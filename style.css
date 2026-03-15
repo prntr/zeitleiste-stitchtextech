@@ -1864,9 +1864,6 @@ body.stt-session-edit-mode .stt-event { cursor: crosshair; }
   padding: 5px 8px;
   line-height: 1;
 }
-:fullscreen .stt-footer {
-  display: none;
-}
 :fullscreen .stt-header {
   --header-h: 50px;
   padding-block: 0;

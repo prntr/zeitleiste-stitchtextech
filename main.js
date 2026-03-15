@@ -271,15 +271,7 @@
     delBtn.addEventListener('click', () => {
       if (!confirm(`Session "${sess.title || sess.id}" löschen?`)) return;
       data.sessions = (data.sessions || []).filter(s => s.id !== sess.id);
-      if (activeSession === sess.id) {
-        activeSession = null;
-        const selEl = document.getElementById('stt-session-select');
-        if (selEl) { selEl.value = ''; selEl.classList.remove('has-session'); }
-        const editBtn2 = document.getElementById('stt-session-edit-btn');
-        if (editBtn2) editBtn2.hidden = true;
-        if (sessionEditMode) exitSessionEditMode();
-        applyEventVisibility();
-      }
+      if (activeSession === sess.id) selectSession(null);
       saveLocalSessions();
       rebuildSessionPicker();
       buildSessionManagerList();
@@ -307,20 +299,55 @@
     newRow?.querySelector('.stt-session-mgr__title')?.focus();
   }
 
-  /* Dropdown nach Änderungen neu aufbauen */
+  /* Popover-Liste nach Änderungen neu aufbauen */
   function rebuildSessionPicker() {
-    const sel = document.getElementById('stt-session-select');
-    if (!sel) return;
-    const prev = sel.value;
-    while (sel.options.length > 1) sel.remove(1);
-    (data.sessions || []).forEach(s => {
-      const opt = document.createElement('option');
-      opt.value = s.id;
-      const d = s.date ? new Date(s.date).toLocaleDateString('de-AT', { day:'2-digit', month:'2-digit' }) : '';
-      opt.textContent = `${d}${d ? ' · ' : ''}${s.title}`;
-      sel.appendChild(opt);
+    const list    = document.getElementById('stt-pres-list');
+    const emptyEl = document.getElementById('stt-pres-empty');
+    if (!list) return;
+    list.innerHTML = '';
+    const sessions = data.sessions || [];
+
+    /* "Alle Ereignisse" */
+    const allItem = document.createElement('div');
+    allItem.className = 'stt-pres-item' + (!activeSession ? ' is-active' : '');
+    allItem.dataset.id = '';
+    allItem.innerHTML = `<span class="stt-pres-item__label">Alle Ereignisse</span><span class="stt-pres-item__count">${data.events.length}</span>`;
+    allItem.addEventListener('click', () => selectSession(null));
+    list.appendChild(allItem);
+
+    sessions.forEach(s => {
+      const d = s.date ? new Date(s.date).toLocaleDateString('de-AT', { day: '2-digit', month: '2-digit' }) : '';
+      const item = document.createElement('div');
+      item.className = 'stt-pres-item' + (activeSession === s.id ? ' is-active' : '');
+      item.dataset.id = s.id;
+      item.innerHTML = `
+        <div class="stt-pres-item__info">
+          <span class="stt-pres-item__label">${s.title}</span>
+          ${d ? `<span class="stt-pres-item__date">${d}</span>` : ''}
+        </div>
+        <span class="stt-pres-item__count">${(s.events || []).length}</span>`;
+      item.addEventListener('click', () => selectSession(s.id));
+      list.appendChild(item);
     });
-    if ([...sel.options].some(o => o.value === prev)) sel.value = prev;
+
+    if (emptyEl) emptyEl.hidden = sessions.length > 0;
+    updatePopoverActions();
+  }
+
+  function selectSession(id) {
+    activeSession = id || null;
+    if (!activeSession && sessionEditMode) exitSessionEditMode();
+    applyEventVisibility();
+    rebuildSessionPicker();
+    if (activeSession) {
+      const sess = (data.sessions || []).find(s => s.id === activeSession);
+      if (sess) showToast(`Präsentation: ${sess.title}${sess.desc ? ' — ' + sess.desc : ''}`);
+    }
+  }
+
+  function updatePopoverActions() {
+    const actionsEl = document.getElementById('stt-pres-actions');
+    if (actionsEl) actionsEl.hidden = !activeSession;
   }
 
   /* ================================================================
@@ -1420,7 +1447,7 @@
     sessionEditMode = false;
     document.body.classList.remove('stt-session-edit-mode');
     const btn = document.getElementById('stt-session-edit-btn');
-    if (btn) { btn.textContent = '✏ bearbeiten'; btn.classList.remove('is-active'); }
+    if (btn) { btn.textContent = '✏ Zuordnen'; btn.classList.remove('is-active'); }
     saveLocalSessions();
     applyEventVisibility();
     updateExportBadge();
@@ -2217,6 +2244,25 @@
   ================================================================ */
   function setupControls() {
 
+    /* Präsentation Popover */
+    const popoverBtn = document.getElementById('stt-pres-popover-btn');
+    const popover    = document.getElementById('stt-pres-popover');
+    const presWrap   = document.getElementById('stt-pres-wrap');
+    if (popoverBtn && popover) {
+      popoverBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = !popover.hidden;
+        popover.hidden = open;
+        popoverBtn.setAttribute('aria-expanded', String(!open));
+      });
+      document.addEventListener('click', (e) => {
+        if (!presWrap?.contains(e.target)) {
+          popover.hidden = true;
+          popoverBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
     /* Session-Manager-Button */
     document.getElementById('stt-session-mgr-btn')?.addEventListener('click', openSessionManager);
 
@@ -2389,45 +2435,11 @@
      SESSION-PICKER (Kurs-Modus)
   ================================================================ */
   function setupSessionPicker() {
-    const sel = document.getElementById('stt-session-select');
-    if (!sel || !data.sessions) return;
-
-    data.sessions.forEach(s => {
-      const opt = document.createElement('option');
-      opt.value = s.id;
-      const d = s.date ? new Date(s.date).toLocaleDateString('de-AT', { day:'2-digit', month:'2-digit' }) : '';
-      opt.textContent = `${d} · ${s.title}`;
-      sel.appendChild(opt);
+    rebuildSessionPicker();
+    document.getElementById('stt-session-edit-btn')?.addEventListener('click', () => {
+      if (sessionEditMode) exitSessionEditMode();
+      else                 enterSessionEditMode();
     });
-
-    sel.addEventListener('change', function () {
-      activeSession = this.value || null;
-      this.classList.toggle('has-session', !!activeSession);
-
-      /* Edit-Button: nur sichtbar wenn Session aktiv */
-      const editBtn2 = document.getElementById('stt-session-edit-btn');
-      if (editBtn2) editBtn2.hidden = !activeSession;
-
-      /* Edit-Mode beenden wenn Session weggewählt */
-      if (!activeSession && sessionEditMode) exitSessionEditMode();
-
-      applyEventVisibility();
-
-      /* Info-Toast bei Session-Auswahl */
-      if (activeSession) {
-        const sess = data.sessions.find(s => s.id === activeSession);
-        if (sess) showToast(`Session: ${sess.title} — ${sess.desc}`);
-      }
-    });
-
-    /* Edit-Button anschließen */
-    const sessionEditBtn = document.getElementById('stt-session-edit-btn');
-    if (sessionEditBtn) {
-      sessionEditBtn.addEventListener('click', () => {
-        if (sessionEditMode) exitSessionEditMode();
-        else                 enterSessionEditMode();
-      });
-    }
   }
 
   /* ================================================================

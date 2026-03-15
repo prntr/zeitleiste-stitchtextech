@@ -39,13 +39,24 @@
       <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="10" y1="10" x2="14" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       <input type="search" class="stt-search" id="stt-search" placeholder="Suche…" aria-label="Ereignisse suchen">
     </label>
-    <select class="stt-session-select" id="stt-session-select" aria-label="Kurs-Session auswählen">
-      <option value="">Alle Ereignisse</option>
-      <!-- Wird per JS befüllt -->
-    </select>
-    <button class="stt-btn stt-btn--ghost" id="stt-session-edit-btn" hidden title="Session-Events bearbeiten">✏ bearbeiten</button>
-    <button class="stt-btn stt-btn--ghost" id="stt-session-mgr-btn" title="Sessions verwalten: anlegen, umbenennen">⚙ Sessions</button>
-    <button class="stt-btn stt-btn--pres" id="stt-pres-btn" title="Präsentations-Modus starten">▶ Präsentieren</button>
+    <div class="stt-pres-wrap" id="stt-pres-wrap">
+      <button class="stt-btn" id="stt-pres-popover-btn" aria-expanded="false" aria-haspopup="true" title="Präsentationen verwalten">Präsentation <span class="stt-pres-caret" aria-hidden="true">▾</span></button>
+      <div class="stt-pres-popover" id="stt-pres-popover" hidden>
+        <div class="stt-pres-list" id="stt-pres-list"></div>
+        <div class="stt-pres-empty" id="stt-pres-empty" hidden>
+          <p>Noch keine Präsentationen.</p>
+          <p>Erstelle eine um Events zu einer Einheit zu gruppieren.</p>
+        </div>
+        <div class="stt-pres-popover__footer">
+          <button class="stt-btn stt-btn--ghost" id="stt-session-add-btn">+ Neue Präsentation</button>
+          <button class="stt-btn stt-btn--ghost" id="stt-session-mgr-btn" title="Alle Präsentationen verwalten">⚙</button>
+        </div>
+        <div class="stt-pres-actions" id="stt-pres-actions" hidden>
+          <button class="stt-btn stt-btn--ghost" id="stt-session-edit-btn" title="Events dieser Präsentation zuordnen">✏ Zuordnen</button>
+          <button class="stt-btn" id="stt-pres-btn" title="Präsentation starten">▶ Starten</button>
+        </div>
+      </div>
+    </div>
     <button class="stt-btn" id="stt-conn-btn" aria-pressed="false" title="Verbindungen zwischen Ereignissen einblenden">Verbindungen</button>
     <button class="stt-btn" id="stt-label-btn" aria-pressed="false" title="Beschriftungen dauerhaft anzeigen">Labels</button>
     <button class="stt-btn" id="stt-collapse-btn" aria-pressed="false" title="Kompakt-Ansicht: alle Tracks auf eine Achse zusammenklappen">Kompakt</button>

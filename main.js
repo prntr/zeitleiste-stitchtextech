@@ -48,6 +48,7 @@
   let showConn       = false;
   let showLabels     = false;
   let selectedId     = null;
+  let hoveredId      = null;
   let searchQuery    = '';
   let activeSession  = null;   // Kurs-Modus: aktive Session-ID oder null
   let viewMode       = 'multi';  // 'multi' | 'single'
@@ -928,8 +929,14 @@
     }
     const g = connG || svgSel.select('.stt-conn-group');
     g.classed('stt-connections-on', showConn);
-    g.selectAll('.stt-connection')
-      .attr('opacity', showConn ? 0.32 : 0);
+    const activeId = hoveredId || selectedId;
+    if (activeId) {
+      g.selectAll('.stt-connection')
+        .attr('opacity', d => (d.src.id === activeId || d.tgt.id === activeId) ? 0.75 : (showConn ? 0.08 : 0));
+    } else {
+      g.selectAll('.stt-connection')
+        .attr('opacity', showConn ? 0.32 : 0);
+    }
   }
 
   /* ================================================================
@@ -1106,23 +1113,18 @@
   function updateCollapsedConnVisibility() {
     if (!svgSel) return;
     const paths = svgSel.selectAll('.stt-collapsed-conn');
+    const activeId = hoveredId || selectedId;
+    if (activeId) {
+      paths.attr('opacity', d =>
+        (d.src.id === activeId || d.tgt.id === activeId) ? 0.72 : (showConn ? 0.05 : 0)
+      );
+      return;
+    }
     if (!showConn) {
       paths.attr('opacity', 0);
       return;
     }
-    if (!selectedId) {
-      paths.attr('opacity', 0.12);
-      return;
-    }
-    const selEv = data.events.find(e => e.id === selectedId);
-    const connSet = new Set(selEv ? (selEv.connections || []) : []);
-    paths.attr('opacity', d => {
-      const involved = d.src.id === selectedId || d.tgt.id === selectedId;
-      if (involved) return 0.72;
-      const srcConn = connSet.has(d.src.id);
-      const tgtConn = connSet.has(d.tgt.id);
-      return (srcConn || tgtConn) ? 0.05 : 0.05;
-    });
+    paths.attr('opacity', 0.12);
   }
 
   /* Render stems + label cards in collapsed view */
@@ -1392,11 +1394,15 @@
     tooltip.style.top  = flipBelow ? cyBottom + 'px' : cy + 'px';
     tooltip.classList.add('is-visible');
     tooltip.removeAttribute('aria-hidden');
+    hoveredId = d.id;
+    updateConnectionVisibility();
   }
 
   function onEventMouseLeave() {
     tooltip.classList.remove('is-visible', 'is-flipped', 'has-thumb');
     tooltip.setAttribute('aria-hidden', 'true');
+    hoveredId = null;
+    updateConnectionVisibility();
   }
 
   /* ================================================================

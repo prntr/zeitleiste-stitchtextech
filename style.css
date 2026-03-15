@@ -506,11 +506,9 @@ body::after {
   fill: none;
   stroke-width: 1.2;
   stroke-dasharray: 4,3;
-  opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
 }
-.stt-connections-on .stt-connection { opacity: 0.35; }
 
 /* ── Detail Panel v2 ────────────────────────────────────────────── */
 .stt-panel {

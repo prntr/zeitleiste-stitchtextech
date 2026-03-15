@@ -928,7 +928,6 @@
       return;
     }
     const g = connG || svgSel.select('.stt-conn-group');
-    g.classed('stt-connections-on', showConn);
     const activeId = hoveredId || selectedId;
     if (activeId) {
       g.selectAll('.stt-connection')

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interaktive Zeitleiste zur Geschichte der Textiltechnologie, Open-Source-Textilmaschinen und Open-Hardware-Bewegung. Für den Bildungskontext. CC BY-SA 4.0.">
+  <meta name="author" content="Stitch (X)">
+  <title>Stitch (X) — Zeitleiste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────── -->
+<header class="stt-header" role="banner">
+
+  <div class="stt-brand">
+    <svg class="stt-brand__icon" viewBox="0 0 36 36" width="34" height="34" aria-hidden="true" focusable="false">
+      <!-- Spule / Bobbin -->
+      <ellipse cx="18" cy="8"  rx="11" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <ellipse cx="18" cy="28" rx="11" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <line x1="7"  y1="8"  x2="7"  y2="28" stroke="currentColor" stroke-width="1.6"/>
+      <line x1="29" y1="8"  x2="29" y2="28" stroke="currentColor" stroke-width="1.6"/>
+      <!-- Fadenwicklung -->
+      <line x1="18" y1="3.5" x2="18" y2="32.5" stroke="currentColor" stroke-width="0.6" stroke-dasharray="2,3" opacity="0.5"/>
+      <path d="M9 16 Q18 12 27 16" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
+      <path d="M9 20 Q18 24 27 20" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
+    </svg>
+    <div>
+      <h1 class="stt-brand__title">Stitch (X)</h1>
+      <p class="stt-brand__sub">Zeitleiste: Textiltechnologie &amp; Open Hardware</p>
+    </div>
+  </div>
+
+  <div class="stt-controls">
+    <label class="stt-search-wrap">
+      <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="10" y1="10" x2="14" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <input type="search" class="stt-search" id="stt-search" placeholder="Suche…" aria-label="Ereignisse suchen">
+    </label>
+    <select class="stt-session-select" id="stt-session-select" aria-label="Kurs-Session auswählen">
+      <option value="">Alle Ereignisse</option>
+      <!-- Wird per JS befüllt -->
+    </select>
+    <button class="stt-btn stt-btn--ghost" id="stt-session-edit-btn" hidden title="Session-Events bearbeiten">✏ bearbeiten</button>
+    <button class="stt-btn stt-btn--ghost" id="stt-session-mgr-btn" title="Sessions verwalten: anlegen, umbenennen">⚙ Sessions</button>
+    <button class="stt-btn stt-btn--pres" id="stt-pres-btn" title="Präsentations-Modus starten">▶ Präsentieren</button>
+    <button class="stt-btn" id="stt-conn-btn" aria-pressed="false" title="Verbindungen zwischen Ereignissen einblenden">Verbindungen</button>
+    <button class="stt-btn" id="stt-label-btn" aria-pressed="false" title="Beschriftungen dauerhaft anzeigen">Labels</button>
+    <button class="stt-btn" id="stt-collapse-btn" aria-pressed="false" title="Kompakt-Ansicht: alle Tracks auf eine Achse zusammenklappen">Kompakt</button>
+    <button class="stt-btn stt-btn--ghost stt-btn--export" id="stt-export-btn" title="Änderungen als JSON exportieren" hidden>↓ Export</button>
+    <button class="stt-btn" id="stt-reset-btn" aria-label="Zoom zurücksetzen">↺</button>
+    <button class="stt-btn stt-btn--ghost stt-btn--fs" id="stt-fullscreen-btn" aria-label="Vollbild ein/aus" title="Vollbild">
+      <svg class="stt-fs-icon--enter" viewBox="0 0 14 14" width="13" height="13" aria-hidden="true"><path d="M1 4V1h3M10 1h3v3M13 10v3h-3M4 13H1v-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="stt-fs-icon--exit"  viewBox="0 0 14 14" width="13" height="13" aria-hidden="true" hidden><path d="M4 1v3H1M13 4h-3V1M10 13v-3h3M1 10h3v3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+</header>
+
+<!-- ── Main ───────────────────────────────────────────────────── -->
+<main class="stt-main" id="stt-main">
+
+  <div class="stt-timeline-wrapper">
+
+    <!-- Track Labels (HTML, bleibt beim Zoomen fix) -->
+    <div class="stt-track-sidebar" id="stt-sidebar" aria-label="Track-Legende" role="list">
+      <!-- Wird per JS befüllt -->
+    </div>
+
+    <!-- SVG Timeline -->
+    <div class="stt-svg-wrapper" id="stt-svg-wrapper"
+         role="region" aria-label="Zeitleiste – Zoom mit Mausrad, Pan mit Klick-und-Ziehen">
+      <svg id="stt-svg" aria-hidden="true" focusable="false"></svg>
+      <div class="stt-tooltip" id="stt-tooltip" aria-hidden="true" role="tooltip"></div>
+    </div>
+
+  </div>
+
+  <!-- Detail Panel (rechts schwebend) -->
+  <section class="stt-panel" id="stt-panel" aria-label="Ereignis-Details" aria-live="polite">
+
+    <div class="stt-panel__track-bar" id="stt-panel-bar"></div>
+
+    <!-- Header: Navigation + Meta + Schließen -->
+    <div class="stt-panel__header">
+      <div class="stt-panel__nav">
+        <button class="stt-panel__nav-btn" id="stt-panel-prev" aria-label="Vorheriges Ereignis" disabled>&#8592;</button>
+        <button class="stt-panel__nav-btn" id="stt-panel-next" aria-label="Nächstes Ereignis" disabled>&#8594;</button>
+      </div>
+      <div class="stt-panel__meta">
+        <span class="stt-panel__year"  id="stt-panel-year"></span>
+        <span class="stt-panel__badge" id="stt-panel-badge"></span>
+      </div>
+      <button class="stt-panel__edit-btn" id="stt-panel-edit" aria-label="Ereignis bearbeiten" title="Bearbeiten">
+        <svg viewBox="0 0 14 14" width="14" height="14" aria-hidden="true">
+          <path d="M9.5 1.5 L12.5 4.5 L5 12 L2 12 L2 9 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          <line x1="7.5" y1="3.5" x2="10.5" y2="6.5" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </button>
+      <button class="stt-panel__close" id="stt-panel-close" aria-label="Panel schließen">
+        <svg viewBox="0 0 14 14" width="14" height="14" aria-hidden="true">
+          <line x1="2" y1="2" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="2" x2="2" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Scrollbarer Inhalt -->
+    <div class="stt-panel__body" id="stt-panel-body">
+
+      <!-- Titel + Untertitel -->
+      <div class="stt-panel__titles">
+        <h2 class="stt-panel__title"    id="stt-panel-title"></h2>
+        <p  class="stt-panel__subtitle" id="stt-panel-subtitle"></p>
+      </div>
+
+      <!-- Media-Galerie -->
+      <div class="stt-panel__gallery" id="stt-panel-gallery" hidden>
+        <div class="stt-gallery__stage" id="stt-gallery-stage"></div>
+        <div class="stt-gallery__bar">
+          <button class="stt-gallery__arrow" id="stt-gallery-prev" aria-label="Vorheriges Medium">&#8592;</button>
+          <div    class="stt-gallery__dots"  id="stt-gallery-dots"></div>
+          <button class="stt-gallery__arrow" id="stt-gallery-next" aria-label="Nächstes Medium">&#8594;</button>
+          <span   class="stt-gallery__caption" id="stt-gallery-caption"></span>
+        </div>
+      </div>
+
+      <!-- Beschreibung -->
+      <p class="stt-panel__desc" id="stt-panel-desc"></p>
+
+      <!-- Verbundene Ereignisse -->
+      <div class="stt-panel__connections" id="stt-panel-connections" hidden></div>
+
+      <!-- Links -->
+      <div class="stt-panel__links" id="stt-panel-links"></div>
+
+      <!-- Quellenangabe -->
+      <footer class="stt-panel__source" id="stt-panel-source"></footer>
+
+    </div>
+
+  <form class="stt-edit-form" id="stt-edit-form" aria-label="Ereignis bearbeiten" hidden novalidate></form>
+
+  </section>
+
+</main>
+
+<!-- ── Footer ─────────────────────────────────────────────────── -->
+<footer class="stt-footer" role="contentinfo">
+
+  <div class="stt-footer__row">
+
+    <!-- Rubriken-Popover (Track-Filter) -->
+    <div class="stt-footer__popover-wrap" id="stt-filter-wrap">
+      <button class="stt-overlay-trigger" id="stt-filter-trigger"
+              aria-expanded="false" aria-controls="stt-filter-popover"
+              title="Track-Rubriken ein-/ausblenden">
+        <span class="stt-overlay-trigger__icon" aria-hidden="true">☰</span>
+        Rubriken
+        <span class="stt-overlay-trigger__badge" id="stt-filter-badge" hidden>0</span>
+        <span class="stt-overlay-trigger__chevron" aria-hidden="true">▴</span>
+      </button>
+      <div class="stt-overlay-popover" id="stt-filter-popover"
+           role="dialog" aria-label="Track-Rubriken">
+        <nav class="stt-filters" aria-label="Track-Filter">
+          <button class="stt-filter-btn is-active" data-track="A" aria-pressed="true" style="--clr:#C0392B" title="Näh- &amp; Stickmaschinen">
+            <span class="stt-filter-btn__dot"></span>Nähen &amp; Sticken
+          </button>
+          <button class="stt-filter-btn is-active" data-track="B" aria-pressed="true" style="--clr:#27AE60" title="Open-Source-Textilmaschinen DIY">
+            <span class="stt-filter-btn__dot"></span>Open DIY
+          </button>
+          <button class="stt-filter-btn is-active" data-track="C" aria-pressed="true" style="--clr:#2980B9" title="Open Hardware / DIY-Technologie">
+            <span class="stt-filter-btn__dot"></span>Open Hardware
+          </button>
+          <button class="stt-filter-btn is-active" data-track="D" aria-pressed="true" style="--clr:#7F8C8D" title="Allgemeine Technologie">
+            <span class="stt-filter-btn__dot"></span>Technologie
+          </button>
+          <button class="stt-filter-btn is-active" data-track="E" aria-pressed="true" style="--clr:#9B59B6" title="Pädagogik &amp; Computational Thinking">
+            <span class="stt-filter-btn__dot"></span>Pädagogik
+          </button>
+          <button class="stt-filter-btn is-active" data-track="F" aria-pressed="true" style="--clr:#E67E22" title="Stitch(x) Projekt">
+            <span class="stt-filter-btn__dot"></span>Stitch(x)
+          </button>
+          <button class="stt-filter-btn is-active" data-track="G" aria-pressed="true" style="--clr:#A66E4A" title="Textildesign, Kunst &amp; Material">
+            <span class="stt-filter-btn__dot"></span>Textildesign
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Overlays-Popover -->
+    <div class="stt-footer__popover-wrap" id="stt-overlay-wrap">
+      <button class="stt-overlay-trigger" id="stt-overlay-trigger"
+              aria-expanded="false" aria-controls="stt-overlay-popover"
+              title="Kontext-Overlays ein-/ausblenden">
+        <span class="stt-overlay-trigger__icon" aria-hidden="true">◈</span>
+        Overlays
+        <span class="stt-overlay-trigger__badge" id="stt-overlay-badge" hidden>0</span>
+        <span class="stt-overlay-trigger__chevron" aria-hidden="true">▴</span>
+      </button>
+      <div class="stt-overlay-popover" id="stt-overlay-popover"
+           role="dialog" aria-label="Kontext-Overlays">
+        <!-- Per JS aus data/metrics.json befüllt -->
+      </div>
+    </div>
+
+    <!-- Spacer -->
+    <div class="stt-footer__spacer"></div>
+
+    <!-- A−/A+ Schriftgröße -->
+    <div class="stt-fontsize-group" role="group" aria-label="Schriftgröße anpassen">
+      <button class="stt-fontsize-btn" id="stt-font-down" title="Schrift kleiner" aria-label="Schrift kleiner">A−</button>
+      <button class="stt-fontsize-btn" id="stt-font-up" title="Schrift größer" aria-label="Schrift größer">A+</button>
+    </div>
+
+    <!-- Meta -->
+    <div class="stt-footer__meta">
+      <button class="stt-btn stt-btn--ghost" id="stt-help-btn" aria-label="Bedienungshinweise">Bedienung</button>
+      <button class="stt-btn stt-btn--ghost" id="stt-sources-btn">Quellen</button>
+      <span class="stt-footer__sep" aria-hidden="true">·</span>
+      <span>Inhalt: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></span>
+      <span>Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT</a></span>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Help Modal -->
+<div class="stt-modal" id="stt-help-modal" role="dialog" aria-label="Bedienung" aria-modal="true" hidden>
+  <div class="stt-modal__box">
+    <button class="stt-modal__close" data-modal="stt-help-modal" aria-label="Schließen">×</button>
+    <h3>Bedienung</h3>
+    <ul>
+      <li><strong>Ereignis öffnen:</strong> Klick auf einen Kreis</li>
+      <li><strong>Panel schließen:</strong> × oder Escape</li>
+      <li><strong>Filter:</strong> Track-Buttons in der Fußzeile</li>
+      <li><strong>Overlay:</strong> Dropdown wählt Hintergrundmetrik (CO₂, Faserproduktion, Moore's Law, Open Source)</li>
+      <li><strong>Verbindungen:</strong> Button zeigt Querverbindungen zwischen Tracks</li>
+      <li><strong>Labels:</strong> Button zeigt Titel dauerhaft an allen Ereignissen</li>
+      <li><strong>Suche:</strong> Volltextsuche über alle Ereignisse</li>
+      <li><strong>Zoom reset:</strong> ↺ Button</li>
+      <li><strong>Zoom:</strong> Mausrad scrollen oder Pinch-Geste</li>
+      <li><strong>Pan links/rechts:</strong> Linke Maustaste ziehen, rechte Maustaste ziehen, oder zwei Finger horizontal wischen</li>
+      <li><strong>Hover-Preview:</strong> Maus über Ereignis → Vorschau mit Beschreibung</li>
+      <li><strong>Tastatur:</strong> Tab zu Ereignissen, Enter/Leertaste öffnet Detail</li>
+    </ul>
+    <p class="stt-modal__note">Größere Kreise = bedeutsamere Ereignisse. Ausgefüllte Kreise mit weißem Rand = Schlüsselereignisse.</p>
+  </div>
+</div>
+
+<!-- Sources Modal -->
+<div class="stt-modal" id="stt-sources-modal" role="dialog" aria-label="Quellenverzeichnis" aria-modal="true" hidden>
+  <div class="stt-modal__box stt-modal__box--wide">
+    <button class="stt-modal__close" data-modal="stt-sources-modal" aria-label="Schließen">×</button>
+    <h3>Quellenverzeichnis</h3>
+    <div id="stt-sources-list" class="stt-sources-list">
+      <!-- Wird per JS befüllt -->
+    </div>
+  </div>
+</div>
+<div class="stt-modal-overlay" id="stt-modal-overlay" hidden></div>
+
+<!-- Session Manager Modal -->
+<div class="stt-modal" id="stt-session-mgr-modal" role="dialog" aria-label="Sessions verwalten" aria-modal="true" hidden>
+  <div class="stt-modal__box stt-modal__box--wide">
+    <button class="stt-modal__close" data-modal="stt-session-mgr-modal" aria-label="Schließen">×</button>
+    <h3>Sessions verwalten</h3>
+    <p class="stt-session-mgr__hint">Änderungen werden lokal gespeichert und beim Export mitgeliefert.</p>
+    <div id="stt-session-mgr-list" class="stt-session-mgr__list">
+      <!-- Wird per JS befüllt -->
+    </div>
+    <div class="stt-session-mgr__add">
+      <button class="stt-btn stt-btn--ghost" id="stt-session-add-btn">+ Neue Session anlegen</button>
+    </div>
+  </div>
+</div>
+
+<!-- Präsentations-Overlay -->
+<div class="stt-pres-overlay" id="stt-pres-overlay" hidden>
+  <div class="stt-pres-card">
+    <div class="stt-pres-trackbar"></div>
+    <div class="stt-pres-header">
+      <span class="stt-pres-dot"></span>
+      <span class="stt-pres-year"></span>
+      <span class="stt-pres-badge"></span>
+      <button class="stt-btn stt-pres-scope-toggle" title="Scope wechseln: Session ↔ Alle sichtbaren Ereignisse">Session ⇄ Alle</button>
+      <button id="stt-pres-close" class="stt-pres-close" aria-label="Präsentation schließen">×</button>
+    </div>
+    <h1 class="stt-pres-title"></h1>
+    <p class="stt-pres-subtitle"></p>
+    <div class="stt-pres-gallery" hidden></div>
+    <p class="stt-pres-desc"></p>
+    <div class="stt-pres-connections" hidden></div>
+    <div class="stt-pres-footer">
+      <button id="stt-pres-prev" class="stt-btn">← Zurück</button>
+      <span class="stt-pres-counter"></span>
+      <button id="stt-pres-next" class="stt-btn">Weiter →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Scripts ─────────────────────────────────────────────────── -->
+<!-- D3.js v7 -->
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<!-- App -->
+<script src="main.js"></script>
+
+</body>
+</html>

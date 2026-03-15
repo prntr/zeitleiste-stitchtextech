@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Legacy-Dateien (nicht mehr aktiv)
+data/timeline.js
+data/sources.js
+
+# Claude Code (lokal)
+.claude/

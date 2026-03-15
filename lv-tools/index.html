@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stitch(x) Werkzeugkarte: zentrale Links, Projektseiten und QR-Codes zu den in der LV verwendeten Tools.">
+  <meta name="author" content="Stitch (X)">
+  <title>Stitch (X) - Werkzeugkarte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --track-a: #C0392B;
+      --track-b: #27AE60;
+      --track-c: #2980B9;
+      --track-d: #7F8C8D;
+      --track-e: #9B59B6;
+      --track-f: #E67E22;
+      --track-g: #A66E4A;
+      --bg: #FAFAF8;
+      --surface: rgba(255, 255, 255, 0.94);
+      --surface-solid: #FFFFFF;
+      --border: #E5E7EB;
+      --text: #1A1A1A;
+      --muted: #6B7280;
+      --accent: #B87333;
+      --accent-soft: rgba(184, 115, 51, 0.12);
+      --radius: 4px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 2px 10px rgba(17, 24, 39, 0.06);
+      --shadow-md: 0 20px 40px rgba(17, 24, 39, 0.10);
+      --font-mono: 'IBM Plex Mono', monospace;
+      --font-sans: 'IBM Plex Sans', sans-serif;
+      --max-w: 1320px;
+    }
+
+    * { box-sizing: border-box; }
+    html { font-size: 15px; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      color: var(--text);
+      background:
+        linear-gradient(180deg, rgba(184, 115, 51, 0.06), transparent 220px),
+        var(--bg);
+      min-height: 100vh;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 11px,
+          rgba(0, 0, 0, 0.018) 11px,
+          rgba(0, 0, 0, 0.018) 12px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 11px,
+          rgba(0, 0, 0, 0.018) 11px,
+          rgba(0, 0, 0, 0.018) 12px
+        );
+      z-index: 0;
+    }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    .stt-shell {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 20px 20px 48px;
+    }
+
+    .stt-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 16px 0 18px;
+      backdrop-filter: blur(16px);
+    }
+
+    .stt-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .stt-brand__icon {
+      flex: 0 0 auto;
+      color: var(--accent);
+    }
+
+    .stt-brand__eyebrow,
+    .stt-meta,
+    .stt-section__meta,
+    .stt-card__meta,
+    .stt-card__qr-label {
+      font-family: var(--font-mono);
+      font-size: 0.73rem;
+      letter-spacing: 0.01em;
+    }
+
+    .stt-brand__eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+
+    .stt-brand__title {
+      margin: 0;
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+
+    .stt-brand__sub {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .stt-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.85);
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .stt-meta__dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .stt-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.8fr);
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .stt-panel,
+    .stt-section,
+    .stt-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stt-panel {
+      position: relative;
+      overflow: hidden;
+      padding: 22px 22px 24px;
+    }
+
+    .stt-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background:
+        linear-gradient(
+          90deg,
+          var(--track-c) 0 24%,
+          var(--track-e) 24% 53%,
+          var(--track-f) 53% 77%,
+          var(--accent) 77% 100%
+        );
+    }
+
+    .stt-hero__title {
+      margin: 10px 0 12px;
+      font-size: clamp(2rem, 4vw, 3.35rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      max-width: 11ch;
+    }
+
+    .stt-hero__lead {
+      margin: 0;
+      max-width: 64ch;
+      color: #2d3748;
+      font-size: 1rem;
+    }
+
+    .stt-hero__rail {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .stt-chip,
+    .stt-anchor {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.84);
+    }
+
+    .stt-chip {
+      color: var(--muted);
+      font-size: 0.79rem;
+    }
+
+    .stt-chip__dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--chip-clr, var(--accent));
+    }
+
+    .stt-anchor-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 24px;
+    }
+
+    .stt-anchor {
+      color: var(--text);
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+    }
+
+    .stt-anchor:hover,
+    .stt-anchor:focus-visible {
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--anchor-clr, var(--accent)) 45%, var(--border));
+      background: color-mix(in srgb, var(--anchor-clr, var(--accent)) 10%, white);
+      outline: none;
+    }
+
+    .stt-summary {
+      display: grid;
+      gap: 10px;
+    }
+
+    .stt-summary__title {
+      margin: 0;
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .stt-summary__text {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .stt-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 18px 0 16px;
+    }
+
+    .stt-stat {
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(250, 250, 248, 0.86);
+    }
+
+    .stt-stat__value {
+      font-family: var(--font-mono);
+      font-size: 1.45rem;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .stt-stat__label {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .stt-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .stt-sections {
+      display: grid;
+      gap: 20px;
+    }
+
+    .stt-section {
+      overflow: hidden;
+    }
+
+    .stt-section__head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px 22px 14px;
+      border-bottom: 1px solid var(--border);
+      background:
+        linear-gradient(
+          90deg,
+          color-mix(in srgb, var(--section-clr) 10%, white),
+          rgba(255, 255, 255, 0.4)
+        );
+    }
+
+    .stt-section__title {
+      margin: 0;
+      font-family: var(--font-mono);
+      font-size: 1.18rem;
+      font-weight: 600;
+    }
+
+    .stt-section__text {
+      margin: 7px 0 0;
+      max-width: 68ch;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .stt-section__meta {
+      color: color-mix(in srgb, var(--section-clr) 70%, black);
+      white-space: nowrap;
+    }
+
+    .stt-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .stt-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 124px;
+      gap: 16px;
+      padding: 18px;
+      align-items: start;
+      position: relative;
+      overflow: hidden;
+      background: var(--surface-solid);
+    }
+
+    .stt-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: var(--card-clr);
+    }
+
+    .stt-card__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+      color: var(--muted);
+    }
+
+    .stt-card__head {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 4px;
+    }
+
+    .stt-card__logo {
+      position: relative;
+      display: grid;
+      place-items: center;
+      flex: 0 0 54px;
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      border: 1px solid color-mix(in srgb, var(--card-clr) 18%, var(--border));
+      background: var(--logo-bg, rgba(255, 255, 255, 0.96));
+      overflow: hidden;
+    }
+
+    .stt-card__logo img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+      display: none;
+    }
+
+    .stt-card__logo.has-image img {
+      display: block;
+    }
+
+    .stt-card__logo-mark {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: color-mix(in srgb, var(--card-clr) 72%, black);
+    }
+
+    .stt-card__logo.has-image .stt-card__logo-mark {
+      display: none;
+    }
+
+    .stt-card__title-wrap {
+      min-width: 0;
+    }
+
+    .stt-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--card-clr) 10%, white);
+      border: 1px solid color-mix(in srgb, var(--card-clr) 26%, var(--border));
+      font-size: 0.72rem;
+    }
+
+    .stt-pill__dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--card-clr);
+    }
+
+    .stt-card__title {
+      margin: 0;
+      font-size: 1.14rem;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .stt-card__desc {
+      margin: 10px 0 14px;
+      color: #374151;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    .stt-card__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .stt-link-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 36px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #fff;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: background 0.16s ease, border-color 0.16s ease, transform 0.16s ease;
+    }
+
+    .stt-link-btn:hover,
+    .stt-link-btn:focus-visible {
+      background: color-mix(in srgb, var(--card-clr) 10%, white);
+      border-color: color-mix(in srgb, var(--card-clr) 45%, var(--border));
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .stt-link-btn--primary {
+      border-color: color-mix(in srgb, var(--card-clr) 35%, var(--border));
+      background: color-mix(in srgb, var(--card-clr) 12%, white);
+    }
+
+    .stt-card__qr-wrap {
+      display: grid;
+      justify-items: center;
+      gap: 10px;
+    }
+
+    .stt-card__qr {
+      display: grid;
+      place-items: center;
+      width: 124px;
+      min-height: 124px;
+      padding: 8px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(180deg, rgba(250, 250, 248, 0.95), rgba(245, 245, 244, 0.9));
+    }
+
+    .stt-card__qr canvas,
+    .stt-card__qr img {
+      width: 100%;
+      height: auto;
+    }
+
+    .stt-card__qr-label {
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .stt-footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 22px;
+      padding: 16px 4px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .stt-footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .stt-footer a:hover,
+    .stt-footer a:focus-visible {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    @media (max-width: 980px) {
+      .stt-hero {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .stt-shell {
+        padding: 14px 14px 34px;
+      }
+      .stt-header {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .stt-meta {
+        justify-content: center;
+      }
+      .stt-section__head {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .stt-card {
+        grid-template-columns: 1fr;
+      }
+      .stt-card__qr-wrap {
+        justify-items: start;
+      }
+      .stt-card__qr-label {
+        text-align: left;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+      body::before,
+      .stt-anchor-nav {
+        display: none;
+      }
+      .stt-header {
+        position: static;
+      }
+      .stt-panel,
+      .stt-section,
+      .stt-card {
+        box-shadow: none;
+        background: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stt-shell">
+    <header class="stt-header" role="banner">
+      <div class="stt-brand">
+        <svg class="stt-brand__icon" viewBox="0 0 36 36" width="34" height="34" aria-hidden="true" focusable="false">
+          <ellipse cx="18" cy="8" rx="11" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.6"></ellipse>
+          <ellipse cx="18" cy="28" rx="11" ry="4.5" fill="none" stroke="currentColor" stroke-width="1.6"></ellipse>
+          <line x1="7" y1="8" x2="7" y2="28" stroke="currentColor" stroke-width="1.6"></line>
+          <line x1="29" y1="8" x2="29" y2="28" stroke="currentColor" stroke-width="1.6"></line>
+          <line x1="18" y1="3.5" x2="18" y2="32.5" stroke="currentColor" stroke-width="0.6" stroke-dasharray="2,3" opacity="0.5"></line>
+          <path d="M9 16 Q18 12 27 16" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.4"></path>
+          <path d="M9 20 Q18 24 27 20" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.4"></path>
+        </svg>
+        <div>
+          <div class="stt-brand__eyebrow">Stitch (X) Werkzeugkarte</div>
+          <h1 class="stt-brand__title">Links, Einstiege und QR-Codes</h1>
+          <p class="stt-brand__sub">eigenstaendige Begleitseite zur StitchTexTech-Zeitleiste</p>
+        </div>
+      </div>
+      <div class="stt-meta" aria-label="Stand der Seite">
+        <span class="stt-meta__dot" aria-hidden="true"></span>
+        Stand: 9. Maerz 2026
+      </div>
+    </header>
+
+    <main>
+      <section class="stt-hero" aria-label="Einleitung">
+        <article class="stt-panel">
+          <div class="stt-brand__eyebrow">LV Stitch(x)</div>
+          <h2 class="stt-hero__title">Die wichtigsten Tools der Lehrveranstaltung auf einer Seite.</h2>
+          <p class="stt-hero__lead">
+            Diese Uebersicht sammelt die zentralen CAD-, KI-, Stick- und Fabrication-Tools der LV in einem
+            eigenstaendigen Format. Jede Karte fuehrt direkt zur offiziellen Startseite; der QR-Code oeffnet
+            jeweils den Primaerlink auf dem Handy.
+          </p>
+          <div class="stt-hero__rail" aria-label="Bereiche">
+            <span class="stt-chip"><span class="stt-chip__dot" style="--chip-clr:var(--track-c)"></span>CAD</span>
+            <span class="stt-chip"><span class="stt-chip__dot" style="--chip-clr:var(--track-e)"></span>AI</span>
+            <span class="stt-chip"><span class="stt-chip__dot" style="--chip-clr:var(--track-f)"></span>Textilcode</span>
+            <span class="stt-chip"><span class="stt-chip__dot" style="--chip-clr:var(--track-b)"></span>Fabrication</span>
+            <span class="stt-chip"><span class="stt-chip__dot" style="--chip-clr:var(--accent)"></span>Repositories</span>
+          </div>
+        </article>
+
+        <aside class="stt-panel stt-summary">
+          <h2 class="stt-summary__title">Einsatz in der LV</h2>
+          <p class="stt-summary__text">
+            Vom schnellen Formfinden in CAD ueber KI-gestuetztes Schreiben und Coden bis zu TurtleStitch,
+            Ink/Stitch, OrcaSlicer und dem StitchLAB-Stack.
+          </p>
+          <div class="stt-stat-grid" aria-label="Kurzuebersicht">
+            <div class="stt-stat">
+              <div class="stt-stat__value">11</div>
+              <div class="stt-stat__label">Werkzeuge</div>
+            </div>
+            <div class="stt-stat">
+              <div class="stt-stat__value">7</div>
+              <div class="stt-stat__label">Repositories</div>
+            </div>
+            <div class="stt-stat">
+              <div class="stt-stat__value">1</div>
+              <div class="stt-stat__label">HTML-Datei</div>
+            </div>
+            <div class="stt-stat">
+              <div class="stt-stat__value">0</div>
+              <div class="stt-stat__label">Build-Schritte</div>
+            </div>
+          </div>
+          <p class="stt-note">
+            Die Zielseiten sind offizielle Produkt-, Projekt- oder Repository-Links. Offene Tools haben zusaetzlich
+            einen direkten GitHub-Einstieg.
+          </p>
+        </aside>
+      </section>
+
+      <nav class="stt-anchor-nav" aria-label="Abschnittsnavigation">
+        <a class="stt-anchor" href="#cad" style="--anchor-clr:var(--track-c)">CAD</a>
+        <a class="stt-anchor" href="#ai" style="--anchor-clr:var(--track-e)">AI</a>
+        <a class="stt-anchor" href="#embroidery" style="--anchor-clr:var(--track-f)">Ink/Stitch + TurtleStitch</a>
+        <a class="stt-anchor" href="#fabrication" style="--anchor-clr:var(--track-b)">OrcaSlicer</a>
+        <a class="stt-anchor" href="#repos" style="--anchor-clr:var(--accent)">Repositories</a>
+      </nav>
+
+      <div class="stt-sections" id="stt-sections"></div>
+    </main>
+
+    <footer class="stt-footer">
+      <span>Gestaltung angelehnt an die StitchTexTech-Zeitleisten-App.</span>
+      <span>Offizielle Zielseiten geprueft am 9. Maerz 2026.</span>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      var sections = [
+        {
+          id: 'cad',
+          title: 'CAD',
+          intro: '3D-Modellierung fuer schnelle Konzepte, technische Bauteile und produktionsnahe Vorbereitung.',
+          color: 'var(--track-c)',
+          items: [
+            {
+              title: 'Fusion 360',
+              type: 'Cloud CAD/CAM',
+              status: 'proprietaer',
+              color: 'var(--track-c)',
+              logoUrl: 'https://cdn.simpleicons.org/autodesk/0C7CD5?viewbox=auto',
+              logoLabel: 'Fusion 360 / Autodesk',
+              logoFallback: 'F360',
+              desc: 'All-in-one-Umgebung fuer 3D-CAD, CAM, Simulation und PCB. In der LV relevant fuer praezise Teile, Vorrichtungen und Fertigungslogik.',
+              links: [
+                { label: 'Produktseite', url: 'https://www.autodesk.com/products/fusion-360/overview' },
+                { label: 'Personal Use', url: 'https://www.autodesk.com/solutions/what-is-fusion-360' }
+              ]
+            },
+            {
+              title: 'Shapr3D',
+              type: 'Direct Modeling',
+              status: 'proprietaer',
+              color: 'var(--track-c)',
+              logoUrl: 'https://cdn.simpleicons.org/shapr3d/315CFF?viewbox=auto',
+              logoLabel: 'Shapr3D',
+              logoFallback: 'S3D',
+              desc: 'Schneller Einstieg fuer Skizze, Form und Praesentation. Besonders stark fuer ideengetriebenes Modellieren auf iPad, Mac und Windows.',
+              links: [
+                { label: 'Startseite', url: 'https://www.shapr3d.com/' },
+                { label: 'Download', url: 'https://support.shapr3d.com/hc/en-us/articles/7859320619292-Download-Shapr3D' }
+              ]
+            },
+            {
+              title: 'FreeCAD',
+              type: 'Open Source CAD',
+              status: 'open source',
+              color: 'var(--track-c)',
+              logoUrl: 'https://cdn.simpleicons.org/freecad/418FDE?viewbox=auto',
+              logoLabel: 'FreeCAD',
+              logoFallback: 'FC',
+              desc: 'Freie parametrische 3D-Modellierung ohne Vendor Lock-in. Sinnvoll fuer Unterricht, Weitergabe und offene Workflows.',
+              links: [
+                { label: 'Projektseite', url: 'https://www.freecad.org/' },
+                { label: 'Repository', url: 'https://github.com/FreeCAD/FreeCAD' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'ai',
+          title: 'AI',
+          intro: 'Werkzeuge fuer Recherche, Schreibunterstuetzung, Ideenfindung, Codehilfe und lokale Modelle.',
+          color: 'var(--track-e)',
+          items: [
+            {
+              title: 'GitHub Copilot',
+              type: 'Coding Assistant',
+              status: 'cloud',
+              color: 'var(--track-e)',
+              logoUrl: 'https://cdn.simpleicons.org/githubcopilot/000000?viewbox=auto',
+              logoLabel: 'GitHub Copilot',
+              logoFallback: 'GC',
+              desc: 'Kontextuelle Hilfe beim Schreiben, Erklaeren und Ueberarbeiten von Code. In der LV besonders nuetzlich fuer kleine Skripte und Strukturfragen.',
+              links: [
+                { label: 'Copilot', url: 'https://github.com/features/copilot' }
+              ]
+            },
+            {
+              title: 'Mistral',
+              type: 'Le Chat',
+              status: 'cloud',
+              color: 'var(--track-e)',
+              logoUrl: 'https://cdn.simpleicons.org/mistralai/F97316?viewbox=auto',
+              logoLabel: 'Mistral',
+              logoFallback: 'M',
+              desc: 'Mehrsprachiger KI-Assistent von Mistral AI. Eignet sich fuer Textarbeit, Recherche und Vergleiche zwischen Modellen.',
+              links: [
+                { label: 'Le Chat', url: 'https://mistral.ai/products/le-chat' }
+              ]
+            },
+            {
+              title: 'ChatGPT',
+              type: 'LLM Assistant',
+              status: 'cloud',
+              color: 'var(--track-e)',
+              logoUrl: 'https://cdn.simpleicons.org/openai/000000?viewbox=auto',
+              logoLabel: 'ChatGPT / OpenAI',
+              logoFallback: 'GPT',
+              desc: 'Breit eingesetzter Assistent fuer Recherche, Strukturierung, Formulierungen und Codeerklaerungen.',
+              links: [
+                { label: 'ChatGPT', url: 'https://openai.com/chatgpt/overview/' }
+              ]
+            },
+            {
+              title: 'Gemini',
+              type: 'Google AI',
+              status: 'cloud',
+              color: 'var(--track-e)',
+              logoUrl: 'https://cdn.simpleicons.org/googlegemini/7C6BFF?viewbox=auto',
+              logoLabel: 'Gemini',
+              logoFallback: 'G',
+              desc: 'Google-Interface fuer generative KI. Praktisch fuer Gegenchecks, alternative Formulierungen und multimodale Prompts.',
+              links: [
+                { label: 'Gemini', url: 'https://gemini.google.com/' }
+              ]
+            },
+            {
+              title: 'Ollama',
+              type: 'Local LLM Runtime',
+              status: 'lokal',
+              color: 'var(--track-e)',
+              logoUrl: 'https://cdn.simpleicons.org/ollama/111111?viewbox=auto',
+              logoLabel: 'Ollama',
+              logoFallback: 'O',
+              desc: 'Lokale Laufzeit fuer offene Sprachmodelle auf dem eigenen Rechner. Relevant fuer datensensible oder offline-nahe Workflows.',
+              links: [
+                { label: 'Download', url: 'https://ollama.com/download' },
+                { label: 'Repository', url: 'https://github.com/ollama/ollama' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'embroidery',
+          title: 'Embroidery Code',
+          intro: 'Die zentralen Werkzeuge fuer coded embroidery, Stickdateien und den Transfer von Gestaltung in Maschine.',
+          color: 'var(--track-f)',
+          items: [
+            {
+              title: 'Ink/Stitch',
+              type: 'Inkscape Extension',
+              status: 'open source',
+              color: 'var(--track-f)',
+              logoUrl: 'https://raw.githubusercontent.com/inkstitch/inkstitch/main/images/logo.png',
+              logoLabel: 'Ink/Stitch',
+              logoFallback: 'IS',
+              desc: 'Open-Source-Erweiterung fuer Inkscape, die SVGs in maschinenlesbare Stickformate uebersetzt. Ideal fuer Vektor-zu-Stick-Workflows.',
+              links: [
+                { label: 'Projektseite', url: 'https://inkstitch.org/' },
+                { label: 'Repository', url: 'https://github.com/inkstitch/inkstitch' }
+              ]
+            },
+            {
+              title: 'TurtleStitch',
+              type: 'Coded Embroidery',
+              status: 'open source',
+              color: 'var(--track-f)',
+              logoUrl: 'https://www.turtlestitch.org/static/img/turtle-b-on-w-on-b.png',
+              logoLabel: 'TurtleStitch',
+              logoFallback: 'TS',
+              desc: 'Blockbasierte Programmierumgebung fuer generative Stickerei. Ein Schluesseltool der LV und direkter Bezug zum StitchLAB-Kontext.',
+              links: [
+                { label: 'Plattform', url: 'https://www.turtlestitch.org/' },
+                { label: 'Tutorials', url: 'https://www.turtlestitch.org/page/tutorials/' },
+                { label: 'Repository', url: 'https://github.com/backface/turtlestitch' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'fabrication',
+          title: 'Fabrication',
+          intro: 'Slicing und Maschinenvorbereitung im weiteren StitchLAB-/Maker-Kontext.',
+          color: 'var(--track-b)',
+          items: [
+            {
+              title: 'OrcaSlicer',
+              type: 'Slicer',
+              status: 'open source',
+              color: 'var(--track-b)',
+              logoUrl: 'https://cdn.simpleicons.org/orcaslicer/1595FF?viewbox=auto',
+              logoLabel: 'OrcaSlicer',
+              logoFallback: 'OS',
+              desc: 'Moderner Open-Source-Slicer fuer praezise Druckvorbereitung. In der LV als Schnittstelle zwischen digitalem Modell und Maschine relevant.',
+              links: [
+                { label: 'Offizielle Seite', url: 'https://www.orcaslicer.com/' },
+                { label: 'Repository', url: 'https://github.com/OrcaSlicer/OrcaSlicer' }
+              ]
+            }
+          ]
+        },
+        {
+          id: 'repos',
+          title: 'Repositories',
+          intro: 'Direkte GitHub-Einstiege zu den offenen Projekten, die im LV-Kontext technisch oder didaktisch wichtig sind.',
+          color: 'var(--accent)',
+          items: [
+            {
+              title: 'prntr/stitchLABsim',
+              type: 'StitchLAB',
+              status: 'kurskontext',
+              color: 'var(--accent)',
+              logoUrl: 'https://cdn.simpleicons.org/github/181717?viewbox=auto',
+              logoLabel: 'GitHub',
+              logoFallback: 'GH',
+              desc: 'Projektkontext, Entwicklungsstand und Referenzpunkt fuer StitchLAB.',
+              links: [
+                { label: 'Repository', url: 'https://github.com/prntr/stitchLABsim' }
+              ]
+            },
+            {
+              title: 'mainsail-crew/mainsail',
+              type: 'Web UI',
+              status: 'open source',
+              color: 'var(--accent)',
+              logoUrl: 'https://cdn.simpleicons.org/github/181717?viewbox=auto',
+              logoLabel: 'GitHub',
+              logoFallback: 'GH',
+              desc: 'Upstream-Frontend fuer Klipper; wichtig fuer den StitchLAB-Stack und dessen Browser-Steuerung.',
+              links: [
+                { label: 'Repository', url: 'https://github.com/mainsail-crew/mainsail' },
+                { label: 'Docs', url: 'https://docs.mainsail.xyz/' }
+              ]
+            },
+            {
+              title: 'Klipper3d/klipper',
+              type: 'Firmware',
+              status: 'open source',
+              color: 'var(--accent)',
+              logoUrl: 'https://cdn.simpleicons.org/github/181717?viewbox=auto',
+              logoLabel: 'GitHub',
+              logoFallback: 'GH',
+              desc: 'Firmware-Grundlage fuer praezise Maschinenbewegungen im erweiterten StitchLAB-Umfeld.',
+              links: [
+                { label: 'Repository', url: 'https://github.com/Klipper3d/klipper' }
+              ]
+            },
+            {
+              title: 'backface/turtlestitch',
+              type: 'Embroidery Code',
+              status: 'open source',
+              color: 'var(--accent)',
+              logoUrl: 'https://cdn.simpleicons.org/github/181717?viewbox=auto',
+              logoLabel: 'GitHub',
+              logoFallback: 'GH',
+              desc: 'Quellcode der TurtleStitch-Plattform, inkl. Offline- und Entwicklungszugang.',
+              links: [
+                { label: 'Repository', url: 'https://github.com/backface/turtlestitch' }
+              ]
+            },
+            {
+              title: 'inkstitch/inkstitch',
+              type: 'Embroidery Design',
+              status: 'open source',
+              color: 'var(--accent)',
+              logoUrl: 'https://cdn.simpleicons.org/github/181717?viewbox=auto',
+              logoLabel: 'GitHub',
+              logoFallback: 'GH',
+              desc: 'Zentrale Codebasis fuer freie Stickdatei-Erstellung auf Basis von Inkscape.',
+              links: [
+                { label: 'Repository', url: 'https://github.com/inkstitch/inkstitch' }
+              ]
+            },
+            {
+              title: 'ollama/ollama',
+              type: 'Local AI',
+              status: 'open source',
+              color: 'var(--accent)',
+              logoUrl: 'https://cdn.simpleicons.org/github/181717?viewbox=auto',
+              logoLabel: 'GitHub',
+              logoFallback: 'GH',
+              desc: 'Lokale KI-Infrastruktur fuer Modelle auf dem eigenen Rechner.',
+              links: [
+                { label: 'Repository', url: 'https://github.com/ollama/ollama' }
+              ]
+            },
+            {
+              title: 'FreeCAD/FreeCAD',
+              type: 'CAD Source',
+              status: 'open source',
+              color: 'var(--accent)',
+              logoUrl: 'https://cdn.simpleicons.org/github/181717?viewbox=auto',
+              logoLabel: 'GitHub',
+              logoFallback: 'GH',
+              desc: 'Offizieller Quellcode des offenen CAD-Werkzeugs fuer nachvollziehbare und weitergebbare Workflows.',
+              links: [
+                { label: 'Repository', url: 'https://github.com/FreeCAD/FreeCAD' }
+              ]
+            }
+          ]
+        }
+      ];
+
+      function renderSections() {
+        var root = document.getElementById('stt-sections');
+        var html = sections.map(function (section) {
+          return [
+            '<section class="stt-section" id="' + escapeAttr(section.id) + '" style="--section-clr:' + escapeAttr(section.color) + '">',
+              '<div class="stt-section__head">',
+                '<div>',
+                  '<h2 class="stt-section__title">' + escapeHtml(section.title) + '</h2>',
+                  '<p class="stt-section__text">' + escapeHtml(section.intro) + '</p>',
+                '</div>',
+                '<div class="stt-section__meta">' + section.items.length + ' Eintraege</div>',
+              '</div>',
+              '<div class="stt-card-grid">',
+                section.items.map(renderCard).join(''),
+              '</div>',
+            '</section>'
+          ].join('');
+        }).join('');
+        root.innerHTML = html;
+      }
+
+      function renderCard(item) {
+        var linksHtml = item.links.map(function (link, index) {
+          var btnClass = index === 0 ? 'stt-link-btn stt-link-btn--primary' : 'stt-link-btn';
+          return '<a class="' + btnClass + '" href="' + escapeAttr(link.url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(link.label) + '</a>';
+        }).join('');
+
+        return [
+          '<article class="stt-card" style="--card-clr:' + escapeAttr(item.color) + '">',
+            '<div>',
+              '<div class="stt-card__meta">',
+                '<span class="stt-pill"><span class="stt-pill__dot" aria-hidden="true"></span>' + escapeHtml(item.type) + '</span>',
+                '<span class="stt-pill"><span class="stt-pill__dot" aria-hidden="true"></span>' + escapeHtml(item.status) + '</span>',
+              '</div>',
+              '<div class="stt-card__head">',
+                '<div class="stt-card__logo" data-logo-wrap>',
+                  '<img src="' + escapeAttr(item.logoUrl || '') + '" alt="' + escapeAttr(item.logoLabel || item.title) + ' Logo" data-logo-img>',
+                  '<span class="stt-card__logo-mark">' + escapeHtml(item.logoFallback || item.title.slice(0, 2).toUpperCase()) + '</span>',
+                '</div>',
+                '<div class="stt-card__title-wrap">',
+                  '<h3 class="stt-card__title">' + escapeHtml(item.title) + '</h3>',
+                '</div>',
+              '</div>',
+              '<p class="stt-card__desc">' + escapeHtml(item.desc) + '</p>',
+              '<div class="stt-card__links">' + linksHtml + '</div>',
+            '</div>',
+            '<div class="stt-card__qr-wrap">',
+              '<div class="stt-card__qr" data-qr-url="' + escapeAttr(item.links[0].url) + '" data-qr-title="' + escapeAttr(item.title) + '"></div>',
+              '<div class="stt-card__qr-label">QR = ' + escapeHtml(item.links[0].label) + '</div>',
+            '</div>',
+          '</article>'
+        ].join('');
+      }
+
+      function renderQRCodes() {
+        var nodes = document.querySelectorAll('[data-qr-url]');
+        Array.prototype.forEach.call(nodes, function (node) {
+          var url = node.getAttribute('data-qr-url');
+          var title = node.getAttribute('data-qr-title') || 'QR';
+
+          if (window.QRCode && typeof window.QRCode.toCanvas === 'function') {
+            var canvas = document.createElement('canvas');
+            node.appendChild(canvas);
+            window.QRCode.toCanvas(canvas, url, {
+              width: 108,
+              margin: 1,
+              color: {
+                dark: '#1A1A1A',
+                light: '#FFFFFF'
+              }
+            }, function (error) {
+              if (error) {
+                node.innerHTML = fallbackQR(url, title);
+              }
+            });
+          } else {
+            node.innerHTML = fallbackQR(url, title);
+          }
+        });
+      }
+
+      function activateLogos() {
+        var logos = document.querySelectorAll('[data-logo-wrap]');
+        Array.prototype.forEach.call(logos, function (wrap) {
+          var img = wrap.querySelector('[data-logo-img]');
+          if (!img || !img.getAttribute('src')) {
+            return;
+          }
+
+          function showImage() {
+            wrap.classList.add('has-image');
+          }
+
+          function hideImage() {
+            wrap.classList.remove('has-image');
+            img.removeAttribute('src');
+          }
+
+          if (typeof img.decode === 'function') {
+            img.decode().then(showImage).catch(function () {
+              if (img.complete && img.naturalWidth > 0) {
+                showImage();
+                return;
+              }
+              hideImage();
+            });
+            return;
+          }
+
+          img.addEventListener('load', showImage, { once: true });
+          img.addEventListener('error', hideImage, { once: true });
+          if (img.complete && img.naturalWidth > 0) {
+            showImage();
+          }
+        });
+      }
+
+      function fallbackQR(url, title) {
+        var qrSrc = 'https://api.qrserver.com/v1/create-qr-code/?size=108x108&data=' + encodeURIComponent(url);
+        return '<img src="' + escapeAttr(qrSrc) + '" alt="QR-Code fuer ' + escapeAttr(title) + '">';
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      function escapeAttr(value) {
+        return escapeHtml(value);
+      }
+
+      renderSections();
+      activateLogos();
+      renderQRCodes();
+    })();
+  </script>
+</body>
+</html>

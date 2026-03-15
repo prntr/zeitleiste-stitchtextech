@@ -1,0 +1,3862 @@
+{
+  "meta": {
+    "version": "0.3",
+    "language": "de",
+    "license": "CC BY-SA 4.0",
+    "lastUpdated": "2026-03-09",
+    "context": "Stitch(x) LV — Lehramt Technik & Design, Österreich AHS"
+  },
+  "tracks": [
+    {
+      "id": "A",
+      "label": "Näh- & Stickmaschinen",
+      "color": "#C0392B"
+    },
+    {
+      "id": "B",
+      "label": "Open-Source-Textilmaschinen",
+      "color": "#27AE60"
+    },
+    {
+      "id": "C",
+      "label": "Open Hardware / DIY-Technologie",
+      "color": "#2980B9"
+    },
+    {
+      "id": "D",
+      "label": "Allgemeine Technologie",
+      "color": "#7F8C8D"
+    },
+    {
+      "id": "E",
+      "label": "Pädagogik & Computational Thinking",
+      "color": "#9B59B6"
+    },
+    {
+      "id": "F",
+      "label": "Stitch(x) Projekt",
+      "color": "#E67E22"
+    },
+    {
+      "id": "G",
+      "label": "Textildesign, Kunst & Material",
+      "color": "#A66E4A"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "s01",
+      "date": "2026-03-10",
+      "title": "Kennenlernen & erste Maschine",
+      "desc": "Gruppen, Background, erstes Verbinden mit StitchLAB, händisches Sticken",
+      "events": [
+        "singer-1851",
+        "howe-1846",
+        "schiffli-1863",
+        "digital-embroidery-1990",
+        "stitchlab-classic",
+        "stitchlab-2024"
+      ]
+    },
+    {
+      "id": "s02",
+      "date": "2026-03-16",
+      "title": "TurtleStitch #1 (DOK)",
+      "desc": "Erstes TurtleStitch im DOK",
+      "events": [
+        "papert-logo-1967",
+        "snap-2011",
+        "turtlestitch-2016"
+      ]
+    },
+    {
+      "id": "s03",
+      "date": "2026-03-17",
+      "title": "TurtleStitch #2 (Coding Lab)",
+      "desc": "Besuch Jonas. Vernetzung ins Coding Lab. TurtleStitch Workshop Uni.",
+      "events": [
+        "papert-logo-1967",
+        "mindstorms-1980",
+        "scratch-2003",
+        "snap-2011",
+        "turtlestitch-2016"
+      ]
+    },
+    {
+      "id": "s04",
+      "date": "2026-03-20",
+      "title": "TurtleStitch #3",
+      "desc": "TurtleStitch Workshop (13–16 Uhr)",
+      "events": [
+        "turtlestitch-2016",
+        "inkstitch-2017",
+        "stitchlab-2024"
+      ]
+    },
+    {
+      "id": "s05",
+      "date": "2026-03-24",
+      "title": "Einfach sticken: Ink/Stitch",
+      "desc": "Session Celina & Anna. Initialen mit Ink/Stitch, TurtleStitch-Motive sticken.",
+      "events": [
+        "inkstitch-2017",
+        "dst-format-1984",
+        "digital-embroidery-1990"
+      ]
+    },
+    {
+      "id": "s06",
+      "date": "2026-04-14",
+      "title": "Digitale & KI-Wording StitchLAB",
+      "desc": "Pauls Session: Wichtigste Begriffe und Funktionen des StitchLAB-Stacks",
+      "events": [
+        "klipper-2016",
+        "mainsail-2020",
+        "stitchlab-2024",
+        "stitchlab-os",
+        "github-2008",
+        "raspberry-pi-2012",
+        "linux-1991"
+      ]
+    },
+    {
+      "id": "s07",
+      "date": "2026-04-21",
+      "title": "Hardware: De/Konstruktion",
+      "desc": "Auf- und Umbau alter und neuer StitchLAB-Maschinen. Bauanleitung lesen.",
+      "events": [
+        "arduino-2005",
+        "reprap-2007",
+        "klipper-2016",
+        "oshwa-2011",
+        "stitchlab-classic",
+        "stitchlab-hybrid",
+        "stitchlab-2024",
+        "nc-machine-1952"
+      ]
+    },
+    {
+      "id": "s08",
+      "date": "2026-04-28",
+      "title": "Studienreise Lustenau / St. Gallen",
+      "desc": "Textil-Industrie, Schiffli-Tradition, Gegenwart der Stickerei-Region",
+      "events": [
+        "schiffli-1863",
+        "lustenau-1895",
+        "singer-1851",
+        "jacquard-1801"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "weisenthal-1755",
+      "year": 1755,
+      "track": "A",
+      "title": "Weisenthal: Patentnadel",
+      "subtitle": "Frühes Patent für eine zweispitzige Nähnadel mit Öhr",
+      "description": "Charles Fredrick Wiesenthal erhält 1755 in England ein Patent auf eine speziell geformte Nähnadel für mechanisiertes Nähen. Die Nadel war noch keine vollständige Nähmaschine, zeigt aber, dass die Automatisierung des Nähens schon vor Saint und Thimonnier als technisches Problem erkannt wurde.",
+      "significance": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SewingMachineNeedle.parts.jpg",
+        "caption": "Bauteile einer Nähmaschinennadel als technischer Bezug zu Wiesenthals frühem Nadelpatent",
+        "license": "Public Domain",
+        "author": "Txinviolet",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Charles_Frederick_Wiesenthal"
+        },
+        {
+          "label": "Wikipedia (EN)",
+          "url": "https://en.wikipedia.org/wiki/Charles_Fredrick_Wiesenthal"
+        }
+      ],
+      "connections": [
+        "saint-1790"
+      ],
+      "tags": [
+        "Patent",
+        "Nadel",
+        "England",
+        "Frühgeschichte",
+        "Mechanisierung"
+      ],
+      "source": "Wikipedia, «Charles Frederick Wiesenthal», CC BY-SA 4.0"
+    },
+    {
+      "id": "saint-1790",
+      "year": 1790,
+      "track": "A",
+      "title": "Thomas Saints Nähmaschinen-Patent",
+      "subtitle": "Erstes dokumentiertes Patent für eine Nähmaschine (England)",
+      "description": "Der englische Erfinder Thomas Saint erhält ein Patent (Nr. 1764) für eine Maschine zum Nähen von Leder und Segeltuch mit einer hakenförmigen Nadel. Die Maschine wurde wahrscheinlich nie gebaut, das Patent gilt jedoch als erster dokumentierter Entwurf einer Nähmaschine.",
+      "significance": "medium",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Thomas_Saint_first_sewing_machine_1790.jpg",
+        "caption": "Rekonstruktion von Thomas Saints früher Nähmaschine nach dem Patent von 1790",
+        "license": "Public Domain",
+        "author": "Thomas Saint",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Thomas_Saint"
+        },
+        {
+          "label": "British Patent 1764",
+          "url": "https://en.wikipedia.org/wiki/Thomas_Saint#Patent"
+        }
+      ],
+      "connections": [
+        "thimonnier-1830"
+      ],
+      "tags": [
+        "Patent",
+        "England",
+        "Leder",
+        "Nähmaschine",
+        "Frühgeschichte"
+      ]
+    },
+    {
+      "id": "thimonnier-1830",
+      "year": 1830,
+      "track": "A",
+      "title": "Barthélemy Thimonnier",
+      "subtitle": "Erste funktionierende Nähmaschine in Serienfertigung",
+      "description": "Der französische Schneider Barthélemy Thimonnier erfindet eine funktionsfähige Kettenstichnähmaschine und eröffnet die erste Maschinennäherei der Welt in Paris. 80 Maschinen nähen Uniformen für die Armee. 1831 zerstört ein Mob der arbeitslosen Schneider die Werkstatt.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Thim2.jpg",
+        "caption": "Nachbau der Nähmaschine von Thimonnier",
+        "license": "Public Domain",
+        "author": "Unbekannt",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Barth%C3%A9lemy_Thimonnier"
+        },
+        {
+          "label": "Musée des Arts",
+          "url": "https://www.arts-et-metiers.net"
+        }
+      ],
+      "connections": [
+        "saint-1790",
+        "howe-1846"
+      ],
+      "tags": [
+        "Frankreich",
+        "Kettelstich",
+        "Paris",
+        "Nähmaschine",
+        "Pionier"
+      ]
+    },
+    {
+      "id": "howe-1846",
+      "year": 1846,
+      "track": "A",
+      "title": "Elias Howe: Lockstitch-Patent",
+      "subtitle": "US-Patent Nr. 4750 für den Doppelstich",
+      "description": "Elias Howe erhält das erste US-Patent für eine Nähmaschine mit Doppelstich (Lockstitch). Das Prinzip — Ober- und Unterfaden werden durch eine öhrlose Hakennadel und eine Spule verknüpft — ist bis heute die Grundlage aller Industrie- und Heimnähmaschinen.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/1846_-_Elias_Howe_Jr.%27s_Sewing_Machine_Patent_Model%2C_from_the_National_Museum_of_American_History_-_NMAH-DOR2010-0923-000001.jpg",
+        "caption": "Patentmodell der Nähmaschine von Elias Howe, 1846",
+        "license": "Public Domain",
+        "author": "Unbekannt",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (EN)",
+          "url": "https://en.wikipedia.org/wiki/Elias_Howe"
+        },
+        {
+          "label": "Google Patents",
+          "url": "https://patents.google.com/patent/US4750"
+        }
+      ],
+      "connections": [
+        "thimonnier-1830",
+        "singer-1851"
+      ],
+      "tags": [
+        "Patent",
+        "Lockstitch",
+        "USA",
+        "Doppelstich"
+      ],
+      "source": "Espacenet / Google Patents, US Patent 4750, 1846"
+    },
+    {
+      "id": "singer-1851",
+      "year": 1851,
+      "track": "A",
+      "title": "Singer Nähmaschine",
+      "subtitle": "Erste kommerziell erfolgreiche Nähmaschine in Massenproduktion",
+      "description": "Isaac Merritt Singer gründet I.M. Singer & Co. und produziert die erste Nähmaschine in industriellem Maßstab. Ratenzahlung und Haustür-Verkauf machen die Maschine für Privathaushalte erschwinglich. Singer dominiert bis ins 20. Jh. den Weltmarkt und revolutioniert Bekleidungsproduktion.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Singer_fur_sewing_machine_1.jpg",
+        "caption": "Historische Singer-Nähmaschine aus dem späten 19. Jahrhundert",
+        "license": "Public Domain",
+        "author": "Unbekannt",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/N%C3%A4hmaschine"
+        },
+        {
+          "label": "Smithsonian NMAH",
+          "url": "https://americanhistory.si.edu/collections/search?edan_q=singer+sewing"
+        }
+      ],
+      "connections": [
+        "howe-1846",
+        "jacquard-1801",
+        "singer-electric-1889"
+      ],
+      "tags": [
+        "Singer",
+        "USA",
+        "Massenproduktion",
+        "Heimnähen",
+        "Industrialisierung"
+      ],
+      "source": "Wikipedia, «Nähmaschine», CC BY-SA 4.0"
+    },
+    {
+      "id": "singer-electric-1889",
+      "year": 1889,
+      "track": "A",
+      "title": "Elektrische Nähmaschinen",
+      "subtitle": "Motorantrieb löst das Fußpedal im späten 19. Jahrhundert ab",
+      "description": "Singer bringt die erste elektrisch angetriebene Nähmaschine auf den Markt. Der Elektromotor ersetzt das ermüdende Fußpedal. Die Elektrifizierung der Nähmaschine ist Vorläuferin der späteren CNC-Steuerung: Energie aus dem Stromnetz statt menschlicher Kraft.",
+      "significance": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Singer_electric_conversion.jpg",
+        "caption": "Historische Singer-Maschine mit elektrischem Nachrüstmotor",
+        "license": "CC BY-SA 3.0 / CC BY 2.5",
+        "author": "Oxyman",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Smithsonian",
+          "url": "https://americanhistory.si.edu/collections/search?edan_q=singer+electric+sewing"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sewing_machine#Electric_sewing_machine"
+        }
+      ],
+      "connections": [
+        "singer-1851",
+        "toyota-cnc-1964"
+      ],
+      "tags": [
+        "Elektro",
+        "Singer",
+        "Motor",
+        "Automatisierung"
+      ]
+    },
+    {
+      "id": "toyota-cnc-1964",
+      "year": 1964,
+      "track": "A",
+      "title": "Erste CNC-Stickmaschinen",
+      "subtitle": "Computergesteuerte Mehrnadel-Stickerei in der Industrie",
+      "description": "Japanische Hersteller (Tajima, Toyota) bringen die ersten computergesteuerten Mehrnadel-Stickmaschinen für die Textilindustrie auf den Markt. Stickprogramme werden zunächst auf Lochstreifen gespeichert — eine direkte technologische Linie von Jacquards Lochkarten zum CNC-Stickcomputer.",
+      "significance": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Industrial_embroidery_machine.jpg",
+        "caption": "Industrielle Mehrkopf-Stickmaschine als Nachfahrin der frühen CNC-Systeme",
+        "license": "Public Domain (USAID)",
+        "author": "USAID Pakistan",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia: Embroidery machine",
+          "url": "https://en.wikipedia.org/wiki/Embroidery_machine"
+        },
+        {
+          "label": "Tajima Industries",
+          "url": "https://www.tajimausa.com"
+        }
+      ],
+      "connections": [
+        "singer-electric-1889",
+        "dst-format-1984",
+        "jacquard-1801"
+      ],
+      "tags": [
+        "CNC",
+        "Stickerei",
+        "Japan",
+        "Tajima",
+        "Lochstreifen",
+        "Automatisierung"
+      ]
+    },
+    {
+      "id": "dst-format-1984",
+      "year": 1984,
+      "track": "A",
+      "title": "Tajima DST-Format",
+      "subtitle": "Industriestandard für digitale Stickmuster wird de facto etabliert",
+      "description": "Das Tajima DST-Format (Data Stitch Tajima) wird zum faktischen Industriestandard für Stickdateien. Es speichert Fahrwege der Sticknadel als binäre Koordinaten. Das proprietäre Format ohne offene Spezifikation ist bis heute verbreitet — und treibt die Entwicklung freier Alternativen wie Ink/Stitch an.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://inkstitch.org/docs/stitch-library/",
+          "caption": "Dokumentation freier Stickformate und ihrer Verwendung in Ink/Stitch",
+          "label": "Ink/Stitch Formate"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "Visualisierung von DST-Stichdaten oder Dateiformat-Dokumentation",
+        "license": "TODO",
+        "author": "TODO",
+        "source": "TODO — freies Schema oder Screenshot eines DST-Workflows finden"
+      },
+      "links": [
+        {
+          "label": "Wikipedia: DST Format",
+          "url": "https://en.wikipedia.org/wiki/Machine_embroidery#File_formats"
+        },
+        {
+          "label": "Ink/Stitch DST Support",
+          "url": "https://inkstitch.org/docs/stitch-library/"
+        }
+      ],
+      "connections": [
+        "toyota-cnc-1964",
+        "digital-embroidery-1990",
+        "inkstitch-2017"
+      ],
+      "tags": [
+        "DST",
+        "Dateiformat",
+        "Tajima",
+        "Standard",
+        "Proprietär"
+      ]
+    },
+    {
+      "id": "digital-embroidery-1990",
+      "year": 1990,
+      "track": "A",
+      "title": "Digitale Heimstickmaschinen",
+      "subtitle": "Brother, Janome, Pfaff: computergesteuerte Stickmuster für Privathaushalte",
+      "description": "Computergesteuerte Stickmaschinen für den Heimbereich werden marktreif. Stickmuster kommen auf Diskette, später CD und USB-Stick. Hersteller-spezifische, proprietäre Dateiformate (.pes, .jef, .vip) machen Wechsel und Interoperabilität schwierig — ein Treiber für Open-Source-Projekte wie Ink/Stitch.",
+      "significance": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Brother_Innov-is_V7_machine,_embroidering.jpg",
+        "caption": "Computergesteuerte Brother-Heimstickmaschine im Einsatz",
+        "license": "CC BY-SA 4.0",
+        "author": "Rwendland",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Embroidery_machine"
+        },
+        {
+          "label": "Brother Stickformate",
+          "url": "https://en.wikipedia.org/wiki/Brother_Industries"
+        }
+      ],
+      "connections": [
+        "dst-format-1984",
+        "inkstitch-2017"
+      ],
+      "tags": [
+        "Heimstickmaschine",
+        "Brother",
+        "Janome",
+        "Diskette",
+        "Proprietär"
+      ]
+    },
+    {
+      "id": "ayab-2011",
+      "year": 2011,
+      "track": "B",
+      "title": "AYAB — All Yarns Are Beautiful",
+      "subtitle": "Open-Source-Steuerung für Brother-Strickmaschinen via Arduino",
+      "description": "AYAB (All Yarns Are Beautiful) ist ein Open-Source-Projekt (GPL), das ältere Brother-Strickmaschinen (KH-910, KH-930 etc.) über eine Arduino-Steuerungsplatine mit freier Software kommunizieren lässt. Es ermöglicht das Stricken beliebiger Muster aus Rastergrafiken und ist Ausgangspunkt einer weltweiten Strick-Hacker-Community.",
+      "significance": "high",
+      "image": {
+        "url": "https://www.ayab-knitting.com/assets/posts/ayab_interface.jpg",
+        "caption": "AYAB-Interface auf einer Brother-Strickmaschine aus der offiziellen Projektdokumentation",
+        "license": "CC BY-SA 4.0",
+        "author": "AYAB Community",
+        "source": "ayab-knitting.com"
+      },
+      "video": {
+        "url": "https://www.youtube-nocookie.com/embed/GhnTSWMMtdU",
+        "caption": "Frühe Demonstration des Computer-Hacks für Brother-Strickmaschinen"
+      },
+      "links": [
+        {
+          "label": "ayab.de",
+          "url": "https://ayab.de"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/AllYarnsAreBeautiful/ayab-firmware"
+        }
+      ],
+      "connections": [
+        "arduino-2005",
+        "openknit-2014",
+        "knitic-2012"
+      ],
+      "tags": [
+        "Strickmaschine",
+        "Arduino",
+        "Brother",
+        "Hack",
+        "GPL"
+      ],
+      "source": "AYAB Project Website, ayab.de; GitHub AllYarnsAreBeautiful"
+    },
+    {
+      "id": "knitic-2012",
+      "year": 2012,
+      "track": "B",
+      "title": "Knitic",
+      "subtitle": "Offene Elektronik-Steuerung für Flachstrickmaschinen (Fab Lab Barcelona)",
+      "description": "Knitic ist ein Open-Hardware-Projekt des Fab Lab Barcelona: eine Arduino-basierte Platine, die kommerzielle Strickmaschinen (Brother, Passap) über freie Software steuerbar macht. Der Quellcode und die Schaltpläne stehen auf GitHub. Knitic ist direkter Vorläufer von OpenKnit.",
+      "significance": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/MachineKnittingKnittax.jpg",
+        "caption": "Flachstrickmaschine als typische Ausgangsbasis für Knitic-Hardware-Hacks",
+        "license": "CC BY-SA 4.0 / GFDL",
+        "author": "Gudde Fog",
+        "source": "Wikimedia Commons"
+      },
+      "video": {
+        "url": "https://player.vimeo.com/video/55114500",
+        "caption": "Knitic Demo (Vimeo)"
+      },
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/fashiontec/knitic"
+        },
+        {
+          "label": "Fab Lab BCN",
+          "url": "https://fablabbcn.org"
+        }
+      ],
+      "connections": [
+        "ayab-2011",
+        "circular-knitic-2013",
+        "openknit-2014",
+        "arduino-2005"
+      ],
+      "tags": [
+        "Strickmaschine",
+        "Arduino",
+        "Fab Lab",
+        "Barcelona",
+        "Open Hardware"
+      ],
+      "source": "Knitic GitHub, fashiontec/knitic; Fab Lab Barcelona"
+    },
+    {
+      "id": "circular-knitic-2013",
+      "year": 2013,
+      "track": "B",
+      "title": "Circular Knitic",
+      "subtitle": "Offene Rundstrickmaschine aus dem Fab Lab",
+      "description": "Circular Knitic ist die Weiterentwicklung von Knitic für Rundstrickmaschinen. Das Fab Lab Barcelona-Projekt ermöglicht das Herstellen nahtloser Textilschläuche (Mützen, Socken) mit Open-Source-Steuerung und 3D-gedruckten Teilen. Alle Dokumentation ist frei zugänglich.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://player.vimeo.com/video/79931101",
+          "caption": "Circular-Knitic-Demonstration der Maschine in Betrieb"
+        },
+        {
+          "type": "embed",
+          "url": "https://github.com/fashiontec/circular-knitic",
+          "caption": "Projekt-Repository mit Dokumentation und Entwicklungsstand",
+          "label": "Circular Knitic auf GitHub"
+        }
+      ],
+      "image": {
+        "url": "https://github.com/fashiontec/circular-knitic/raw/master/images/barretina.jpg",
+        "caption": "Circular-Knitic-Demonstrator aus dem offiziellen Projekt-Repository",
+        "license": "Projektdokumentation im offiziellen GitHub-Repository",
+        "author": "fashiontec / Fab Lab Barcelona",
+        "source": "GitHub fashiontec/circular-knitic"
+      },
+      "video": {
+        "url": "https://player.vimeo.com/video/79931101",
+        "caption": "Circular Knitic Demo (Vimeo)"
+      },
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/fashiontec/circular-knitic"
+        },
+        {
+          "label": "Fab Lab BCN",
+          "url": "https://fablabbcn.org"
+        }
+      ],
+      "connections": [
+        "knitic-2012",
+        "openknit-2014"
+      ],
+      "tags": [
+        "Rundstrickmaschine",
+        "Nahtlos",
+        "Fab Lab",
+        "3D-Druck",
+        "Open Hardware"
+      ],
+      "source": "Circular Knitic GitHub, fashiontec/circular-knitic"
+    },
+    {
+      "id": "openknit-2014",
+      "year": 2014,
+      "month": 2,
+      "track": "B",
+      "title": "OpenKnit",
+      "subtitle": "Parametrische Open-Hardware-Flachstrickmaschine aus 3D-gedruckten Teilen",
+      "description": "Gerard Rubio (Fab Lab Barcelona) veröffentlicht OpenKnit unter CC BY-SA: eine vollständig dokumentierte Strickmaschine, deren Teile selbst mit einem 3D-Drucker hergestellt werden können. Das Projekt zeigt exemplarisch, wie Open Hardware, digitale Fabrikation und Citizen Science zusammenwirken, um Textilproduktion zu demokratisieren.",
+      "significance": "landmark",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://player.vimeo.com/video/83556573",
+          "caption": "OpenKnit-Präsentation mit Maschine in Betrieb"
+        },
+        {
+          "type": "embed",
+          "url": "http://openknit.org",
+          "caption": "Projektwebseite mit Dokumentation und Hintergrund",
+          "label": "openknit.org"
+        }
+      ],
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Universal_Knitting_Machine.jpg",
+        "caption": "Flachstrickmaschine als offener Maschinentyp, den OpenKnit digital neu interpretiert",
+        "license": "Public Domain",
+        "author": "Unbekannt",
+        "source": "Wikimedia Commons"
+      },
+      "video": {
+        "url": "https://player.vimeo.com/video/83556573",
+        "caption": "OpenKnit Präsentationsvideo (Vimeo)"
+      },
+      "links": [
+        {
+          "label": "openknit.org",
+          "url": "http://openknit.org"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/g-rubio/openknit"
+        },
+        {
+          "label": "Fab Lab BCN",
+          "url": "https://fablabbcn.org"
+        }
+      ],
+      "connections": [
+        "ayab-2011",
+        "knitic-2012",
+        "reprap-2007",
+        "kniterate-2015",
+        "inkstitch-2017"
+      ],
+      "tags": [
+        "Strickmaschine",
+        "3D-Druck",
+        "Fab Lab",
+        "Barcelona",
+        "CC BY-SA"
+      ],
+      "source": "Rubio, Gerard. «OpenKnit». Fab Lab Barcelona, 2014. openknit.org"
+    },
+    {
+      "id": "kniterate-2015",
+      "year": 2015,
+      "track": "B",
+      "title": "Kniterate",
+      "subtitle": "Digitale Open-Source-Strickmaschine (Kickstarter)",
+      "description": "Kniterate ist eine voll digitale, Arduino-gesteuerte Strickmaschine, die über Kickstarter finanziert wird. Anders als OpenKnit ist sie als fertig montierte Maschine konzipiert. Teile der Software sind open-source. Das Projekt zeigt die Kommerzialisierung der DIY-Strickmaschinen-Bewegung.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://www.kickstarter.com/projects/kniterate/kniterate-the-digital-knitting-machine",
+          "caption": "Kickstarter-Kampagne mit Produktansichten, Demo-Material und Projektkontext",
+          "label": "Kniterate Kickstarter"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "Kniterate-Maschine oder offizielles Produktbild",
+        "license": "TODO",
+        "author": "TODO",
+        "source": "TODO — frei lizenzierte Kniterate-Abbildung oder offizielles Demo-Still finden"
+      },
+      "links": [
+        {
+          "label": "kniterate.com",
+          "url": "https://www.kniterate.com"
+        },
+        {
+          "label": "Kickstarter",
+          "url": "https://www.kickstarter.com/projects/kniterate/kniterate-the-digital-knitting-machine"
+        }
+      ],
+      "connections": [
+        "openknit-2014",
+        "arduino-2005"
+      ],
+      "tags": [
+        "Strickmaschine",
+        "Kickstarter",
+        "Arduino",
+        "Kommerzialisierung"
+      ],
+      "source": "Kniterate Website, kniterate.com; Kickstarter Campaign 2016"
+    },
+    {
+      "id": "hilo-spinning-machine-2015",
+      "year": 2015,
+      "track": "B",
+      "title": "HILO Spinning Machine",
+      "subtitle": "Open-Source-Garnproduktion fuer kleine Werkstaetten und Bildung",
+      "description": "HILO entwickelt seit 2015 eine offene Spinnmaschine fuer lokale Garnproduktion in kleinem Massstab. Das System verbindet Maschinenbau, Arduino-nahe Steuerung, offene Software und dokumentierte Iterationen von Version 1.0 bis 3.0+. Fuer DIY-Textilmaschinen ist HILO wichtig, weil hier nicht nur Stoffe bearbeitet, sondern schon Faser und Garn als offene, anpassbare Produktionsstufe gedacht werden.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://www.hilotextiles.com/hilo-spinning-machine",
+          "caption": "Offizielle Produkt- und Dokumentationsseite der HILO Spinning Machine",
+          "label": "HILO Spinning Machine"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.hilotextiles.com/open-tools",
+          "caption": "HILO Open Tools mit E-Spinner, Spinning Machine und Recycling Machine",
+          "label": "HILO Open Tools"
+        }
+      ],
+      "links": [
+        {
+          "label": "HILO Spinning Machine",
+          "url": "https://www.hilotextiles.com/hilo-spinning-machine"
+        },
+        {
+          "label": "Open Tools",
+          "url": "https://www.hilotextiles.com/open-tools"
+        }
+      ],
+      "connections": [
+        "openknit-2014",
+        "fabtextiles-2020",
+        "stitchlab-2024",
+        "claude-code-2025"
+      ],
+      "tags": [
+        "Spinnen",
+        "Garn",
+        "Open Hardware",
+        "HILO",
+        "Lokale Produktion"
+      ],
+      "source": "HILO Textiles, «HILO Spinning Machine»; HILO, «Open Tools»"
+    },
+    {
+      "id": "inkstitch-2017",
+      "year": 2017,
+      "track": "B",
+      "title": "Ink/Stitch",
+      "subtitle": "Freie Stickereierweiterung für Inkscape (GPL v3)",
+      "description": "Ink/Stitch ist eine Open-Source-Erweiterung für das Vektorgrafikprogramm Inkscape. Sie wandelt SVG-Grafiken in maschinenlesbare Stickformate um (.dst, .pes, .jef u.v.m.) und unterstützt alle gängigen Heim- und Industriestickmaschinen. Das aktiv entwickelte Projekt auf GitHub macht proprietäre Stickerei-Software überflüssig.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://inkstitch.org/assets/images/tutorials/multicolor_satin/snake.jpg",
+          "caption": "Mit Ink/Stitch erzeugtes Stickbeispiel aus der offiziellen Projektdokumentation",
+          "license": "GPL v3",
+          "author": "Ink/Stitch Contributors",
+          "source": "inkstitch.org / GitHub inkstitch/inkstitch"
+        },
+        {
+          "type": "video",
+          "url": "https://www.youtube-nocookie.com/embed/PTcSRuCA1Aw",
+          "caption": "Offizielle Einführung in Ink/Stitch für Einsteigerinnen und Einsteiger"
+        },
+        {
+          "type": "embed",
+          "url": "https://inkstitch.org/tutorials/resources/beginner-video-tutorials/",
+          "caption": "Tutorial-Seite mit offizieller Video-Serie und Beispielen",
+          "label": "Beginner Tutorials"
+        }
+      ],
+      "image": {
+        "url": "https://github.com/inkstitch/inkstitch/raw/refs/heads/main/images/logo.png",
+        "caption": "Ink/Stitch Logo aus dem offiziellen GitHub-Repository",
+        "license": "GPL v3",
+        "author": "Ink/Stitch Contributors",
+        "source": "GitHub inkstitch/inkstitch"
+      },
+      "links": [
+        {
+          "label": "inkstitch.org",
+          "url": "https://inkstitch.org"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/inkstitch/inkstitch"
+        },
+        {
+          "label": "Docs",
+          "url": "https://inkstitch.org/docs/"
+        }
+      ],
+      "connections": [
+        "openknit-2014",
+        "digital-embroidery-1990",
+        "dst-format-1984"
+      ],
+      "tags": [
+        "Stickerei",
+        "Inkscape",
+        "GPL",
+        "SVG",
+        "Dateiformat",
+        "Open Source"
+      ],
+      "source": "Ink/Stitch Project, inkstitch.org, GPL v3; GitHub inkstitch/inkstitch"
+    },
+    {
+      "id": "seamly2d-2018",
+      "year": 2018,
+      "track": "B",
+      "title": "Seamly2D (früher: Valentina)",
+      "subtitle": "Freie Open-Source-Software für Schnittmuster",
+      "description": "Seamly2D (ursprünglich Valentina) ist eine freie, parametrische Schnittmuster-CAD-Software unter GPL. Sie ermöglicht das Erstellen und Anpassen von Schnittmustern nach eigenen Maßen — eine Gegenbewegung zu proprietären Systemen wie Gerber oder Lectra. Das Projekt wird von einer internationalen Community gepflegt.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://seamly.net",
+          "caption": "Projektwebseite mit Dokumentation, Screenshots und Software-Kontext",
+          "label": "seamly.net"
+        }
+      ],
+      "image": {
+        "url": "https://github.com/FashionFreedom/Seamly2D/blob/master/src/app/share/resources/icon/svg/Valentina_logo.svg?raw=true",
+        "caption": "Valentina-/Seamly2D-Logo aus dem offiziellen Repository",
+        "license": "GPL v3",
+        "author": "Seamly2D Contributors",
+        "source": "GitHub FashionFreedom/Seamly2D"
+      },
+      "links": [
+        {
+          "label": "seamly.net",
+          "url": "https://seamly.net"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/FashionFreedom/Seamly2D"
+        }
+      ],
+      "connections": [
+        "inkstitch-2017",
+        "github-2008"
+      ],
+      "tags": [
+        "Schnittmuster",
+        "CAD",
+        "Parametrisch",
+        "GPL",
+        "Mode"
+      ],
+      "source": "Seamly2D GitHub, FashionFreedom/Seamly2D; seamly.net"
+    },
+    {
+      "id": "fabtextiles-2020",
+      "year": 2020,
+      "track": "B",
+      "title": "Fab Textiles Lab",
+      "subtitle": "Dokumentation offener Textilprojekte (Fab Lab Barcelona / IAAC)",
+      "description": "Das Fab Textiles Lab am Fab Lab Barcelona (Institut für Fortgeschrittene Architektur Kataloniens) dokumentiert systematisch Open-Source-Textilprojekte, Workshops und Forschung zu E-Textilien, Smart Fabrics und digitaler Textilproduktion. Die Ressourcen sind frei zugänglich und für Bildungszwecke nutzbar.",
+      "significance": "low",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://fabtextiles.org",
+          "caption": "Projektwebseite des Fab Textiles Lab mit Forschungs- und Lehrkontext",
+          "label": "Fab Textiles Lab"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "Fab Textiles Lab, Workshop oder Laboransicht",
+        "license": "TODO",
+        "author": "TODO",
+        "source": "TODO — frei lizenzierte Labor- oder Workshopaufnahme finden"
+      },
+      "links": [
+        {
+          "label": "fabtextiles.org",
+          "url": "https://fabtextiles.org"
+        },
+        {
+          "label": "IAAC",
+          "url": "https://iaac.net"
+        }
+      ],
+      "connections": [
+        "openknit-2014",
+        "inkstitch-2017"
+      ],
+      "tags": [
+        "E-Textilien",
+        "Smart Fabrics",
+        "Bildung",
+        "Fab Lab",
+        "Barcelona"
+      ]
+    },
+    {
+      "id": "gnu-1983",
+      "year": 1983,
+      "month": 9,
+      "track": "C",
+      "title": "GNU-Projekt",
+      "subtitle": "Richard Stallman kündigt das erste freie Betriebssystem an",
+      "description": "Richard Stallman kündigt im September 1983 das GNU-Projekt an: ein vollständig freies Unix-kompatibles Betriebssystem. 1985 erscheint das GNU Manifesto, das die vier Freiheiten freier Software definiert. GNU legt den ideologischen und rechtlichen Grundstein für die gesamte Open-Source-Bewegung.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://www.gnu.org/graphics/heckert_gnu.transparent.png",
+        "caption": "GNU-Kopf als offizielles Symbol des GNU-Projekts",
+        "license": "CC BY-SA 2.0 / FAL / GFDL 1.3+",
+        "author": "Aurélio A. Heckert / Free Software Foundation",
+        "source": "gnu.org"
+      },
+      "links": [
+        {
+          "label": "gnu.org",
+          "url": "https://www.gnu.org/gnu/thegnuproject.html"
+        },
+        {
+          "label": "GNU Manifesto",
+          "url": "https://www.gnu.org/gnu/manifesto.html"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/GNU-Projekt"
+        }
+      ],
+      "connections": [
+        "osi-1998",
+        "linux-1991",
+        "creative-commons-2001"
+      ],
+      "tags": [
+        "GNU",
+        "Stallman",
+        "Freie Software",
+        "GPL",
+        "Betriebssystem"
+      ],
+      "source": "gnu.org; Wikipedia, «GNU-Projekt», CC BY-SA 4.0"
+    },
+    {
+      "id": "osi-1998",
+      "year": 1998,
+      "track": "C",
+      "title": "Open Source Initiative",
+      "subtitle": "Eric Raymond und Bruce Perens gründen die OSI, definieren «Open Source»",
+      "description": "Eric S. Raymond und Bruce Perens gründen die Open Source Initiative (OSI) und veröffentlichen die Open Source Definition (OSD). Der Begriff «Open Source» soll gegenüber dem ideologisch geladenen «Freie Software» zugänglicher wirken — eine strategische Neupositionierung, die Open Source in der kommerziellen Welt salonfähig macht.",
+      "significance": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Open_Source_Initiative.svg",
+        "caption": "Open Source Initiative Logo",
+        "license": "CC BY 2.5",
+        "author": "Colin Viebrock",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "opensource.org",
+          "url": "https://opensource.org"
+        },
+        {
+          "label": "OSD Definition",
+          "url": "https://opensource.org/osd"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Open_Source_Initiative"
+        }
+      ],
+      "connections": [
+        "gnu-1983",
+        "creative-commons-2001",
+        "arduino-2005"
+      ],
+      "tags": [
+        "OSI",
+        "Open Source",
+        "Definition",
+        "Raymond",
+        "Perens"
+      ],
+      "source": "opensource.org; Wikipedia, «Open Source Initiative», CC BY-SA 4.0"
+    },
+    {
+      "id": "creative-commons-2001",
+      "year": 2001,
+      "track": "C",
+      "title": "Creative Commons",
+      "subtitle": "Lawrence Lessig gründet Creative Commons — offene Lizenzen für Inhalte",
+      "description": "Lawrence Lessig gründet Creative Commons: ein System flexibler Urheberrechtslizenzen, das freies Teilen, Remixen und Weiterverwenden von Inhalten ermöglicht. CC-Lizenzen (CC BY, CC BY-SA, CC0) werden zur Grundlage von Wikipedia, Wikimedia Commons und unzähligen Open-Hardware-Dokumentationen.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/400px-Cc.logo.circle.svg.png",
+        "caption": "Creative Commons Logo",
+        "license": "CC BY 4.0",
+        "author": "Creative Commons",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "creativecommons.org",
+          "url": "https://creativecommons.org"
+        },
+        {
+          "label": "Lizenzen",
+          "url": "https://creativecommons.org/licenses/"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Creative_Commons"
+        }
+      ],
+      "connections": [
+        "gnu-1983",
+        "osi-1998",
+        "wikipedia-2001",
+        "arduino-2005"
+      ],
+      "tags": [
+        "Lizenz",
+        "Lessig",
+        "CC BY",
+        "Inhalte",
+        "Open Knowledge"
+      ],
+      "source": "creativecommons.org; Wikipedia, «Creative Commons», CC BY-SA 4.0"
+    },
+    {
+      "id": "arduino-2005",
+      "year": 2005,
+      "track": "C",
+      "title": "Arduino",
+      "subtitle": "Open-Hardware-Mikrocontroller-Plattform aus Ivrea (Italien)",
+      "description": "Massimo Banzi, David Cuartielles und Kollegen am IDII (Ivrea) entwickeln Arduino: eine günstige, leicht programmierbare Mikrocontroller-Platine mit offenen Schaltplänen (CC BY-SA) und freier Software (GPL/LGPL). Arduino wird zur meistverbreiteten Plattform für DIY-Elektronik und ist Grundlage von AYAB, Knitic und anderen Open-Textilprojekten.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Uno_-_R3.jpg/500px-Arduino_Uno_-_R3.jpg",
+        "caption": "Arduino Uno Rev3",
+        "license": "CC BY-SA 2.0",
+        "author": "SparkFun Electronics",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "arduino.cc",
+          "url": "https://www.arduino.cc"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Arduino_(Plattform)"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/arduino"
+        }
+      ],
+      "connections": [
+        "osi-1998",
+        "reprap-2007",
+        "ayab-2011",
+        "oshwa-2011"
+      ],
+      "tags": [
+        "Mikrocontroller",
+        "Open Hardware",
+        "CC BY-SA",
+        "IDII",
+        "Ivrea"
+      ],
+      "source": "arduino.cc; Wikipedia, «Arduino (Plattform)», CC BY-SA 4.0"
+    },
+    {
+      "id": "reprap-2007",
+      "year": 2007,
+      "month": 3,
+      "track": "C",
+      "title": "RepRap Darwin",
+      "subtitle": "Erster selbstreplizierender Open-Source-3D-Drucker (Universität Bath)",
+      "description": "Adrian Bowyer (Universität Bath) veröffentlicht RepRap Darwin: den ersten 3D-Drucker, der den Großteil seiner eigenen Kunststoffteile selbst drucken kann. Alle Konstruktionsdaten und Software stehen unter GPL. RepRap ist die Keimzelle der globalen Maker-Bewegung und macht 3D-Druck demokratisch — und ermöglicht damit Projekte wie OpenKnit.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/All_3_axes_fdmd_sml.jpg",
+        "caption": "Früher RepRap-Prototyp vor Darwin mit bereits gedruckten Achskomponenten",
+        "license": "GPL v2 or later",
+        "author": "Vik Olliver",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "reprap.org",
+          "url": "https://reprap.org"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/RepRap"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Reprap"
+        }
+      ],
+      "connections": [
+        "arduino-2005",
+        "openknit-2014",
+        "ayab-2011",
+        "oshwa-2011",
+        "github-2008"
+      ],
+      "tags": [
+        "3D-Druck",
+        "GPL",
+        "Selbstreproduktion",
+        "Maker",
+        "Bowyer"
+      ],
+      "source": "reprap.org; Wikipedia, «RepRap», CC BY-SA 4.0"
+    },
+    {
+      "id": "ros-2007",
+      "year": 2007,
+      "track": "C",
+      "title": "ROS",
+      "subtitle": "Robot Operating System als offene Robotik-Infrastruktur",
+      "description": "Mit ROS etabliert sich ab 2007 eine offene Software-Infrastruktur für Robotik, Sensorik und Aktorik. Das System trennt Bewegungsplanung, Wahrnehmung und Hardware-Abstraktion in wiederverwendbare Module. Für DIY-Stickmaschinen wird das relevant, sobald Kameras, Greifer, Fadenzuführung oder robotische Zusatzachsen mit offenen Werkzeugketten kombiniert werden.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://www.ros.org/",
+          "caption": "ROS als offene Plattform für Robotik-Software und modulare Maschinensteuerung",
+          "label": "ros.org"
+        }
+      ],
+      "links": [
+        {
+          "label": "ros.org",
+          "url": "https://www.ros.org/"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Robot_Operating_System"
+        }
+      ],
+      "connections": [
+        "reprap-2007",
+        "stitchlab-turtlebot",
+        "stitchlab-robot"
+      ],
+      "tags": [
+        "ROS",
+        "Robotik",
+        "Middleware",
+        "Open Source",
+        "Sensorik"
+      ],
+      "source": "ros.org; Wikipedia, «Robot Operating System», CC BY-SA 4.0"
+    },
+    {
+      "id": "github-2008",
+      "year": 2008,
+      "track": "C",
+      "title": "GitHub",
+      "subtitle": "Plattform für gemeinsame Open-Source-Entwicklung geht online",
+      "description": "Tom Preston-Werner, Chris Wanstrath und PJ Hyett starten GitHub: eine Webplattform, die Git-Versionsverwaltung mit sozialen Netzwerk-Funktionen kombiniert. GitHub wird zur zentralen Infrastruktur des Open-Source-Ökosystems und beherbergt Projekte wie Arduino, RepRap, AYAB, OpenKnit und Ink/Stitch.",
+      "significance": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/GitHub_Mark.png",
+        "caption": "GitHub-Marke (Octocat-Silhouette) als zentrales Symbol der Plattform",
+        "license": "Public Domain",
+        "author": "GitHub",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "github.com",
+          "url": "https://github.com"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/GitHub"
+        }
+      ],
+      "connections": [
+        "reprap-2007",
+        "oshwa-2011",
+        "www-1991"
+      ],
+      "tags": [
+        "Git",
+        "Versionsverwaltung",
+        "Plattform",
+        "Open Source",
+        "Kollaboration"
+      ],
+      "source": "Wikipedia, «GitHub», CC BY-SA 4.0"
+    },
+    {
+      "id": "oshwa-2011",
+      "year": 2011,
+      "track": "C",
+      "title": "OSHWA gegründet",
+      "subtitle": "Open Source Hardware Association: Definition und Zertifizierung",
+      "description": "Die Open Source Hardware Association (OSHWA) wird gegründet, um eine verbindliche Definition von Open-Source-Hardware zu etablieren. Die OSHW Definition 1.0 legt fest, was «offen» bedeutet: Schaltpläne, Platinenlayouts, Mechanikpläne und Software müssen unter freien Lizenzen stehen. OSHWA vergibt heute ein Zertifizierungszeichen.",
+      "significance": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Open_Source_Hardware_Association_logo.svg",
+        "caption": "Logo der Open Source Hardware Association",
+        "license": "CC BY-SA 4.0",
+        "author": "OSHWA",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "oshwa.org",
+          "url": "https://www.oshwa.org"
+        },
+        {
+          "label": "OSHW Definition",
+          "url": "https://www.oshwa.org/definition/"
+        },
+        {
+          "label": "Zertifizierung",
+          "url": "https://certification.oshwa.org"
+        }
+      ],
+      "connections": [
+        "arduino-2005",
+        "reprap-2007",
+        "raspberry-pi-2012"
+      ],
+      "tags": [
+        "OSHWA",
+        "Definition",
+        "Zertifizierung",
+        "Open Hardware"
+      ],
+      "source": "Open Source Hardware Association, oshwa.org; Wikipedia"
+    },
+    {
+      "id": "raspberry-pi-2012",
+      "year": 2012,
+      "month": 2,
+      "track": "C",
+      "title": "Raspberry Pi",
+      "subtitle": "Einplatinencomputer für Bildung und Maker zu 35 USD",
+      "description": "Die Raspberry Pi Foundation (UK) bringt den ersten Raspberry Pi für 35 USD auf den Markt: ein vollständiger Linux-Computer auf einer Platine, Zielgruppe Kinder und Bildungseinrichtungen. Der Raspberry Pi wird zum meistverkauften britischen Computer und treibt Projekte im Bereich Open Hardware, Elektronik-Bildung und DIY-Textilmaschinen voran.",
+      "significance": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raspberry_Pi_Beta_Board.jpg",
+        "caption": "Raspberry-Pi-Betaboard kurz vor dem Marktstart 2012",
+        "license": "PD-author",
+        "author": "Liz",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "raspberrypi.org",
+          "url": "https://www.raspberrypi.org"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Raspberry_Pi"
+        }
+      ],
+      "connections": [
+        "oshwa-2011",
+        "arduino-2005",
+        "linux-1991"
+      ],
+      "tags": [
+        "Einplatinencomputer",
+        "Bildung",
+        "Linux",
+        "Maker",
+        "UK"
+      ],
+      "source": "Raspberry Pi Foundation; Wikipedia, «Raspberry Pi», CC BY-SA 4.0"
+    },
+    {
+      "id": "cern-ohl-2013",
+      "year": 2013,
+      "track": "C",
+      "title": "CERN Open Hardware Licence",
+      "subtitle": "Freie Hardware-Lizenz für wissenschaftliche Instrumentation",
+      "description": "Das CERN (Genf) veröffentlicht die CERN Open Hardware Licence (OHL), eine speziell für Hardware-Schaltpläne und Konstruktionsdokumente entwickelte freie Lizenz. Sie schließt eine wichtige Lücke: Software-Lizenzen (GPL, MIT) decken Hardware nicht korrekt ab. CERN OHL v2 (2020) unterscheidet zwischen stark copyleft, schwach copyleft und permissiv.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://cern-ohl.web.cern.ch",
+          "caption": "Offizielle CERN-Seite zur Open Hardware Licence mit Versionen und Dokumentation",
+          "label": "CERN OHL"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "Titelblatt, Wortmarke oder grafische Darstellung der CERN Open Hardware Licence",
+        "license": "TODO",
+        "author": "TODO",
+        "source": "TODO — frei verwendbare Visualisierung der CERN OHL finden"
+      },
+      "links": [
+        {
+          "label": "CERN OHL",
+          "url": "https://cern-ohl.web.cern.ch"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/CERN_Open_Hardware_Licence"
+        }
+      ],
+      "connections": [
+        "oshwa-2011",
+        "reprap-2007"
+      ],
+      "tags": [
+        "Lizenz",
+        "CERN",
+        "Hardware",
+        "Copyleft",
+        "Wissenschaft"
+      ],
+      "source": "CERN, cern-ohl.web.cern.ch; Wikipedia, CERN Open Hardware Licence"
+    },
+    {
+      "id": "soft-robotics-toolkit-2013",
+      "year": 2013,
+      "track": "C",
+      "title": "Soft Robotics Toolkit",
+      "subtitle": "Offene Werkzeuge für weiche Aktoren, Greifer und materialschonende Robotik",
+      "description": "Das Soft Robotics Toolkit sammelt ab 2013 offen zugängliche Anleitungen, Materialien und Beispiele für weiche, nachgiebige Robotik. Statt harter Metallmechanik stehen elastische Strukturen, pneumatische Aktoren und materialschonende Greifer im Mittelpunkt. Für DIY-Stickmaschinen ist das interessant, wenn Stoffe nicht nur bewegt, sondern auch sanft gespannt, geführt oder gegriffen werden sollen.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://softroboticstoolkit.com/",
+          "caption": "Open-Source-Toolkit für Soft Robotics mit Tutorials, Designs und Materialwissen",
+          "label": "Soft Robotics Toolkit"
+        }
+      ],
+      "links": [
+        {
+          "label": "Soft Robotics Toolkit",
+          "url": "https://softroboticstoolkit.com/"
+        },
+        {
+          "label": "Harvard News",
+          "url": "https://wyss.harvard.edu/news/open-source-toolkit-brings-soft-robotics-to-the-masses/"
+        }
+      ],
+      "connections": [
+        "lilypad-2007",
+        "stitchlab-smartpedal",
+        "stitchlab-hybrid"
+      ],
+      "tags": [
+        "Soft Robotics",
+        "Greifer",
+        "Aktoren",
+        "Open Source",
+        "Material"
+      ],
+      "source": "Soft Robotics Toolkit; Harvard Wyss Institute"
+    },
+    {
+      "id": "bouchon-1725",
+      "year": 1725,
+      "track": "D",
+      "title": "Basile Bouchon",
+      "subtitle": "Gelochtes Papier steuert erstmals einen Webstuhl",
+      "description": "Basile Bouchon entwickelt 1725 ein System aus gelochtem Papierband, das einen Webstuhl bei der Auswahl von Kettfäden steuert. Damit entsteht ein früher programmierbarer Textilautomat. Das Prinzip führt über Falcon und Jacquard direkt zur Idee austauschbarer Maschinenprogramme.",
+      "significance": "medium",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basile_Bouchon_1725_loom.jpg",
+        "caption": "Basile-Bouchon-Webstuhl im Musée des Arts et Métiers, Paris",
+        "license": "CC BY-SA 3.0",
+        "author": "Jebulon",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (EN)",
+          "url": "https://en.wikipedia.org/wiki/Basile_Bouchon"
+        },
+        {
+          "label": "Musée des Arts et Métiers",
+          "url": "https://www.arts-et-metiers.net/musee"
+        }
+      ],
+      "connections": [
+        "jacquard-1801"
+      ],
+      "tags": [
+        "Lochpapier",
+        "Webstuhl",
+        "Automatisierung",
+        "Frankreich",
+        "Vorläufer"
+      ],
+      "source": "Wikipedia, «Basile Bouchon», CC BY-SA 4.0"
+    },
+    {
+      "id": "jacquard-1801",
+      "year": 1801,
+      "track": "D",
+      "title": "Jacquard-Webstuhl",
+      "subtitle": "Lochkarten steuern Webmuster — Vorläufer der Programmierung",
+      "description": "Joseph-Marie Jacquard (Lyon) entwickelt einen Webstuhl, der durch auswechselbare gelochte Pappkarten beliebige Muster weben kann. Das Prinzip der lochkartengesteuerten Informationseingabe wird später zur Grundlage früher Computer (Babbage, Hollerith). Der Jacquard-Webstuhl ist das erste Beispiel für extern speicherbare, austauschbare Programme.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Jacquard.loom.cards.jpg/500px-Jacquard.loom.cards.jpg",
+        "caption": "Jacquard-Webstuhl mit Lochkarten, Lyon",
+        "license": "Public Domain",
+        "author": "Unbekannt",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Jacquardwebstuhl"
+        },
+        {
+          "label": "Smithsonian",
+          "url": "https://americanhistory.si.edu"
+        },
+        {
+          "label": "Musée des Arts",
+          "url": "https://www.arts-et-metiers.net"
+        }
+      ],
+      "connections": [
+        "bouchon-1725",
+        "babbage-1837",
+        "singer-1851",
+        "toyota-cnc-1964"
+      ],
+      "tags": [
+        "Lochkarten",
+        "Programmierung",
+        "Lyon",
+        "Webstuhl",
+        "Informatikgeschichte"
+      ],
+      "source": "Wikipedia, «Jacquardwebstuhl», CC BY-SA 4.0"
+    },
+    {
+      "id": "babbage-1837",
+      "year": 1837,
+      "track": "D",
+      "title": "Babbage Analytical Engine",
+      "subtitle": "Erster Entwurf eines vollständig programmierbaren Computers",
+      "description": "Charles Babbage entwirft die Analytical Engine: eine mechanische Rechenmaschine mit Speicher, Rechenwerk, Eingabe (Lochkarten nach Jacquard-Prinzip) und Ausgabe. Obwohl nie fertiggebaut, ist der Entwurf konzeptuell der erste vollständige Computer. Ada Lovelace schreibt das erste Programm dafür.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Babbage_Analytical_Engine_Plan_1840_CHM.agr.jpg",
+        "caption": "Plan der Babbage Analytical Engine aus dem Jahr 1840",
+        "license": "CC BY 4.0",
+        "author": "ArnoldReinhold",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Analytical_Engine"
+        },
+        {
+          "label": "Science Museum UK",
+          "url": "https://www.sciencemuseum.org.uk/objects-and-stories/babbage-and-his-engines"
+        }
+      ],
+      "connections": [
+        "jacquard-1801",
+        "ada-lovelace-1843",
+        "hollerith-1890"
+      ],
+      "tags": [
+        "Babbage",
+        "Analytical Engine",
+        "Computer",
+        "Mechanik",
+        "Lochkarten"
+      ],
+      "source": "Wikipedia, «Analytical Engine», CC BY-SA 4.0; Science Museum UK"
+    },
+    {
+      "id": "ada-lovelace-1843",
+      "year": 1843,
+      "track": "D",
+      "title": "Ada Lovelace: Erster Algorithmus",
+      "subtitle": "Ada Lovelace schreibt das erste veröffentlichte Computerprogramm",
+      "description": "Augusta Ada King, Gräfin von Lovelace, übersetzt Luigi Menabreas Artikel über Babbages Analytical Engine und fügt eigene Notizen hinzu — darunter einen Algorithmus zur Berechnung der Bernoulli-Zahlen, das erste veröffentlichte Computerprogramm. Ada Lovelace erkennt als erste, dass die Maschine mehr als nur rechnen kann.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/400px-Ada_Lovelace_portrait.jpg",
+        "caption": "Ada Lovelace, Aquarellporträt ca. 1840 (Alfred Edward Chalon)",
+        "license": "Public Domain",
+        "author": "Alfred Edward Chalon",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Ada_Lovelace"
+        },
+        {
+          "label": "British Library",
+          "url": "https://www.bl.uk"
+        },
+        {
+          "label": "Ada Lovelace Day",
+          "url": "https://findingada.com"
+        }
+      ],
+      "connections": [
+        "babbage-1837",
+        "hollerith-1890"
+      ],
+      "tags": [
+        "Ada Lovelace",
+        "Algorithmus",
+        "Programmierung",
+        "Pionierinnen",
+        "Feminismus"
+      ],
+      "source": "Wikipedia, «Ada Lovelace», CC BY-SA 4.0; British Library"
+    },
+    {
+      "id": "hollerith-1890",
+      "year": 1890,
+      "track": "D",
+      "title": "Hollerith-Tabelliermaschine",
+      "subtitle": "Lochkarten-Auswertung für den US-Zensus 1890 — Vorläufer von IBM",
+      "description": "Herman Hollerith entwickelt eine elektromechanische Tabelliermaschine für den US-Volkszählung 1890, die Lochkarten (nach Jacquard-Prinzip) in Sekunden auswertet statt in Jahren. Das Unternehmen, das er gründet, wird 1924 zu IBM. Textiltechnologie, Datenverarbeitung und Informationsindustrie haben denselben technischen Ursprung.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Hollerith_census_machine.CHM.jpg",
+        "caption": "Hollerith Tabelliermaschine, 1890",
+        "license": "Public Domain",
+        "author": "Unbekannt",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Herman_Hollerith"
+        },
+        {
+          "label": "IBM History",
+          "url": "https://www.ibm.com/ibm/history/ibm100/us/en/icons/hollerith/"
+        }
+      ],
+      "connections": [
+        "babbage-1837",
+        "ada-lovelace-1843",
+        "internet-1983"
+      ],
+      "tags": [
+        "Hollerith",
+        "Lochkarten",
+        "IBM",
+        "Zensus",
+        "Datenverarbeitung"
+      ],
+      "source": "Wikipedia, «Herman Hollerith», CC BY-SA 4.0"
+    },
+    {
+      "id": "internet-1983",
+      "year": 1983,
+      "track": "D",
+      "title": "Das Internet: TCP/IP",
+      "subtitle": "ARPANET wechselt zu TCP/IP — Geburtsstunde des modernen Internets",
+      "description": "Am 1. Januar 1983 wechselt das ARPANET zum TCP/IP-Protokoll. Dieses Datum gilt als Geburtsstunde des modernen Internets. Das dezentrale Netzwerk ohne zentralen Besitzer ist die technische Grundvoraussetzung für globale Open-Source-Kollaboration — von Linux und GNU bis zu RepRap und OpenKnit.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arpanet_logical_map,_march_1977.png",
+        "caption": "ARPANET-Netzkarte von 1977 als Vorläufer des offenen TCP/IP-Internets",
+        "license": "Public Domain",
+        "author": "ARPANET / Computer History Museum",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Geschichte_des_Internets"
+        },
+        {
+          "label": "Internet Society",
+          "url": "https://www.internetsociety.org/internet/history-internet/"
+        }
+      ],
+      "connections": [
+        "hollerith-1890",
+        "www-1991",
+        "gnu-1983"
+      ],
+      "tags": [
+        "Internet",
+        "TCP/IP",
+        "ARPANET",
+        "DARPA",
+        "Protokoll"
+      ],
+      "source": "Wikipedia, «Geschichte des Internets», CC BY-SA 4.0; Internet Society"
+    },
+    {
+      "id": "linux-1991",
+      "year": 1991,
+      "month": 8,
+      "track": "C",
+      "title": "Linux Kernel 0.01",
+      "subtitle": "Linus Torvalds veröffentlicht freien Betriebssystem-Kern (GPL)",
+      "description": "Der Finne Linus Torvalds kündigt am 25. August 1991 in der Newsgroup comp.os.minix seinen «kostenlosen» Kernel an. Linux unter GPL kombiniert mit GNU-Werkzeugen zu einem vollständig freien Betriebssystem. Linux läuft heute auf nahezu allen 3D-Drucker-Steuerungen, Raspberry Pis und CNC-Maschinen.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/400px-Tux.svg.png",
+        "caption": "Tux, das Linux-Maskottchen (Larry Ewing, 1996)",
+        "license": "CC0",
+        "author": "Larry Ewing",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "kernel.org",
+          "url": "https://www.kernel.org"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Linux"
+        }
+      ],
+      "connections": [
+        "gnu-1983",
+        "www-1991",
+        "raspberry-pi-2012"
+      ],
+      "tags": [
+        "Linux",
+        "Kernel",
+        "GPL",
+        "Torvalds",
+        "Betriebssystem"
+      ],
+      "source": "kernel.org; Wikipedia, «Linux», CC BY-SA 4.0"
+    },
+    {
+      "id": "www-1991",
+      "year": 1991,
+      "month": 8,
+      "track": "D",
+      "title": "World Wide Web",
+      "subtitle": "Tim Berners-Lee öffnet das WWW — gebührenfrei, ohne Patent",
+      "description": "Tim Berners-Lee stellt das am CERN entwickelte World Wide Web der Öffentlichkeit kostenfrei und ohne Patentansprüche zur Verfügung. Mit HTML, HTTP und URLs schafft er eine dezentrale Informationsinfrastruktur. Das Web wird zur entscheidenden Plattform für Open-Source-Kollaboration: Dokumentation, Foren, GitHub — ohne WWW kein Maker-Ökosystem.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/400px-WWW_logo_by_Robert_Cailliau.svg.png",
+        "caption": "Erstes WWW-Logo, Robert Cailliau 1990",
+        "license": "Public Domain",
+        "author": "Robert Cailliau / CERN",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "CERN History",
+          "url": "https://home.cern/science/computing/birth-web"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/World_Wide_Web"
+        }
+      ],
+      "connections": [
+        "linux-1991",
+        "internet-1983",
+        "github-2008",
+        "wikipedia-2001"
+      ],
+      "tags": [
+        "WWW",
+        "HTTP",
+        "HTML",
+        "CERN",
+        "Berners-Lee"
+      ],
+      "source": "CERN, «The birth of the Web»; Wikipedia, «World Wide Web», CC BY-SA 4.0"
+    },
+    {
+      "id": "wikipedia-2001",
+      "year": 2001,
+      "month": 1,
+      "track": "D",
+      "title": "Wikipedia",
+      "subtitle": "Freie Enzyklopädie unter CC BY-SA — offenes Wissen für alle",
+      "description": "Jimmy Wales und Larry Sanger gründen Wikipedia als freie, kollaborative Enzyklopädie unter CC BY-SA-Lizenz. Wikipedia und die Schwesterprojekte (Wikimedia Commons, Wikisource) stellen die Hauptinfrastruktur für offen lizenzierte Bilder und Informationen bereit — unverzichtbar für Projekte wie StitchTexTech.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/400px-Wikipedia-logo-v2.svg.png",
+        "caption": "Wikipedia Logo",
+        "license": "CC BY-SA 3.0",
+        "author": "Nohat (Wikipedia)",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "wikipedia.org",
+          "url": "https://de.wikipedia.org"
+        },
+        {
+          "label": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org"
+        },
+        {
+          "label": "Wikimedia Foundation",
+          "url": "https://wikimediafoundation.org"
+        }
+      ],
+      "connections": [
+        "www-1991",
+        "creative-commons-2001"
+      ],
+      "tags": [
+        "Wikipedia",
+        "Open Knowledge",
+        "CC BY-SA",
+        "Wikimedia",
+        "Enzyklopädie"
+      ],
+      "source": "Wikipedia, «Wikipedia», CC BY-SA 4.0; Wikimedia Foundation"
+    },
+    {
+      "id": "morse-1837",
+      "year": 1837,
+      "track": "D",
+      "title": "Morse-Code",
+      "subtitle": "Samuel Morse: erste digitale Nachrichtenübertragung — Punkt und Strich",
+      "description": "Samuel Morse und Alfred Vail entwickeln den Morse-Code: Information wird als Folge kurzer (·) und langer (–) Signale übertragen. Das ist das erste praktische Binärsystem der Kommunikation. Der Übergang von mechanischer zu elektrischer Information — und ein direkter konzeptueller Vorläufer von 0 und 1 in digitalen Systemen.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/International_Morse_Code.svg",
+        "caption": "Internationales Morse-Code Alphabet",
+        "license": "Public Domain",
+        "author": "Rhey T. Snodgrass & Victor F. Camp, 1922",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Morsecode"
+        }
+      ],
+      "connections": [
+        "jacquard-1801",
+        "babbage-1837",
+        "internet-1983"
+      ],
+      "tags": [
+        "Kommunikation",
+        "Binär",
+        "Codierung",
+        "Elektrizität",
+        "Punkt-Strich"
+      ],
+      "source": "Wikipedia, «Morsecode», CC BY-SA 4.0"
+    },
+    {
+      "id": "schiffli-1863",
+      "year": 1863,
+      "track": "A",
+      "title": "Schiffli-Stickmaschine",
+      "subtitle": "Isaac Groebli, St. Gallen — Industriestickerei im Maßstab",
+      "description": "Isaac Groebli (St. Gallen, Schweiz) erfindet die Schiffli-Stickmaschine: eine Großmaschine, die das Lockstitch-Prinzip (wie Howe) auf Hunderte parallele Nadeln ausweitet. Ein einziger Bediener kann damit ganze Stoffbahnen besticken. St. Gallen und das angrenzende Vorarlberg (Lustenau) werden zur weltweiten Hochburg der Maschinenbestickung.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Fully_automated_schiffli_embroidery_machine_by_Saurer.jpg",
+        "caption": "Vollautomatische Schiffli-Stickmaschine von Saurer als typischer Industriemaschinentyp",
+        "license": "CC BY-SA 3.0",
+        "author": "Paebi",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Textilmuseum St. Gallen",
+          "url": "https://www.textilmuseum.ch"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Schifflistickmaschine"
+        }
+      ],
+      "connections": [
+        "howe-1846",
+        "singer-1851",
+        "lustenau-1895",
+        "toyota-cnc-1964"
+      ],
+      "tags": [
+        "Schiffli",
+        "St. Gallen",
+        "Industrie",
+        "Massenproduktion",
+        "Stickerei"
+      ],
+      "source": "Wikipedia, «Schifflistickmaschine», CC BY-SA 4.0; Textilmuseum St. Gallen"
+    },
+    {
+      "id": "lustenau-1895",
+      "year": 1895,
+      "track": "A",
+      "title": "Lustenau: Welthauptstadt der Stickerei",
+      "subtitle": "Vorarlberg wird globales Zentrum der Maschinenbestickung",
+      "description": "Ende des 19. Jahrhunderts entwickelt sich Lustenau (Vorarlberg, Österreich) zusammen mit St. Gallen zum bedeutendsten Zentrum der mechanischen Stickerei weltweit. Hunderte Schiffli-Maschinen produzieren Spitzen und Stickereien für den Weltmarkt. Die Region prägt bis heute die globale Hochpreistextilbranche — und ist Ziel der Studienreise.",
+      "significance": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kleid_ca1968_2.jpg",
+        "caption": "Besticktes Abendkleid aus dem Hämmerle-&-Vogel-Archiv in Lustenau als Produkt der regionalen Stickereiindustrie",
+        "license": "Public Domain",
+        "author": "Wolf D.",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Lustenauer Museumsverein",
+          "url": "https://www.lustenau.at/de/gemeinde/museen"
+        },
+        {
+          "label": "Textilmuseum St. Gallen",
+          "url": "https://www.textilmuseum.ch"
+        },
+        {
+          "label": "Wikipedia Lustenau",
+          "url": "https://de.wikipedia.org/wiki/Lustenau"
+        }
+      ],
+      "connections": [
+        "schiffli-1863",
+        "singer-1851",
+        "toyota-cnc-1964"
+      ],
+      "tags": [
+        "Lustenau",
+        "Vorarlberg",
+        "Österreich",
+        "Stickerei-Industrie",
+        "Studienreise"
+      ],
+      "source": "Wikipedia, «Lustenau», CC BY-SA 4.0; Textilmuseum St. Gallen"
+    },
+    {
+      "id": "nc-machine-1952",
+      "year": 1952,
+      "track": "D",
+      "title": "Erste NC-Fräsmaschine",
+      "subtitle": "MIT & Parsons: Numerische Steuerung — Geburt von CNC und G-Code",
+      "description": "John Parsons und Frank Stulen entwickeln am MIT die erste numerisch gesteuerte (NC) Fräsmaschine, finanziert vom US Air Force. Koordinaten werden als Lochkarten eingegeben und in Maschinenbewegungen übersetzt. Dieses Prinzip — Programm steuert Werkzeug — ist die direkte Grundlage von G-Code, CNC-Stickmaschinen und schließlich Klipper/StitchLAB.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://en.wikipedia.org/wiki/Numerical_control",
+          "caption": "Einführung in die Geschichte numerischer Steuerung als technische Grundlage späterer CNC-Systeme",
+          "label": "Numerical Control"
+        }
+      ],
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Moog_at_milling_machine.jpg",
+        "caption": "Frühe numerisch gesteuerte Fräsmaschine im industriellen Einsatz",
+        "license": "Public Domain",
+        "author": "National Photo Company Collection",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia: NC Machining",
+          "url": "https://en.wikipedia.org/wiki/Numerical_control"
+        },
+        {
+          "label": "MIT News",
+          "url": "https://news.mit.edu"
+        }
+      ],
+      "connections": [
+        "jacquard-1801",
+        "hollerith-1890",
+        "toyota-cnc-1964",
+        "arduino-2005"
+      ],
+      "tags": [
+        "CNC",
+        "G-Code",
+        "MIT",
+        "Numerische Steuerung",
+        "Fabrikation"
+      ],
+      "source": "Wikipedia, «Numerical control», CC BY-SA 4.0"
+    },
+    {
+      "id": "industrial-robot-1961",
+      "year": 1961,
+      "track": "D",
+      "title": "Industrieroboter",
+      "subtitle": "Unimate zeigt, wie programmierte Bewegungen zur Fabriklogik werden",
+      "description": "1961 geht mit Unimate der erste Industrieroboter in den produktiven Einsatz. Wiederholbare Achsbewegungen, Werkzeugbahnen und automatisierte Handhabung werden damit Teil realer Fertigung. Für DIY-Stickmaschinen ist dieser Schritt wichtig, weil X/Y-Gantry, Zusatzachsen und automatisierte Materialführung genau aus dieser Robotiklogik verkleinert und umgebaut werden.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://www.automate.org/industry-insights/the-birth-of-the-first-industrial-robot",
+          "caption": "Geschichte des ersten Industrieroboters als Kontext für offene Maschinenbewegung und Automatisierung",
+          "label": "Automate"
+        }
+      ],
+      "links": [
+        {
+          "label": "Automate",
+          "url": "https://www.automate.org/industry-insights/the-birth-of-the-first-industrial-robot"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Industrieroboter"
+        }
+      ],
+      "connections": [
+        "nc-machine-1952",
+        "reprap-2007",
+        "stitchlab-turtlebot"
+      ],
+      "tags": [
+        "Robotik",
+        "Industrieroboter",
+        "Unimate",
+        "Bewegungssteuerung",
+        "Automatisierung"
+      ],
+      "source": "Automate, «The Birth of the First Industrial Robot»; Wikipedia, «Industrieroboter», CC BY-SA 4.0"
+    },
+    {
+      "id": "dartmouth-ai-1956",
+      "year": 1956,
+      "track": "D",
+      "title": "Dartmouth Workshop",
+      "subtitle": "Der Begriff «Artificial Intelligence» entsteht als neues Forschungsfeld",
+      "description": "Beim Dartmouth Summer Research Project prägen John McCarthy, Marvin Minsky, Nathaniel Rochester und Claude Shannon 1956 den Begriff «Artificial Intelligence». Damit wird Intelligenz nicht mehr nur philosophisch, sondern als technisch bearbeitbares Problem formuliert. Für DIY-Textilmaschinen ist das wichtig, weil spätere Systeme nicht nur Bewegungen ausführen, sondern auch Muster erkennen, Fehler klassifizieren und Entscheidungen vorbereiten.",
+      "significance": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/John_McCarthy_Stanford.jpg",
+        "caption": "John McCarthy, einer der zentralen Organisatoren des Dartmouth-Workshops",
+        "license": "CC BY 3.0",
+        "author": "Steve Jurvetson",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia: Kuenstliche Intelligenz",
+          "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz"
+        }
+      ],
+      "connections": [
+        "nc-machine-1952",
+        "industrial-robot-1961",
+        "papert-logo-1967"
+      ],
+      "tags": [
+        "KI",
+        "Artificial Intelligence",
+        "Dartmouth",
+        "John McCarthy",
+        "Forschung"
+      ],
+      "source": "Wikipedia, «Künstliche Intelligenz», CC BY-SA 4.0; Wikimedia Commons"
+    },
+    {
+      "id": "perceptron-1958",
+      "year": 1958,
+      "track": "D",
+      "title": "Perzeptron",
+      "subtitle": "Frank Rosenblatt baut ein lernendes kuenstliches Neuron als Maschine",
+      "description": "Frank Rosenblatt präsentiert 1958 das Perzeptron als Hardware und Modell eines lernenden künstlichen Neurons. Die Idee: Gewichte werden aus Beispielen angepasst, statt jede Regel von Hand zu programmieren. Für DIY-Textilmaschinen ist das ein wichtiger Vorläufer späterer Bildklassifikation, Mustererkennung und sensorgestützter Qualitätskontrolle.",
+      "significance": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mark_I_perceptron.jpeg",
+        "caption": "Mark I Perceptron als frühe lernende Maschine",
+        "license": "Public Domain",
+        "author": "Cornell Aeronautical Laboratory",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia: Perzeptron",
+          "url": "https://de.wikipedia.org/wiki/Perzeptron"
+        }
+      ],
+      "connections": [
+        "dartmouth-ai-1956",
+        "industrial-robot-1961",
+        "deep-learning-2012"
+      ],
+      "tags": [
+        "Perzeptron",
+        "Machine Learning",
+        "Rosenblatt",
+        "Neuronales Netz",
+        "Mustererkennung"
+      ],
+      "source": "Wikipedia, «Perzeptron», CC BY-SA 4.0; Wikimedia Commons"
+    },
+    {
+      "id": "deep-learning-2012",
+      "year": 2012,
+      "track": "D",
+      "title": "Deep Learning",
+      "subtitle": "AlexNet macht lernende Bildauswertung zum neuen Standard",
+      "description": "2012 zeigt AlexNet beim ImageNet-Wettbewerb, dass tiefe neuronale Netze visuelle Muster deutlich besser skalierbar erkennen können als viele vorherige Verfahren. GPUs, große Datensätze und lernbare Merkmalsstufen machen Computer Vision damit zum praktischen Werkzeug. Für DIY-Stickmaschinen wird das relevant, wenn Kameras Stofflage, Fadenrisse, Nadelposition oder Musterfehler automatisch erkennen sollen.",
+      "significance": "high",
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artificial_neural_network.svg",
+        "caption": "Schema eines kuenstlichen neuronalen Netzes als Grundprinzip moderner Deep-Learning-Systeme",
+        "license": "CC BY-SA 3.0",
+        "author": "Dhp1080",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia: Deep Learning",
+          "url": "https://de.wikipedia.org/wiki/Deep_Learning"
+        }
+      ],
+      "connections": [
+        "perceptron-1958",
+        "raspberry-pi-2012",
+        "soft-robotics-toolkit-2013",
+        "stitchlab-robot"
+      ],
+      "tags": [
+        "Deep Learning",
+        "Computer Vision",
+        "Neuronale Netze",
+        "ImageNet",
+        "Sensorik"
+      ],
+      "source": "Wikipedia, «Deep Learning», CC BY-SA 4.0; Wikimedia Commons"
+    },
+    {
+      "id": "klipper-2016",
+      "year": 2016,
+      "track": "C",
+      "title": "Klipper",
+      "subtitle": "Open-Source 3D-Drucker-Firmware — Basis des StitchLAB-Stacks",
+      "description": "Kevin O'Connor veröffentlicht Klipper: eine 3D-Drucker-Firmware, die die Berechnung von Bewegungspfaden auf einen Raspberry Pi (Linux) auslagert, während ein Mikrocontroller nur noch die Schrittmotoren steuert. Klipper wurde ursprünglich für 3D-Drucker entwickelt und ist über Mainsail die Grundlage von StitchLAB — ein direktes Kind des RepRap-Ökosystems.",
+      "significance": "high",
+      "image": {
+        "url": "https://github.com/Klipper3d/klipper/raw/master/docs/img/klipper-logo.png",
+        "caption": "Klipper-Logo aus dem offiziellen Projekt-Repository",
+        "license": "GPL v3",
+        "author": "Kevin O'Connor / Klipper Community",
+        "source": "GitHub Klipper3d/klipper"
+      },
+      "links": [
+        {
+          "label": "klipper3d.org",
+          "url": "https://www.klipper3d.org"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Klipper3d/klipper"
+        }
+      ],
+      "connections": [
+        "reprap-2007",
+        "raspberry-pi-2012",
+        "mainsail-2020",
+        "stitchlab-2024"
+      ],
+      "tags": [
+        "Firmware",
+        "3D-Druck",
+        "Raspberry Pi",
+        "GPL",
+        "Schrittmotor"
+      ],
+      "source": "klipper3d.org; GitHub Klipper3d/klipper, GPL v3"
+    },
+    {
+      "id": "mainsail-2020",
+      "year": 2020,
+      "track": "C",
+      "title": "Mainsail",
+      "subtitle": "Open-Source Web-Frontend für Klipper — geforkted zu StitchLAB OS",
+      "description": "Mainsail ist ein quelloffenes Browser-Frontend für Klipper-basierte Drucker (Vue.js, MIT-Lizenz). Es zeigt G-Code-Vorschau, Temperaturkurven, Kamera-Feeds und ermöglicht volle Maschinensteuerung über den Browser. StitchLAB OS ist ein Fork von Mainsail, der um Stickmaschinenfunktionen (Nadelsteuerung, TurtleStitch-Integration, G-Code Studio) erweitert wird.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://docs.mainsail.xyz",
+          "caption": "Offizielle Mainsail-Dokumentation mit Interface- und Funktionskontext",
+          "label": "Mainsail Docs"
+        }
+      ],
+      "image": {
+        "url": "https://github.com/mainsail-crew/docs/raw/master/.vuepress/public/assets/img/logo.svg",
+        "caption": "Mainsail-Logo aus der offiziellen Dokumentation",
+        "license": "MIT",
+        "author": "Mainsail Contributors",
+        "source": "GitHub mainsail-crew/docs"
+      },
+      "links": [
+        {
+          "label": "docs.mainsail.xyz",
+          "url": "https://docs.mainsail.xyz"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mainsail-crew/mainsail"
+        }
+      ],
+      "connections": [
+        "klipper-2016",
+        "github-2008",
+        "stitchlab-2024"
+      ],
+      "tags": [
+        "Frontend",
+        "Vue.js",
+        "Browser",
+        "3D-Druck",
+        "MIT"
+      ],
+      "source": "docs.mainsail.xyz; GitHub mainsail-crew/mainsail, MIT"
+    },
+    {
+      "id": "stitchlab-2024",
+      "year": 2024,
+      "track": "F",
+      "title": "StitchLAB",
+      "subtitle": "DIY-Stickmaschine auf Klipper-Basis — Open-Source, Raspberry Pi, TurtleStitch",
+      "description": "StitchLAB verwandelt alte Haushaltsnähmaschinen (u.a. Pfaff) in hybride digitale Stick- und Nähmaschinen. Das System läuft auf einem Raspberry Pi mit Klipper-Firmware und einem geforkten Mainsail-Frontend (StitchLAB OS). TurtleStitch läuft offline auf dem Pi und exportiert G-Code direkt an Klipper. StitchLAB verkörpert die gesamte Open-Hardware-Kaskade: RepRap → Klipper → Mainsail → TurtleStitch → Sticknadel.",
+      "significance": "landmark",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://github.com/prntr/stitchLABsim",
+          "caption": "Öffentliche Projektseite mit Roadmap, Code und Dokumentation",
+          "label": "GitHub-Repository"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "StitchLAB — Pfaff-Nähmaschine mit Raspberry Pi und Gantry",
+        "license": "CC BY-SA 4.0",
+        "author": "StitchLAB / prntr",
+        "source": "github.com/prntr/stitchLABsim — ⚠️ Foto der echten Maschine verwenden"
+      },
+      "video": {
+        "url": "TODO",
+        "caption": "StitchLAB Demonstrationsvideo — ⚠️ Video-ID eintragen"
+      },
+      "links": [
+        {
+          "label": "StitchLAB Sim (GitHub)",
+          "url": "https://github.com/prntr/stitchLABsim"
+        },
+        {
+          "label": "StitchLAB OS",
+          "url": "https://github.com/prntr"
+        }
+      ],
+      "connections": [
+        "klipper-2016",
+        "mainsail-2020",
+        "turtlestitch-2016",
+        "inkstitch-2017",
+        "reprap-2007",
+        "ayab-2011"
+      ],
+      "tags": [
+        "StitchLAB",
+        "Klipper",
+        "Mainsail",
+        "TurtleStitch",
+        "G-Code",
+        "Raspberry Pi",
+        "DIY"
+      ],
+      "source": "github.com/prntr/stitchLABsim; Development Roadmap, StitchLAB"
+    },
+    {
+      "id": "meccano-1898",
+      "year": 1898,
+      "track": "E",
+      "title": "Meccano",
+      "subtitle": "Frank Hornbys Metallbaukasten als Ingenieur-Spielzeug",
+      "description": "Frank Hornby entwickelt 1898 in England den Baukasten, aus dem Meccano hervorgeht. Lochbleche, Schrauben, Muttern und Zahnräder machen technische Prinzipien sichtbar und zerlegbar. Damit verschiebt sich das Lernspielzeug vom freien Holzbau zum modularen Maschinenmodell und prägt viele spätere Technikbaukästen.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Meccano_Set%2C_Edinburgh_Museum_of_Childhood.JPG",
+        "caption": "Historischer Meccano-Baukasten im Museum of Childhood in Edinburgh",
+        "license": "CC BY-SA 4.0",
+        "author": "Kim Traynor",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Meccano Heritage",
+          "url": "https://www.meccano.com/heritage/"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Meccano"
+        }
+      ],
+      "connections": [
+        "matador-1903",
+        "fischertechnik-1965",
+        "lego-1932"
+      ],
+      "tags": [
+        "Meccano",
+        "Baukasten",
+        "Metall",
+        "Mechanik",
+        "Lernspielzeug"
+      ],
+      "source": "Meccano Heritage; Wikipedia, «Meccano», CC BY-SA 4.0"
+    },
+    {
+      "id": "matador-1903",
+      "year": 1903,
+      "track": "E",
+      "title": "MATADOR Holzbaukasten",
+      "subtitle": "Johann Korbuly verbindet Bauen, Werkzeug und Mechanik",
+      "description": "Der von Johann Korbuly entwickelte MATADOR-Holzbaukasten geht 1903 in Serienproduktion. Vorgebohrte Holzklötze, Stäbe, Räder und Werkzeug verbinden freies Bauen mit handwerklichem und mechanischem Verständnis. Im österreichischen Kontext ist MATADOR ein wichtiger Vorläufer jener Lernkultur, in der Kinder Technik durch Konstruieren begreifen.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Matador-Holzbaukasten-1766.jpg",
+        "caption": "Historischer MATADOR-Holzbaukasten mit Rädern, Stäben und Werkzeug",
+        "license": "CC BY-SA 4.0",
+        "author": "Hermann Handleskaskel",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Matador_(Spielzeug)"
+        },
+        {
+          "label": "Commons-Datei",
+          "url": "https://commons.wikimedia.org/wiki/File:Matador-Holzbaukasten-1766.jpg"
+        }
+      ],
+      "connections": [
+        "meccano-1898",
+        "fischertechnik-1965",
+        "papert-logo-1967"
+      ],
+      "tags": [
+        "MATADOR",
+        "Holzbaukasten",
+        "Österreich",
+        "Mechanik",
+        "Pädagogik"
+      ],
+      "source": "Wikipedia, «Matador (Spielzeug)», CC BY-SA 4.0; Wikimedia Commons"
+    },
+    {
+      "id": "phantasus-1919",
+      "year": 1919,
+      "track": "E",
+      "title": "Phantasus-Baukasten",
+      "subtitle": "Singer, Scala und Dicker: Bauhaus-Spielzeug für Form und Fantasie",
+      "description": "Im Umfeld des frühen Bauhauses entsteht ein Tierbaukasten aus einfachen farbigen Holzformen, der später meist als «Phantasus-Baukasten» bezeichnet wird. Die Forschung verweist auf einen bereits 1919 dokumentierten Entwurf «Singer-Scala», während das Spiel ab 1924 in Quellen klarer fassbar wird. Pädagogisch ist daran entscheidend, dass Kinder nicht ein fertiges Objekt konsumieren, sondern Formbeziehungen, Abstraktion und Konstruktion selbst herstellen.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://www.wienmuseum.at/atelier_bauhaus_wien",
+          "caption": "Wien-Museum-Ausstellung zu Friedl Dicker und Franz Singer mit Phantasus als Teil der gezeigten Arbeiten",
+          "label": "Wien Museum"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wien Museum",
+          "url": "https://www.wienmuseum.at/atelier_bauhaus_wien"
+        },
+        {
+          "label": "Open-Access-Buch",
+          "url": "https://doi.org/10.7767/9783205213161"
+        }
+      ],
+      "connections": [
+        "matador-1903",
+        "franz-singer-1925",
+        "lego-1932",
+        "papert-logo-1967"
+      ],
+      "tags": [
+        "Phantasus",
+        "Baukasten",
+        "Bauhaus",
+        "Abstraktion",
+        "Lernspielzeug"
+      ],
+      "source": "Hövelmann, Katharina. Bauhaus in Wien?, 2021; Wien Museum, «Atelier Bauhaus, Wien»"
+    },
+    {
+      "id": "franz-singer-1925",
+      "year": 1925,
+      "track": "E",
+      "title": "Franz Singer in Wien",
+      "subtitle": "Atelier Singer-Dicker: Räume, Möbel und Lernumgebungen",
+      "description": "Nach der Bauhaus-Zeit kehren Franz Singer und Friedl Dicker 1925 nach Wien zurück und bauen eine gemeinsame Atelierpraxis auf. Dort entwerfen sie nicht nur Möbel und Innenräume, sondern auch pädagogisch relevante Umgebungen wie den Montessori-Kindergarten im Goethehof. Für die Timeline ist Singer deshalb wichtig, weil hier Gestaltung, Spiel, Bewegung und Lernraum schon lange vor Paperts Computerkonzepten zusammen gedacht werden.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://www.bauhaus.de/forschen/forschungprojekte/erschliessung-der-nachlaesse-von-franz-singer-und-friedl-dicker/",
+          "caption": "Bauhaus-Archiv mit Forschungsprojekt zu Franz Singer und Friedl Dicker, inklusive Montessori-Entwürfen",
+          "label": "Bauhaus-Archiv"
+        }
+      ],
+      "links": [
+        {
+          "label": "Bauhaus-Archiv",
+          "url": "https://www.bauhaus.de/forschen/forschungprojekte/erschliessung-der-nachlaesse-von-franz-singer-und-friedl-dicker/"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Franz_Singer_(Architekt)"
+        }
+      ],
+      "connections": [
+        "phantasus-1919",
+        "fischertechnik-1965",
+        "papert-logo-1967"
+      ],
+      "tags": [
+        "Franz Singer",
+        "Friedl Dicker",
+        "Bauhaus",
+        "Montessori",
+        "Lernraum"
+      ],
+      "source": "Bauhaus-Archiv, «Erschließung der Nachlässe von Franz Singer und Friedl Dicker»; Wikipedia, «Franz Singer (Architekt)»"
+    },
+    {
+      "id": "lego-1932",
+      "year": 1932,
+      "track": "E",
+      "title": "LEGO",
+      "subtitle": "Vom Holzspielzeug zum systematischen Bauen",
+      "description": "Die LEGO Group beginnt 1932 mit Holzspielzeug und entwickelt daraus ein standardisiertes Bausystem. Für die Pädagogik wichtig ist weniger die Marke als das Prinzip: wiederverwendbare Teile, offene Kombinatorik und sichtbare Konstruktion. Dieses Denken macht LEGO später anschlussfähig für Robotik, Coding und Paperts Lernideen.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Lego_bricks.jpg",
+        "caption": "LEGO-Steine als modulares Bausystem",
+        "license": "CC BY-SA 3.0",
+        "author": "Rjgalindo86",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "LEGO History",
+          "url": "https://www.lego.com/en-us/history"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Lego"
+        }
+      ],
+      "connections": [
+        "meccano-1898",
+        "phantasus-1919",
+        "mindstorms-1980",
+        "lego-mindstorms-1998"
+      ],
+      "tags": [
+        "LEGO",
+        "Bauklötze",
+        "Baukasten",
+        "Systemspielzeug",
+        "Pädagogik"
+      ],
+      "source": "LEGO History; Wikipedia, «Lego», CC BY-SA 4.0"
+    },
+    {
+      "id": "fischertechnik-1965",
+      "year": 1965,
+      "track": "E",
+      "title": "fischertechnik",
+      "subtitle": "Technikbaukasten zwischen Industrie, Schule und Spiel",
+      "description": "fischertechnik wird 1965 als Baukastensystem entwickelt und kurz darauf als Lern- und Spielsystem verbreitet. Präzise Kunststoffbauteile, Statik, Zahnräder und später Elektromechanik machen technische Modelle systematisch nachvollziehbar. Damit entsteht eine direkte Brücke zwischen Baukasten, Technikunterricht und dem späteren Maker-Lernen.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/E-Bausteine_fischertechnik.JPG",
+        "caption": "fischertechnik-Elektrobausteine als Erweiterung des Baukastensystems",
+        "license": "Public Domain",
+        "author": "Kabelsalat",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Fischertechnik"
+        },
+        {
+          "label": "Commons-Datei",
+          "url": "https://commons.wikimedia.org/wiki/File:E-Bausteine_fischertechnik.JPG"
+        }
+      ],
+      "connections": [
+        "meccano-1898",
+        "matador-1903",
+        "phantasus-1919",
+        "papert-logo-1967",
+        "lego-mindstorms-1998"
+      ],
+      "tags": [
+        "fischertechnik",
+        "Baukasten",
+        "Elektromechanik",
+        "Technikunterricht",
+        "Lernspielzeug"
+      ],
+      "source": "Wikipedia, «Fischertechnik», CC BY-SA 4.0; Wikimedia Commons"
+    },
+    {
+      "id": "papert-logo-1967",
+      "year": 1967,
+      "track": "E",
+      "title": "Seymour Papert: LOGO & die Schildkröte",
+      "subtitle": "Konstruktionismus — Lernen durch Herstellen von Objekten",
+      "description": "Seymour Papert, Wally Feurzeig und Cynthia Solomon entwickeln am MIT LOGO: eine Programmiersprache für Kinder. Das zentrale Konzept ist die «Schildkröte» (Turtle) — ein Cursor, der durch einfache Befehle (VORWÄRTS, LINKS, RECHTS) Linien zeichnet. Papert nennt sein pädagogisches Konzept Konstruktionismus: Wissen entsteht am besten beim Herstellen von Dingen, die geteilt werden können.",
+      "significance": "landmark",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Papert.jpg",
+        "caption": "Seymour Papert",
+        "license": "CC BY 2.0",
+        "author": "Seymour Papert / Wikimedia Commons",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Seymour_Papert"
+        },
+        {
+          "label": "MIT Media Lab Legacy",
+          "url": "https://el.media.mit.edu/logo-foundation/"
+        },
+        {
+          "label": "LOGO Foundation",
+          "url": "https://el.media.mit.edu/logo-foundation/what_is_logo/"
+        }
+      ],
+      "connections": [
+        "matador-1903",
+        "phantasus-1919",
+        "franz-singer-1925",
+        "lego-1932",
+        "fischertechnik-1965",
+        "jacquard-1801",
+        "mindstorms-1980",
+        "lego-mindstorms-1998",
+        "scratch-2003",
+        "turtlestitch-2016"
+      ],
+      "tags": [
+        "Papert",
+        "LOGO",
+        "Konstruktionismus",
+        "MIT",
+        "Programmieren für Kinder",
+        "Pädagogik"
+      ],
+      "source": "Wikipedia, «Seymour Papert», CC BY-SA 4.0; LOGO Foundation, el.media.mit.edu"
+    },
+    {
+      "id": "mindstorms-1980",
+      "year": 1980,
+      "track": "E",
+      "title": "Mindstorms: Kinder, Computer und mächtige Ideen",
+      "subtitle": "Paperts Buch — das pädagogische Fundament des Maker-Denkens",
+      "description": "Seymour Papert veröffentlicht «Mindstorms: Children, Computers, and Powerful Ideas». Das Buch beschreibt, wie Computer zum universellen Baustein für Lernen werden können. Die Kernthese: Ein Kind, das eine Schildkröte auf dem Bildschirm bewegt, versteht Geometrie, weil es den Weg selbst verkörpert. LEGO benannte später seine Robotik-Linie nach dem Buch.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://el.media.mit.edu/logo-foundation/",
+          "caption": "LOGO-Foundation als Kontextquelle zu Paperts Konstruktionismus und Mindstorms",
+          "label": "LOGO Foundation"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "Papert, «Mindstorms», Buchcover 1980",
+        "license": "TODO — Buchcover, Zitatrecht prüfen",
+        "author": "Seymour Papert",
+        "source": "Basic Books, 1980 — ⚠️ Alternativbild (CC) suchen"
+      },
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mindstorms_(book)"
+        },
+        {
+          "label": "LOGO Foundation",
+          "url": "https://el.media.mit.edu/logo-foundation/"
+        }
+      ],
+      "connections": [
+        "papert-logo-1967",
+        "lego-1932",
+        "lego-mindstorms-1998",
+        "scratch-2003"
+      ],
+      "tags": [
+        "Mindstorms",
+        "Papert",
+        "Pädagogik",
+        "LEGO",
+        "Konstruktionismus"
+      ],
+      "source": "Papert, Seymour. Mindstorms: Children, Computers, and Powerful Ideas. Basic Books, 1980."
+    },
+    {
+      "id": "lego-mindstorms-1998",
+      "year": 1998,
+      "track": "E",
+      "title": "LEGO Mindstorms",
+      "subtitle": "Paperts Ideen werden zum Robotik-Baukasten",
+      "description": "1998 bringt LEGO mit Mindstorms einen Robotik-Baukasten auf den Markt, dessen Name direkt auf Paperts Buch von 1980 verweist. Sensoren, Motoren und programmierbare Steine verbinden das klassische LEGO-System mit Coding und physischem Experimentieren. Für viele Lernende wird Mindstorms damit zum greifbaren Übergang von Bauklotzlogik zu Robotik und Computational Thinking.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/LEGO_Mindstorms_Robot_with_Compass_%2B_Ultrasonic.jpg",
+        "caption": "LEGO-Mindstorms-Roboter mit Sensorik",
+        "license": "CC BY-SA 4.0",
+        "author": "Sicnag",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "LEGO Mindstorms",
+          "url": "https://www.lego.com/en-us/themes/mindstorms/about"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Lego_Mindstorms"
+        }
+      ],
+      "connections": [
+        "lego-1932",
+        "fischertechnik-1965",
+        "papert-logo-1967",
+        "mindstorms-1980",
+        "scratch-2003"
+      ],
+      "tags": [
+        "LEGO Mindstorms",
+        "Robotik",
+        "Sensoren",
+        "Papert",
+        "Computational Thinking"
+      ],
+      "source": "LEGO Mindstorms; Wikipedia, «Lego Mindstorms», CC BY-SA 4.0; Wikimedia Commons"
+    },
+    {
+      "id": "scratch-2003",
+      "year": 2003,
+      "track": "E",
+      "title": "Scratch",
+      "subtitle": "MIT Media Lab: visuelle Programmierung für Kinder (Mitch Resnick)",
+      "description": "Mitch Resnick (MIT Media Lab) veröffentlicht Scratch: eine blockbasierte Programmierumgebung, in der Kinder Programme wie Lego-Steine zusammenstecken. Scratch ist in über 70 Sprachen verfügbar und von mehr als 100 Millionen Nutzern weltweit verwendet. Es ist die direkte Vorgänger-Umgebung von Snap! und damit indirekt von TurtleStitch.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://scratch.mit.edu",
+          "caption": "Offizielle Scratch-Plattform mit Projekten, Editor und Lernressourcen",
+          "label": "scratch.mit.edu"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "Scratch Benutzeroberfläche",
+        "license": "CC BY-SA 4.0",
+        "author": "MIT Media Lab / Scratch Foundation",
+        "source": "scratch.mit.edu — ⚠️ Screenshot mit freier Lizenz prüfen"
+      },
+      "links": [
+        {
+          "label": "scratch.mit.edu",
+          "url": "https://scratch.mit.edu"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Scratch_(Programmiersprache)"
+        }
+      ],
+      "connections": [
+        "papert-logo-1967",
+        "mindstorms-1980",
+        "snap-2011"
+      ],
+      "tags": [
+        "Scratch",
+        "MIT",
+        "Resnick",
+        "Blockprogrammierung",
+        "Kinder"
+      ],
+      "source": "scratch.mit.edu; Wikipedia, «Scratch (Programmiersprache)», CC BY-SA 4.0"
+    },
+    {
+      "id": "snap-2011",
+      "year": 2011,
+      "track": "E",
+      "title": "Snap! (BYOB)",
+      "subtitle": "UC Berkeley: Erweitertes Scratch — Basis von TurtleStitch",
+      "description": "Jens Mönig (SAP) und Brian Harvey (UC Berkeley) entwickeln Snap! (ursprünglich BYOB — Build Your Own Blocks): eine Erweiterung von Scratch, die benutzerdefinierte Blöcke, Lambdas und fortgeschrittene Programmierkonzepte ermöglicht. Snap! ist die direkte Grundlage von TurtleStitch und hat heute (Version 11, 2025) eine eigene Neural-Networks-Bibliothek.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://snap.berkeley.edu",
+          "caption": "Offizielle Snap!-Plattform mit Editor, Beispielen und Dokumentation",
+          "label": "snap.berkeley.edu"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "Snap! Benutzeroberfläche",
+        "license": "AGPL v3",
+        "author": "Jens Mönig / Brian Harvey",
+        "source": "snap.berkeley.edu — ⚠️ Screenshot prüfen"
+      },
+      "links": [
+        {
+          "label": "snap.berkeley.edu",
+          "url": "https://snap.berkeley.edu"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/jmoenig/Snap"
+        }
+      ],
+      "connections": [
+        "scratch-2003",
+        "turtlestitch-2016"
+      ],
+      "tags": [
+        "Snap!",
+        "BYOB",
+        "UC Berkeley",
+        "Blockprogrammierung",
+        "AGPL"
+      ],
+      "source": "snap.berkeley.edu; GitHub jmoenig/Snap, AGPL v3"
+    },
+    {
+      "id": "turtlestitch-2016",
+      "year": 2016,
+      "track": "E",
+      "title": "TurtleStitch",
+      "subtitle": "Wien: Turtle Graphics → Stickmaschinencode (Andrea Mayr-Stalder u.a.)",
+      "description": "TurtleStitch (Wien, Österreich) erweitert Snap! um Stickerei-Funktionen: Turtle-Befehle erzeugen direkt maschinenlesbare Stickmuster (G-Code, DST). Die Sticknadel ist die neue Schildkröte. TurtleStitch verbindet Paperts LOGO-Pädagogik direkt mit digitaler Textilproduktion — und läuft offline auf dem Raspberry Pi in StitchLAB. Eines der wenigen österreichischen Projekte in der globalen Open-EdTech-Szene.",
+      "significance": "landmark",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://turtlestitch.org/static/img/turtle-b-on-w-on-b.png",
+          "caption": "TurtleStitch-Logo aus der offiziellen Plattformoberfläche",
+          "license": "AGPL v3",
+          "author": "TurtleStitch Contributors",
+          "source": "turtlestitch.org"
+        },
+        {
+          "type": "video",
+          "url": "https://www.youtube-nocookie.com/embed/GcaBKF86hBQ",
+          "caption": "Offizielles Video: TurtleStitch als coded embroidery platform"
+        },
+        {
+          "type": "embed",
+          "url": "https://turtlestitch.org/page/tutorials/",
+          "caption": "Offizielle Tutorials mit Lernbeispielen und Einführungen",
+          "label": "Tutorials"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "TurtleStitch Interface mit Stickmuster",
+        "license": "AGPL v3",
+        "author": "TurtleStitch Contributors",
+        "source": "turtlestitch.org — ⚠️ Screenshot mit Lizenzhinweis einholen"
+      },
+      "video": {
+        "url": "TODO",
+        "caption": "TurtleStitch Einführungsvideo — ⚠️ URL eintragen"
+      },
+      "links": [
+        {
+          "label": "turtlestitch.org",
+          "url": "https://www.turtlestitch.org"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/turtlestitch/turtlestitch"
+        }
+      ],
+      "connections": [
+        "snap-2011",
+        "papert-logo-1967",
+        "inkstitch-2017",
+        "stitchlab-2024"
+      ],
+      "tags": [
+        "TurtleStitch",
+        "Wien",
+        "Österreich",
+        "Turtle Graphics",
+        "Stickerei",
+        "Pädagogik"
+      ],
+      "source": "turtlestitch.org; GitHub turtlestitch/turtlestitch, AGPL v3"
+    },
+    {
+      "id": "anni-albers-1925",
+      "year": 1925,
+      "track": "G",
+      "title": "Anni Albers & Bauhaus-Weberei",
+      "subtitle": "Textile Fläche wird als Struktur, Raster und Entwurfssystem gedacht",
+      "description": "Anni Albers prägt die Bauhaus-Weberei als Ort, an dem textile Fläche nicht nur dekorativ, sondern konstruktiv gedacht wird. Muster, Bindung, Material und Raster werden zu einer Art textiler Logik, die später sehr gut zu digitalem Entwerfen, Punchcards und maschineller Stickerei passt. Für DIY-Stickmaschinen ist das wichtig, weil hier das Denken in strukturierter Fläche früh sichtbar wird.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Anni_Albers_%281899%E2%80%931994%29%2C_Design_for_Wall_Hanging%2C_1925.jpg",
+        "caption": "Entwurf von Anni Albers für einen Wandbehang von 1925",
+        "license": "Public Domain",
+        "author": "Anni Albers",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (EN)",
+          "url": "https://en.wikipedia.org/wiki/Anni_Albers"
+        }
+      ],
+      "connections": [
+        "jacquard-1801",
+        "schiffli-1863",
+        "wholegarment-1995"
+      ],
+      "tags": [
+        "Bauhaus",
+        "Anni Albers",
+        "Weberei",
+        "Fläche",
+        "Textildesign"
+      ],
+      "source": "Wikipedia, «Anni Albers», CC BY-SA 4.0; Wikimedia Commons"
+    },
+    {
+      "id": "nylon-1935",
+      "year": 1935,
+      "track": "G",
+      "title": "Nylon",
+      "subtitle": "Synthetische Faser verändert Textilproduktion und Oberflächen",
+      "description": "Mit Nylon wird 1935 erstmals eine vollständig synthetische Faser in großem Maßstab textil wirksam. Das Material verändert Dehnbarkeit, Haltbarkeit und Oberflächenwirkung von Stoffen und Garnen grundlegend. Für maschinelle Stickerei und DIY-Textilmaschinen ist Nylon wichtig, weil Faserverhalten direkt bestimmt, wie Garn geführt, gespannt und vernäht werden kann.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/%D0%9F%D0%BB%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B5%D0%B9%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2%D1%8B%D1%85_%D1%87%D1%83%D0%BB%D0%BE%D0%BA.jpg",
+        "caption": "Nylon-Strümpfe als frühes Massenprodukt der neuen Synthetikfaser",
+        "license": "CC BY-SA 4.0",
+        "author": "Gorlov",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Wikipedia (EN)",
+          "url": "https://en.wikipedia.org/wiki/Nylon"
+        }
+      ],
+      "connections": [
+        "digital-embroidery-1990",
+        "inkstitch-2017"
+      ],
+      "tags": [
+        "Nylon",
+        "Faserinnovation",
+        "Synthetik",
+        "Garn",
+        "Material"
+      ],
+      "source": "Wikipedia, «Nylon», CC BY-SA 4.0; Wikimedia Commons"
+    },
+    {
+      "id": "velcro-1948",
+      "year": 1948,
+      "track": "G",
+      "title": "Klettverschluss",
+      "subtitle": "Hook-and-loop als textile Oberfläche für Prototyping und Anpassung",
+      "description": "George de Mestral entwickelt 1948 den Klettverschluss als textile Haken-und-Flausch-Oberfläche. Das System macht reversible Befestigung, schnelle Anpassung und modulare Textilverbindungen alltagstauglich. Im DIY-Kontext ist das bis heute wichtig, weil Prototypen an Stickrahmen, Sensortextilien oder Maschinenzubehör oft erst über lösbare textile Verbindungen erprobt werden.",
+      "significance": "medium",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Velcro5.jpg",
+        "caption": "Klettband mit Haken- und Flauschseite als textile Oberflächenverbindung",
+        "license": "Public Domain",
+        "author": "Ildar Sagdejev (Specious)",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "VELCRO History",
+          "url": "https://www.velcro.com/news-and-blog/2016/11/an-idea-that-stuck-how-george-de-mestral-invented-the-velcro-fastener/"
+        },
+        {
+          "label": "Wikipedia (DE)",
+          "url": "https://de.wikipedia.org/wiki/Klettverschluss"
+        }
+      ],
+      "connections": [
+        "lilypad-2007",
+        "stitchlab-2024"
+      ],
+      "tags": [
+        "Klettverschluss",
+        "Oberfläche",
+        "Prototyping",
+        "Befestigung",
+        "Textil"
+      ],
+      "source": "VELCRO History; Wikipedia, «Klettverschluss», CC BY-SA 4.0"
+    },
+    {
+      "id": "wholegarment-1995",
+      "year": 1995,
+      "track": "G",
+      "title": "WHOLEGARMENT",
+      "subtitle": "Nahtlose Strickflächen direkt aus der Maschine",
+      "description": "SHIMA SEIKI führt 1995 WHOLEGARMENT als industrielle Ganzstrick-Technologie ein. Das Kleidungsstück kommt nahezu fertig aus der Maschine und verschiebt den Fokus von Zuschnitt und Montage hin zu digitaler Flächen- und Formsteuerung. Für offene Textilmaschinen wie OpenKnit oder Kniterate ist das ein wichtiger Referenzpunkt.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Computerized_Flat_Knitting_Machine_%28Jacquard_Machine%29.jpg/960px-Computerized_Flat_Knitting_Machine_%28Jacquard_Machine%29.jpg",
+        "caption": "Computerisierte Flachstrickmaschine als Referenz für digitale Ganzstrick-Technologien",
+        "license": "CC BY-SA 4.0",
+        "author": "Asivechowdhury",
+        "source": "Wikimedia Commons"
+      },
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://www.shimaseiki.com/wholegarment/",
+          "caption": "WHOLEGARMENT als nahtlose digitale Stricktechnologie von SHIMA SEIKI",
+          "label": "WHOLEGARMENT"
+        }
+      ],
+      "links": [
+        {
+          "label": "SHIMA SEIKI",
+          "url": "https://www.shimaseiki.com/wholegarment/"
+        }
+      ],
+      "connections": [
+        "anni-albers-1925",
+        "openknit-2014",
+        "kniterate-2015"
+      ],
+      "tags": [
+        "WHOLEGARMENT",
+        "Strickdesign",
+        "Nahtlos",
+        "Digitales Textil",
+        "Maschine"
+      ],
+      "source": "SHIMA SEIKI, WHOLEGARMENT"
+    },
+    {
+      "id": "pleats-please-1993",
+      "year": 1993,
+      "track": "G",
+      "title": "Pleats Please",
+      "subtitle": "Permanent plissierte Fläche wird als Alltagsmode neu gedacht",
+      "description": "Issey Miyake führt 1993 Pleats Please als dauerhaft plissierte Bekleidungslinie ein. Das Entscheidende ist nicht nur der Look, sondern die technische Behandlung der Stofffläche: leicht, beweglich, waschbar und in der Form stabil. Für die Timeline ist das wichtig, weil Textildesign hier als Zusammenspiel von Material, Verfahren und Körperbewegung sichtbar wird.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Issey_miyake%2C_pleats_please%2C_series_n.1%2C_a-i_1996-97_%28hasselt%2C_modemuseum%29.jpg",
+        "caption": "Pleats-Please-Kleidungsstueck als Beispiel fuer dauerhaft plissierte Textilflaechen",
+        "license": "CC BY-SA 4.0",
+        "author": "Francesco Bini",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "Issey Miyake: Pleats Please",
+          "url": "https://us.isseymiyake.com/pages/pleatsplease"
+        }
+      ],
+      "connections": [
+        "anni-albers-1925",
+        "nylon-1935",
+        "wholegarment-1995",
+        "stitchlab-2024"
+      ],
+      "tags": [
+        "Pleats Please",
+        "Mode",
+        "Flaeche",
+        "Polyester",
+        "Textildesign"
+      ],
+      "source": "Issey Miyake, Pleats Please; Wikimedia Commons"
+    },
+    {
+      "id": "lilypad-2007",
+      "year": 2007,
+      "track": "G",
+      "title": "LilyPad Arduino",
+      "subtitle": "Sewable Electronics verbindet Textilfläche und Open Hardware",
+      "description": "Leah Buechley entwickelt mit LilyPad Arduino eine für Textilien gedachte Mikrocontroller-Plattform mit leitfähigem Garn und nähbaren Modulen. Damit werden Stickerei, E-Textil und Interaktion direkt miteinander verschaltbar. Für DIY-Stickmaschinen ist das relevant, weil gestickte Linien nicht nur dekorativ, sondern auch funktionale Leiterbahnen werden können.",
+      "significance": "high",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flexible_Lilypad_Arduino.jpg",
+        "caption": "Flexible LilyPad-Arduino-Plattform für nähbare Elektronik",
+        "license": "CC BY-SA 4.0",
+        "author": "Evil Mad Scientist Laboratories",
+        "source": "Wikimedia Commons"
+      },
+      "links": [
+        {
+          "label": "SparkFun Guide",
+          "url": "https://learn.sparkfun.com/tutorials/lilypad-development-board-hookup-guide/all"
+        }
+      ],
+      "connections": [
+        "arduino-2005",
+        "inkstitch-2017",
+        "turtlestitch-2016",
+        "soft-robotics-toolkit-2013"
+      ],
+      "tags": [
+        "LilyPad",
+        "E-Textiles",
+        "Leitfähiges Garn",
+        "Arduino",
+        "Stickerei"
+      ],
+      "source": "SparkFun LilyPad Guide; Wikimedia Commons"
+    },
+    {
+      "id": "floor-turtle-1969",
+      "year": 1969,
+      "track": "C",
+      "title": "LOGO Floor Turtle",
+      "subtitle": "MIT: Paperts physischer Roboter — der erste DIY-Programmier-Körper",
+      "description": "Am MIT entsteht der erste physische «Floor Turtle»: ein kuppelförmiger Roboter mit eingebautem Stift, der durch LOGO-Befehle auf dem Boden Linien zeichnet. Der Turtle ist ein DIY-Prototyp — kein Produkt, sondern ein Werkzeug um zu lernen. Er ist der direkte Vorfahre des TurtleStitchBot: statt auf Papier zeichnet die Sticknadel auf Stoff.",
+      "significance": "landmark",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://el.media.mit.edu/logo-foundation/what_is_logo/logo_primer.html",
+          "caption": "LOGO Primer mit Einführung in die Floor-Turtle-Idee und frühe Turtle-Lernkonzepte",
+          "label": "LOGO Primer"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "Floor Turtle am MIT",
+        "license": "TODO",
+        "author": "TODO",
+        "source": "TODO — frei nutzbares Foto der Floor Turtle finden"
+      },
+      "links": [
+        {
+          "label": "LOGO Foundation",
+          "url": "https://el.media.mit.edu/logo-foundation/resources/logoupdate/v14n2/10.html"
+        },
+        {
+          "label": "Wikipedia: LOGO",
+          "url": "https://de.wikipedia.org/wiki/Logo_(Programmiersprache)"
+        }
+      ],
+      "connections": [
+        "papert-logo-1967",
+        "arduino-2005",
+        "stitchlab-turtlebot"
+      ],
+      "tags": [
+        "Floor Turtle",
+        "MIT",
+        "Papert",
+        "Roboter",
+        "DIY",
+        "Physisch"
+      ],
+      "source": "LOGO Foundation; Wikipedia, «Logo (Programmiersprache)», CC BY-SA 4.0"
+    },
+    {
+      "id": "stitchlab-classic",
+      "year": 2022,
+      "track": "F",
+      "title": "StitchLAB Classic",
+      "subtitle": "Erste Haushaltsnähmaschine zur digitalen Stickmaschine umgebaut",
+      "description": "StitchLAB Classic ist die erste Entwicklungslinie des Projekts: eine alte Haushaltsnähmaschine (Pfaff) wird mit einem aufgesetzten Gantry-System (X/Y-Achsen), Schrittmotoren und einem Raspberry Pi zur digitalen Stickmaschine umgebaut. Die Steuerung übernimmt Klipper — ursprünglich für 3D-Drucker entwickelt.",
+      "significance": "landmark",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://github.com/prntr/stitchLABsim",
+          "caption": "Projekt-Repository mit Entwicklungsstand und technischer Dokumentation",
+          "label": "StitchLAB Classic auf GitHub"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "StitchLAB Classic — erste umgebaute Pfaff",
+        "license": "CC BY-SA 4.0",
+        "author": "StitchLAB / prntr",
+        "source": "TODO — Eigenes Foto verwenden"
+      },
+      "links": [
+        {
+          "label": "GitHub StitchLAB",
+          "url": "https://github.com/prntr/stitchLABsim"
+        }
+      ],
+      "connections": [
+        "klipper-2016",
+        "reprap-2007",
+        "ayab-2011",
+        "stitchlab-os"
+      ],
+      "tags": [
+        "StitchLAB Classic",
+        "Pfaff",
+        "Umbau",
+        "Klipper",
+        "Raspberry Pi"
+      ],
+      "source": "StitchLAB Development Roadmap, prntr"
+    },
+    {
+      "id": "stitchlab-os",
+      "year": 2023,
+      "track": "F",
+      "title": "StitchLAB OS",
+      "subtitle": "Mainsail-Fork mit Stickerei-Modulen: Nadelsteuerung, G-Code Studio, TurtleStitch",
+      "description": "StitchLAB OS ist ein Fork des Open-Source-Frontends Mainsail (Vue.js), erweitert um stickmaschinespezifische Module: Nadelpositionssteuerung über Klipper-Makros, G-Code Studio zur Vorschau und Bearbeitung von Stickmustern im Browser, und TurtleStitch offline auf dem Raspberry Pi mit direktem G-Code-Export an Klipper.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://github.com/prntr",
+          "caption": "Projektprofil mit StitchLAB-OS-Kontext und verknüpften Repositories",
+          "label": "prntr auf GitHub"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "StitchLAB OS Interface im Browser",
+        "license": "MIT / GPL",
+        "author": "StitchLAB / prntr",
+        "source": "TODO — Screenshot der Oberfläche"
+      },
+      "links": [
+        {
+          "label": "Mainsail (Upstream)",
+          "url": "https://docs.mainsail.xyz"
+        },
+        {
+          "label": "GitHub StitchLAB",
+          "url": "https://github.com/prntr"
+        }
+      ],
+      "connections": [
+        "mainsail-2020",
+        "turtlestitch-2016",
+        "stitchlab-classic",
+        "stitchlab-hybrid"
+      ],
+      "tags": [
+        "StitchLAB OS",
+        "Mainsail",
+        "Vue.js",
+        "Browser",
+        "G-Code Studio",
+        "TurtleStitch"
+      ],
+      "source": "stitchlabos README; Mainsail Upstream Docs"
+    },
+    {
+      "id": "stitchlab-hybrid",
+      "year": 2024,
+      "track": "F",
+      "title": "StitchLAB Hybrid",
+      "subtitle": "Abnehmbarer Gantry — dieselbe Maschine näht UND stickt",
+      "description": "StitchLAB Hybrid ist die zweite Entwicklungslinie: ein abnehmbarer Gantry-Aufsatz mit Klemmechanismus und elektrischem Stecker ermöglicht es, dieselbe Nähmaschine zwischen Normal- und Stickmodus umzuschalten. Der Gantry ist so konstruiert, dass er an unterschiedliche Nähmaschinen-Geometrien angepasst werden kann.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://github.com/prntr/stitchLABsim",
+          "caption": "Roadmap und technische Entwicklung des Hybrid-Umbaukonzepts",
+          "label": "Hybrid-Roadmap"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "StitchLAB Hybrid — abnehmbarer Gantry auf Pfaff",
+        "license": "CC BY-SA 4.0",
+        "author": "StitchLAB / prntr",
+        "source": "TODO — CAD-Zeichnung oder Foto"
+      },
+      "links": [
+        {
+          "label": "Roadmap",
+          "url": "https://github.com/prntr/stitchLABsim"
+        }
+      ],
+      "connections": [
+        "stitchlab-classic",
+        "stitchlab-os",
+        "stitchlab-2024"
+      ],
+      "tags": [
+        "Hybrid",
+        "Gantry",
+        "Mechanik",
+        "Klipper",
+        "CNC",
+        "Umbau"
+      ],
+      "source": "StitchLAB Development Roadmap, prntr"
+    },
+    {
+      "id": "stitchlab-controller",
+      "year": 2024,
+      "track": "F",
+      "title": "StitchLAB Controller V1",
+      "subtitle": "Mikro-Gamepad mit Touch-Display (Lilygo T4 S3 + Adafruit Mini Gamepad)",
+      "description": "Der StitchLAB Controller V1 ist ein kompaktes Handgerät — ein Mikro-Gamepad mit Touch-Display auf Basis des Lilygo T4 S3 und des Adafruit Mini I2C Gamepads. Er kommuniziert über ESP-NOW (bidirektional) via einem StitchLAB-Dongle mit Klipper/Moonraker. Das Interface passt sich dynamisch dem Controller-Typ an.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://github.com/prntr/stitchLABsim",
+          "caption": "Roadmap und Projektdokumentation zum Controller-Konzept",
+          "label": "Controller-Roadmap"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "StitchLAB Controller V1",
+        "license": "CC BY-SA 4.0",
+        "author": "StitchLAB / prntr",
+        "source": "TODO — Foto des Controllers"
+      },
+      "links": [
+        {
+          "label": "Lilygo T4 S3",
+          "url": "https://www.lilygo.cc"
+        },
+        {
+          "label": "Adafruit Mini Gamepad",
+          "url": "https://www.adafruit.com"
+        }
+      ],
+      "connections": [
+        "stitchlab-2024",
+        "stitchlab-os",
+        "arduino-2005"
+      ],
+      "tags": [
+        "Controller",
+        "ESP-NOW",
+        "Gamepad",
+        "ESP32",
+        "HCI",
+        "Wireless"
+      ],
+      "source": "StitchLAB Development Roadmap, prntr"
+    },
+    {
+      "id": "stitchlab-smartpedal",
+      "year": 2025,
+      "track": "F",
+      "title": "SmartFootPedal",
+      "subtitle": "Intelligentes Fußpedal — StitchLAB wie eine reguläre Nähmaschine bedienen",
+      "description": "Das SmartFootPedal ist ein offenes Hardware-Projekt: ein Fußpedal, das über ESP-NOW mit Klipper/Moonraker kommuniziert und die Geschwindigkeitssteuerung von StitchLAB ermöglicht — genau wie das Pedal einer konventionellen Nähmaschine. Es verbindet vertraute Körpergeste (Fußdruck) mit digitaler Maschinensteuerung.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://github.com/prntr/stitchLABsim",
+          "caption": "Roadmap und technische Beschreibung des SmartFootPedal-Konzepts",
+          "label": "SmartFootPedal-Roadmap"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "SmartFootPedal Prototyp",
+        "license": "CC BY-SA 4.0",
+        "author": "StitchLAB / prntr",
+        "source": "TODO — Foto"
+      },
+      "links": [
+        {
+          "label": "Roadmap",
+          "url": "https://github.com/prntr/stitchLABsim"
+        }
+      ],
+      "connections": [
+        "stitchlab-2024",
+        "stitchlab-controller"
+      ],
+      "tags": [
+        "Fußpedal",
+        "ESP-NOW",
+        "Bedienung",
+        "Metapher",
+        "Körper"
+      ],
+      "source": "StitchLAB Development Roadmap, prntr"
+    },
+    {
+      "id": "stitchlab-turtlebot",
+      "year": 2025,
+      "track": "F",
+      "title": "TurtleStitchBot",
+      "subtitle": "Paperts Schildkröte als Stickroboter — Programmiersprache wird greifbar",
+      "description": "Der TurtleStitchBot ist die physische Reinkarnation von Paperts LOGO-Turtle (1969): ein kleines Gerät, das über vereinfachte Turtle-Befehle und ein reduziertes Interface steuerbar ist, Zeichnungen erzeugt — und diese direkt zu StitchLAB exportieren kann. Die Programmiersprache wird buchstäblich greifbar. Vom Floor Turtle 1969 zum Stickroboter 2025: derselbe Gedanke, neue Materialität.",
+      "significance": "landmark",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://www.turtlestitch.org",
+          "caption": "TurtleStitch als pädagogische und technische Grundlage des Bots",
+          "label": "TurtleStitch"
+        },
+        {
+          "type": "embed",
+          "url": "https://github.com/prntr/stitchLABsim",
+          "caption": "Roadmap des TurtleStitchBot im StitchLAB-Kontext",
+          "label": "TurtleBot-Roadmap"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "TurtleStitchBot Prototyp",
+        "license": "CC BY-SA 4.0",
+        "author": "StitchLAB / prntr",
+        "source": "TODO — Foto oder Rendering"
+      },
+      "links": [
+        {
+          "label": "TurtleStitch",
+          "url": "https://www.turtlestitch.org"
+        },
+        {
+          "label": "Roadmap",
+          "url": "https://github.com/prntr/stitchLABsim"
+        }
+      ],
+      "connections": [
+        "floor-turtle-1969",
+        "turtlestitch-2016",
+        "stitchlab-2024",
+        "papert-logo-1967"
+      ],
+      "tags": [
+        "TurtleStitchBot",
+        "Roboter",
+        "Turtle",
+        "Papert",
+        "Physisch",
+        "Programmieren"
+      ],
+      "source": "StitchLAB Development Roadmap, prntr"
+    },
+    {
+      "id": "stitchlab-robot",
+      "year": 2026,
+      "track": "F",
+      "title": "StitchLAB Robot",
+      "subtitle": "Völlig neue Klasse digitaler Näh- und Stickmaschinen (in Entwicklung)",
+      "description": "StitchLAB Robot ist die dritte und ambitionierteste Entwicklungslinie: keine Umrüstung einer bestehenden Maschine, sondern ein vollständig neues System für digitales Nähen und Sticken. Ein offenes, modulares Roboter-Nähsystem — konzipiert als Referenzdesign für die Maker-Community.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://github.com/prntr/stitchLABsim",
+          "caption": "Roadmap und Referenzkonzept des geplanten StitchLAB Robot",
+          "label": "Robot-Roadmap"
+        }
+      ],
+      "image": {
+        "url": "TODO",
+        "caption": "StitchLAB Robot — Konzept",
+        "license": "CC BY-SA 4.0",
+        "author": "StitchLAB / prntr",
+        "source": "TODO — CAD oder Skizze"
+      },
+      "links": [
+        {
+          "label": "GitHub StitchLABsim",
+          "url": "https://github.com/prntr/stitchLABsim"
+        }
+      ],
+      "connections": [
+        "stitchlab-hybrid",
+        "stitchlab-2024",
+        "klipper-2016"
+      ],
+      "tags": [
+        "Roboter",
+        "Neuentwicklung",
+        "Modular",
+        "Referenzdesign",
+        "Zukunft"
+      ],
+      "source": "StitchLAB Development Roadmap, prntr"
+    },
+    {
+      "id": "dampfmaschine-1769",
+      "year": 1769,
+      "month": null,
+      "track": "D",
+      "title": "Dampfmaschine (Watt)",
+      "subtitle": "James Watt verbessert die Dampfmaschine — Motor der Industrialisierung",
+      "description": "James Watt verbessert 1769 die Dampfmaschine von Thomas Newcomen durch einen separaten Kondensator, was den Wirkungsgrad erheblich steigert. Die verbesserte Dampfmaschine wird zur zentralen Antriebskraft der Industriellen Revolution. Sie treibt Webstühle, Lokomotiven und Fabriken an und verändert die menschliche Arbeit grundlegend.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Maquina_vapor_Watt_ETSIIM.jpg",
+          "caption": "Nachbau einer Wattschen Dampfmaschine",
+          "license": "CC BY-SA 3.0",
+          "author": "Nicolás Pérez",
+          "source": "Wikimedia Commons"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/Dampfmaschine"
+        }
+      ],
+      "connections": [
+        "bouchon-1725",
+        "jacquard-1801"
+      ],
+      "tags": [
+        "Industrialisierung",
+        "Energie",
+        "Mechanisierung"
+      ],
+      "source": "Watt, J. (1769). British Patent No. 913."
+    },
+    {
+      "id": "volta-batterie-1800",
+      "year": 1800,
+      "month": null,
+      "track": "D",
+      "title": "Volta-Batterie",
+      "subtitle": "Alessandro Volta erfindet die erste elektrische Batterie",
+      "description": "Alessandro Volta stellt 1800 der Royal Society in London seine Voltasche Säule vor — den ersten elektrochemischen Stromspeicher der Geschichte. Abwechselnde Scheiben aus Zink und Kupfer, getrennt durch befeuchtete Tücher, erzeugen einen kontinuierlichen elektrischen Strom. Diese Erfindung ermöglicht systematische Elektrizitätsforschung und ist Grundlage aller späteren Batterietechnologien.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Volta_pile.svg",
+          "caption": "Schematische Darstellung der Voltaschen Säule",
+          "license": "Public Domain",
+          "author": "Unbekannt",
+          "source": "Wikimedia Commons"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/Voltasche_S%C3%A4ule"
+        }
+      ],
+      "connections": [
+        "dampfmaschine-1769",
+        "faraday-induktion-1831"
+      ],
+      "tags": [
+        "Elektrizität",
+        "Energie",
+        "Physik"
+      ],
+      "source": "Volta, A. (1800). On the electricity excited by the mere contact. Phil. Trans. Royal Soc."
+    },
+    {
+      "id": "faraday-induktion-1831",
+      "year": 1831,
+      "month": null,
+      "track": "D",
+      "title": "Elektromagnetische Induktion (Faraday)",
+      "subtitle": "Grundlage aller Elektromotoren und Generatoren",
+      "description": "Michael Faraday entdeckt 1831, dass ein sich veränderndes Magnetfeld in einem Leiter elektrischen Strom erzeugt. Dieses Prinzip der elektromagnetischen Induktion ist die Grundlage für Elektromotoren, Generatoren und Transformatoren. Ohne Faradays Entdeckung gäbe es keine elektrische Energie in Haushalten und Fabriken.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Faraday_disk_generator.jpg",
+          "caption": "Faradays erste Dynamomaschine — Urmodell aller Generatoren",
+          "license": "Public Domain",
+          "author": "Unbekannt",
+          "source": "Wikimedia Commons"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/Elektromagnetische_Induktion"
+        }
+      ],
+      "connections": [
+        "volta-batterie-1800",
+        "morse-1837"
+      ],
+      "tags": [
+        "Elektrizität",
+        "Physik",
+        "Elektromagnetismus"
+      ],
+      "source": "Faraday, M. (1832). Experimental Researches in Electricity. Phil. Trans. Royal Soc."
+    },
+    {
+      "id": "telefon-1876",
+      "year": 1876,
+      "month": 3,
+      "track": "D",
+      "title": "Telefon (Bell)",
+      "subtitle": "Alexander Graham Bell überträgt erstmals menschliche Sprache elektrisch",
+      "description": "Alexander Graham Bell erhält 1876 ein US-Patent auf das Telefon und überträgt erstmals eine vollständige Konversation per Elektrizität. Das Telefon verändert Kommunikation, Handel und gesellschaftliches Leben grundlegend. Es ist die erste Technologie, die menschliche Stimme über weite Distanzen in Echtzeit übermitteln kann.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Alexander_Graham_Bell_-_first_telephone.jpg",
+          "caption": "Bells Originaltelefon von 1876 im Smithsonian Museum",
+          "license": "Public Domain",
+          "author": "Unbekannt",
+          "source": "Wikimedia Commons"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/Telefon"
+        }
+      ],
+      "connections": [
+        "morse-1837",
+        "hollerith-1890"
+      ],
+      "tags": [
+        "Kommunikation",
+        "Elektrizität",
+        "Telekommunikation"
+      ],
+      "source": "Bell, A.G. (1876). US Patent 174,465: Improvement in Telegraphy."
+    },
+    {
+      "id": "edison-stromnetz-1882",
+      "year": 1882,
+      "month": 9,
+      "track": "D",
+      "title": "Edisons erstes Stromnetz",
+      "subtitle": "Öffentliche Elektrizität für New York — Beginn der Elektrifizierung",
+      "description": "Thomas Edison eröffnet am 4. September 1882 die Pearl Street Station in New York — das erste öffentliche Gleichstrom-Versorgungsnetz der Welt. 85 Haushalte und Betriebe erhalten zunächst elektrisches Licht. Diese Infrastruktur legt den Grundstein für die umfassende Elektrifizierung der modernen Gesellschaft.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Edison_Pearl_Street_station_1882.jpg",
+          "caption": "Edisons Pearl Street Station, New York 1882",
+          "license": "Public Domain",
+          "author": "Unbekannt",
+          "source": "Wikimedia Commons"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/Pearl_Street_Station"
+        }
+      ],
+      "connections": [
+        "faraday-induktion-1831",
+        "telefon-1876",
+        "hollerith-1890"
+      ],
+      "tags": [
+        "Elektrizität",
+        "Infrastruktur",
+        "Edison"
+      ],
+      "source": "Hughes, T.P. (1983). Networks of Power. Johns Hopkins University Press."
+    },
+    {
+      "id": "marconi-radio-1901",
+      "year": 1901,
+      "month": 12,
+      "track": "D",
+      "title": "Marconis erstes Transatlantiksignal",
+      "subtitle": "Drahtlose Kommunikation über den Atlantik — Beginn des Rundfunks",
+      "description": "Guglielmo Marconi sendet am 12. Dezember 1901 von Cornwall nach Neufundland das erste transatlantische Funksignal (Morsecode). Damit beweist er, dass drahtlose Kommunikation über Kontinente möglich ist. Radio wird in der Folge zum ersten Massenmedium und Vorbild für alle drahtlosen Übertragungstechnologien.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Guglielmo_Marconi_1901_wireless_signal.jpg",
+          "caption": "Marconi bei seiner Transatlantikübertragung 1901",
+          "license": "Public Domain",
+          "author": "Unbekannt",
+          "source": "Wikimedia Commons"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/Guglielmo_Marconi"
+        }
+      ],
+      "connections": [
+        "morse-1837",
+        "telefon-1876",
+        "hollerith-1890"
+      ],
+      "tags": [
+        "Kommunikation",
+        "Funk",
+        "Drahtlos"
+      ],
+      "source": "Weightman, G. (2003). Signor Marconi's Magic Box. HarperCollins."
+    },
+    {
+      "id": "fernsehen-1926",
+      "year": 1926,
+      "month": 1,
+      "track": "D",
+      "title": "Fernsehen (Baird)",
+      "subtitle": "John Logie Baird demonstriert erstmals bewegte Bilder per Funk",
+      "description": "John Logie Baird führt am 26. Januar 1926 in London erstmals ein funktionierendes mechanisches Fernsehsystem öffentlich vor. Das System überträgt Bilder mit 12,5 Halbbildern pro Sekunde. Das Fernsehen entwickelt sich zum einflussreichsten Massenmedium des 20. Jahrhunderts und verändert Information, Unterhaltung und Bildung.",
+      "significance": "medium",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/John_Logie_Baird_with_television_transmitter_1925.jpg",
+          "caption": "John Logie Baird mit seinem frühen Fernsehgerät, ca. 1925",
+          "license": "Public Domain",
+          "author": "Unbekannt",
+          "source": "Wikimedia Commons"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/Fernsehen"
+        }
+      ],
+      "connections": [
+        "marconi-radio-1901",
+        "nc-machine-1952"
+      ],
+      "tags": [
+        "Medien",
+        "Kommunikation",
+        "Bild"
+      ],
+      "source": "Burns, R.W. (1998). Television: An International History of the Formative Years. IET."
+    },
+    {
+      "id": "eniac-1945",
+      "year": 1945,
+      "month": null,
+      "track": "D",
+      "title": "ENIAC",
+      "subtitle": "Erster programmierbarer elektronischer Universalrechner (USA)",
+      "description": "ENIAC (Electronic Numerical Integrator and Computer) wird 1945 an der Universität Pennsylvania fertiggestellt — der erste voll elektronische, programmierbare Universalrechner. Das 30 Tonnen schwere Gerät führt 5.000 Additionen pro Sekunde durch. ENIAC markiert den Beginn des digitalen Computerzeitalters und eröffnet völlig neue Möglichkeiten wissenschaftlicher Berechnung.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Eniac.jpg",
+          "caption": "ENIAC — erster elektronischer Universalrechner, 1945",
+          "license": "Public Domain",
+          "author": "US Army",
+          "source": "Wikimedia Commons"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/ENIAC"
+        }
+      ],
+      "connections": [
+        "ada-lovelace-1843",
+        "babbage-1837",
+        "nc-machine-1952"
+      ],
+      "tags": [
+        "Computer",
+        "Digitaltechnik",
+        "Geschichte"
+      ],
+      "source": "Goldstine, H.H. (1972). The Computer from Pascal to von Neumann. Princeton UP."
+    },
+    {
+      "id": "transistor-1947",
+      "year": 1947,
+      "month": 12,
+      "track": "D",
+      "title": "Transistor (Bell Labs)",
+      "subtitle": "Halbleiter ersetzen Röhren — Grundbaustein der Mikroelektronik",
+      "description": "William Shockley, John Bardeen und Walter Brattain erfinden 1947 bei Bell Labs den Transistor. Der Transistor ersetzt die fehleranfällige und energiehungrige Elektronenröhre und ermöglicht immer kleinere, schnellere und günstigere Computer. Ohne den Transistor gäbe es keine Mikrochips, Smartphones oder modernen Computer.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Replica-of-first-transistor.jpg",
+          "caption": "Nachbau des ersten Transistors von Bell Labs, 1947",
+          "license": "Public Domain",
+          "author": "Unitronic",
+          "source": "Wikimedia Commons"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/Transistor"
+        }
+      ],
+      "connections": [
+        "eniac-1945",
+        "nc-machine-1952",
+        "industrial-robot-1961"
+      ],
+      "tags": [
+        "Halbleiter",
+        "Elektronik",
+        "Miniaturisierung"
+      ],
+      "source": "Riordan, M. & Hoddeson, L. (1997). Crystal Fire. Norton."
+    },
+    {
+      "id": "ibm-pc-1981",
+      "year": 1981,
+      "month": 8,
+      "track": "D",
+      "title": "IBM PC",
+      "subtitle": "Der Personal Computer wird zum Massenprodukt",
+      "description": "IBM stellt im August 1981 den IBM Personal Computer 5150 vor, der offene Architektur und marktgängige Komponenten verwendet. Der IBM PC und seine zahlreichen Nachbauten (Klone) machen den Heimcomputer für Unternehmen und Privatpersonen erschwinglich. Dies löst eine fundamentale Demokratisierung der Datenverarbeitung aus.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/IBM_PC_5150.jpg",
+          "caption": "IBM PC 5150 — der erste Personal Computer von IBM, 1981",
+          "license": "CC BY-SA 2.0",
+          "author": "Ruben de Rijcke",
+          "source": "Wikimedia Commons"
+        }
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/IBM_PC"
+        }
+      ],
+      "connections": [
+        "transistor-1947",
+        "internet-1983"
+      ],
+      "tags": [
+        "Computer",
+        "Personal Computer",
+        "Massenprodukt"
+      ],
+      "source": "Carroll, P. (1993). Big Blues: The Unmaking of IBM. Crown."
+    },
+    {
+      "id": "iphone-2007",
+      "year": 2007,
+      "month": 1,
+      "track": "D",
+      "title": "iPhone / Smartphone-Ära",
+      "subtitle": "Apple vereint Computer, Telefon und Internet in einem Gerät",
+      "description": "Apple stellt am 9. Januar 2007 das erste iPhone vor und vereint Touchscreen-Computer, Mobiltelefon und Internet-Client in einem kompakten Gerät. Das iPhone begründet die moderne Smartphone-Ära und verändert Kommunikation, Navigation, Medienkonsum und Bildung. Heute nutzen weltweit über 6 Milliarden Menschen ein Mobiltelefon.",
+      "significance": "high",
+      "media": [],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/IPhone_(1._Generation)"
+        }
+      ],
+      "connections": [
+        "ibm-pc-1981",
+        "internet-1983",
+        "www-1991",
+        "wikipedia-2001"
+      ],
+      "tags": [
+        "Mobiltelefon",
+        "Smartphone",
+        "Apple"
+      ],
+      "source": "Merchant, B. (2017). The One Device: The Secret History of the iPhone. Little, Brown."
+    },
+    {
+      "id": "alexnet-2012",
+      "year": 2012,
+      "month": null,
+      "track": "D",
+      "title": "Deep Learning / AlexNet",
+      "subtitle": "Neuronale Netze schlagen menschliche Bilderkennung — KI-Durchbruch",
+      "description": "Das neuronale Netz AlexNet von Alex Krizhevsky, Ilya Sutskever und Geoffrey Hinton gewinnt 2012 den ImageNet-Wettbewerb mit deutlichem Abstand vor klassischen Methoden. Dieser Erfolg löst weltweit eine Welle von Investitionen in Deep Learning aus. Bildanalyse, Spracherkennung und viele weitere KI-Anwendungen werden seitdem durch tiefe neuronale Netze dominiert.",
+      "significance": "high",
+      "media": [],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/AlexNet"
+        }
+      ],
+      "connections": [
+        "ibm-pc-1981",
+        "internet-1983",
+        "chatgpt-2022"
+      ],
+      "tags": [
+        "KI",
+        "Deep Learning",
+        "Bilderkennung"
+      ],
+      "source": "Krizhevsky, A. et al. (2012). ImageNet Classification with Deep Convolutional Neural Networks. NIPS."
+    },
+    {
+      "id": "chatgpt-2022",
+      "year": 2022,
+      "month": 11,
+      "track": "D",
+      "title": "Generative KI / ChatGPT",
+      "subtitle": "OpenAI macht generative KI öffentlich zugänglich",
+      "description": "OpenAI veröffentlicht im November 2022 ChatGPT — einen großen Sprachmodell-Chatbot, der in natürlicher Sprache kommuniziert, Texte verfasst, Code schreibt und Fragen beantwortet. Innerhalb von zwei Monaten erreicht ChatGPT 100 Millionen Nutzerinnen und Nutzer. Generative KI verändert Bildung, Kreativwirtschaft und Wissensarbeit grundlegend.",
+      "significance": "high",
+      "media": [],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://de.wikipedia.org/wiki/ChatGPT"
+        }
+      ],
+      "connections": [
+        "alexnet-2012",
+        "wikipedia-2001",
+        "www-1991"
+      ],
+      "tags": [
+        "KI",
+        "Sprachmodell",
+        "Generative KI"
+      ],
+      "source": "OpenAI (2022). ChatGPT: Optimizing Language Models for Dialogue. openai.com."
+    },
+    {
+      "id": "claude-code-2025",
+      "year": 2025,
+      "month": 5,
+      "track": "D",
+      "title": "Claude Code",
+      "subtitle": "Agentisches Coding im Terminal wird als Produktform sichtbar",
+      "description": "Mit Claude Code wird 2025 ein KI-Werkzeug prominent, das nicht nur Code vorschlaegt, sondern ein Projekt im Terminal analysiert, Dateien aendert, Befehle ausfuehrt und mit bestehenden Toolchains arbeitet. Das ist kein erster Coding-Assistent insgesamt, aber ein gut belegter Meilenstein fuer agentisches Coding in realen Entwicklungsumgebungen. Fuer offene Textilhardware ist das relevant, weil Dokumentation, Firmware, CAM-Skripte und Maschinenkonfigurationen damit in zusammenhaengenden Arbeitsablaeufen bearbeitet werden koennen.",
+      "significance": "high",
+      "media": [
+        {
+          "type": "embed",
+          "url": "https://www.anthropic.com/claude-code",
+          "caption": "Offizielle Produktseite zu Claude Code als terminalbasiertem Coding-Agenten",
+          "label": "Anthropic"
+        }
+      ],
+      "links": [
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        },
+        {
+          "label": "Code with Claude 2025",
+          "url": "https://www.anthropic.com/events/code-with-claude-2025"
+        }
+      ],
+      "connections": [
+        "deep-learning-2012",
+        "github-2008",
+        "stitchlab-2024",
+        "hilo-spinning-machine-2015"
+      ],
+      "tags": [
+        "KI-Agent",
+        "Coding",
+        "Terminal",
+        "Claude",
+        "Automatisierung"
+      ],
+      "source": "Anthropic, «Claude Code»; Anthropic, «Code with Claude 2025»"
+    }
+  ]
+}

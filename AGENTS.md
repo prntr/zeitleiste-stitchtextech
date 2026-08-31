@@ -1,5 +1,10 @@
 # AGENTS.md — StitchTexTech Timeline
 
+> `AGENTS.md` is the canonical instruction file for **every** agent (Claude Code, Codex,
+> Mistral). `CLAUDE.md` is a symlink to it — edit `AGENTS.md` only, never the symlink.
+> House rules: see `~/Code/_std/AGENTS.base.md`.
+
+
 Dieses Dokument steuert KI-Agenten bei der Arbeit an diesem Projekt.
 Lies es vollständig bevor du Code schreibst oder Inhalte recherchierst.
 
@@ -7,7 +12,7 @@ Lies es vollständig bevor du Code schreibst oder Inhalte recherchierst.
 
 ## Projektkontext
 
-**StitchTexTech** ist eine interaktive Web-Zeitleiste für den Bildungsbereich (LV Stitch(x), Lehramt Technik & Design, AHS Österreich).
+**StitchTexTech** ist eine interaktive Web-Zeitleiste für den Bildungsbereich ( Uni LV für angehende LehrerInnen im Rahmen des Projekts Stitch(x), Lehramt Technik & Design, AHS Österreich).
 Zielgruppe: angehende Lehrpersonen mit textilen Vorkenntnissen, wenig Tech-Background.
 Intellektueller Rahmen: Papert-Konstruktionismus, Gershenfeld „How to Make Almost Everything".
 
@@ -51,6 +56,7 @@ ZeitleisteStitchTexTech/
 ├── index.html          # Einzige HTML-Seite
 ├── style.css           # Alle Styles
 ├── main.js             # Gesamte App-Logik (IIFE)
+├── design-example/     # Archiviertes Redesign-Beispiel, nicht Source of Truth
 ├── data/
 │   ├── timeline.json   # Primär: wird per fetch() geladen (events, tracks, sessions)
 │   ├── timeline.js     # Legacy: window.__timelineData = {...} (nicht mehr aktiv)
@@ -64,6 +70,8 @@ ZeitleisteStitchTexTech/
 ```
 
 **Wichtig:** Die App lädt `data/timeline.json` und `data/sources.json` per `fetch()` (kein globales `window.__timelineData` mehr). Für lokale Entwicklung muss ein HTTP-Server laufen (z.B. `python3 -m http.server`).
+
+**Hinweis:** `design-example/` enthält ein archiviertes Redesign mit eigener Typografie- und Farbexploration. Verbindlich für die Haupt-App im Root bleiben die hier dokumentierten Vorgaben.
 
 **LocalStorage:** Editierungen werden unter dem Schlüssel `stt-local-edits` gespeichert (JSON-Objekt, keyed by Event-ID). Beim Seitenaufruf werden Overrides automatisch auf die geladenen JSON-Daten angewendet.
 

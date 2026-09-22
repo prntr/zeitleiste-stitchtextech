@@ -433,3 +433,15 @@ Medium nur eintragen wenn alle `ja`:
 - Kurze Statusmeldungen am Ende jeder Phase
 - Offene Lizenzfragen markieren: `⚠️ LIZENZ PRÜFEN:`
 - Fehlende Ressourcen: `"url": "TODO"` — nie erfinden
+
+<!-- BEGIN _STD:SHARED_REFERENCES -->
+## Shared references
+
+- House rules and Code layout: `~/Code/_std/AGENTS.base.md`. Claude Code and Codex
+  load it as their global instructions; do not read it a second time. Only an agent
+  without a global instruction file reads it from here.
+- Delivery pipeline: `~/Code/active/plattform/pipeline.md`. Read it before deploying
+  or touching devices or the network; local-only work does not need it.
+
+This managed block is checked by `~/Code/_std/bin/agents-doctor`; keep its markers intact.
+<!-- END _STD:SHARED_REFERENCES -->

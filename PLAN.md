@@ -4,6 +4,8 @@
 **Lizenz:** CC BY-SA 4.0 (Inhalt), MIT (Code)
 **Zuletzt aktualisiert:** 2026-03-09
 
+Hinweis: Das zwischenzeitliche Redesign wurde als Referenz unter `design-example/` archiviert. Die Hauptversion im Projekt-Root ist wieder die klassische App.
+
 ---
 
 ## Projektziel

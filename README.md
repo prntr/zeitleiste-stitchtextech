@@ -5,6 +5,7 @@ Interaktive Web-Zeitleiste zur Geschichte von Näh- & Stickmaschinen, Open-Sourc
 Entwickelt für die Lehrveranstaltung **Stitch(x)** — Lehramt Technik & Design, AHS Österreich.
 
 **→ [Live-App](https://prntr.github.io/zeitleiste-stitchtextech/)**
+**→ Designbeispiel lokal/archiviert unter `design-example/`**
 
 ---
 

@@ -1,0 +1,947 @@
+{
+  "sources": [
+    {
+      "id": "wikipedia-naehmaschine",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Nähmaschine",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/N%C3%A4hmaschine",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "wikipedia-wiesenthal",
+      "type": "article",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "title": "Charles Fredrick Wiesenthal",
+      "journal": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Charles_Fredrick_Wiesenthal",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "commons-needle-parts",
+      "type": "website",
+      "author": "Txinviolet",
+      "year": 2017,
+      "title": "SewingMachineNeedle.parts.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SewingMachineNeedle.parts.jpg",
+      "license": "Public Domain",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-jacquard",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Jacquardwebstuhl",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Jacquardwebstuhl",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "wikipedia-bouchon",
+      "type": "article",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "title": "Basile Bouchon",
+      "journal": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Basile_Bouchon",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "wikipedia-howe",
+      "type": "article",
+      "author": "Wikipedia contributors",
+      "year": 2024,
+      "title": "Elias Howe",
+      "journal": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Elias_Howe",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "espacenet-howe-4750",
+      "type": "patent",
+      "author": "Howe, Elias",
+      "year": 1846,
+      "title": "Improvement in Sewing Machines (US Patent 4750)",
+      "url": "https://patents.google.com/patent/US4750",
+      "license": "Public Domain"
+    },
+    {
+      "id": "wikipedia-thimonnier",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Barthélemy Thimonnier",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Barth%C3%A9lemy_Thimonnier",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "wikipedia-embroidery-machine",
+      "type": "article",
+      "author": "Wikipedia contributors",
+      "year": 2024,
+      "title": "Embroidery machine",
+      "journal": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Embroidery_machine",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "ayab-website",
+      "type": "website",
+      "author": "AYAB Community",
+      "year": 2011,
+      "title": "AYAB — All Yarns Are Beautiful",
+      "url": "https://ayab.de",
+      "license": "GPL v3",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "ayab-media-page",
+      "type": "website",
+      "author": "AYAB Community",
+      "year": 2026,
+      "title": "AYAB Features and Interface Images",
+      "url": "https://www.ayab-knitting.com/features",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "ayab-github",
+      "type": "github",
+      "author": "AYAB Community",
+      "year": 2011,
+      "title": "ayab-firmware (GitHub)",
+      "url": "https://github.com/AllYarnsAreBeautiful/ayab-firmware",
+      "license": "GPL v3",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "knitic-github",
+      "type": "github",
+      "author": "Fab Lab Barcelona / fashiontec",
+      "year": 2012,
+      "title": "knitic (GitHub)",
+      "url": "https://github.com/fashiontec/knitic",
+      "license": "LGPL v3",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "openknit-website",
+      "type": "website",
+      "author": "Rubio, Gerard",
+      "year": 2014,
+      "title": "OpenKnit — Open Knitting Machine",
+      "url": "http://openknit.org",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "openknit-github",
+      "type": "github",
+      "author": "Rubio, Gerard",
+      "year": 2014,
+      "title": "openknit (GitHub)",
+      "url": "https://github.com/g-rubio/openknit",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "inkstitch-website",
+      "type": "website",
+      "author": "Ink/Stitch Contributors",
+      "year": 2017,
+      "title": "Ink/Stitch — Open-Source Machine Embroidery",
+      "url": "https://inkstitch.org",
+      "license": "GPL v3",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "inkstitch-github",
+      "type": "github",
+      "author": "Ink/Stitch Contributors",
+      "year": 2017,
+      "title": "inkstitch (GitHub)",
+      "url": "https://github.com/inkstitch/inkstitch",
+      "license": "GPL v3",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "inkstitch-beginner-tutorials",
+      "type": "website",
+      "author": "Ink/Stitch Contributors",
+      "year": 2017,
+      "title": "Beginner Video Tutorials",
+      "url": "https://inkstitch.org/tutorials/resources/beginner-video-tutorials/",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "inkstitch-beginner-video",
+      "type": "website",
+      "author": "Ink/Stitch Contributors",
+      "year": 2017,
+      "title": "Ink/Stitch Beginner Tutorial Video",
+      "url": "https://www.youtube.com/watch?v=PTcSRuCA1Aw",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "kniterate-kickstarter",
+      "type": "website",
+      "author": "Kniterate",
+      "year": 2015,
+      "title": "Kniterate: The Digital Knitting Machine (Kickstarter)",
+      "url": "https://www.kickstarter.com/projects/kniterate/kniterate-the-digital-knitting-machine",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "seamly2d-github",
+      "type": "github",
+      "author": "FashionFreedom / Seamly2D Contributors",
+      "year": 2018,
+      "title": "Seamly2D (GitHub)",
+      "url": "https://github.com/FashionFreedom/Seamly2D",
+      "license": "GPL v3",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "fabtextiles-website",
+      "type": "website",
+      "author": "Fab Lab Barcelona / IAAC",
+      "year": 2020,
+      "title": "Fab Textiles Lab",
+      "url": "https://fabtextiles.org",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "gnu-project",
+      "type": "website",
+      "author": "Stallman, Richard M.",
+      "year": 1983,
+      "title": "The GNU Project",
+      "url": "https://www.gnu.org/gnu/thegnuproject.html",
+      "license": "CC BY-ND 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "gnu-head-graphic",
+      "type": "website",
+      "author": "Heckert, Aurelio A. / Free Software Foundation",
+      "year": 2007,
+      "title": "A GNU Head",
+      "url": "https://www.gnu.org/graphics/heckert_gnu.html",
+      "license": "CC BY-SA 2.0 / FAL / GFDL 1.3+",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-stallman-photo",
+      "type": "website",
+      "author": "Jonnymccullagh",
+      "year": 2012,
+      "title": "Richard-m-stallman.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Richard-m-stallman.jpg",
+      "license": "CC BY-SA 3.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "osi-osd",
+      "type": "website",
+      "author": "Open Source Initiative",
+      "year": 1998,
+      "title": "The Open Source Definition",
+      "url": "https://opensource.org/osd",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "creativecommons",
+      "type": "website",
+      "author": "Creative Commons",
+      "year": 2001,
+      "title": "Creative Commons Licenses",
+      "url": "https://creativecommons.org/licenses/",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "arduino-website",
+      "type": "website",
+      "author": "Arduino",
+      "year": 2005,
+      "title": "Arduino",
+      "url": "https://www.arduino.cc",
+      "license": "CC BY-SA / GPL",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "reprap-website",
+      "type": "website",
+      "author": "Bowyer, Adrian et al.",
+      "year": 2007,
+      "title": "RepRap — Replicating Rapid Prototyper",
+      "url": "https://reprap.org",
+      "license": "GPL v2",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "commons-reprap-proto",
+      "type": "website",
+      "author": "Olliver, Vik",
+      "year": 2007,
+      "title": "All 3 axes fdmd sml",
+      "url": "https://commons.wikimedia.org/wiki/File:All_3_axes_fdmd_sml.jpg",
+      "license": "GPL v2 or later",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "oshwa-definition",
+      "type": "website",
+      "author": "Open Source Hardware Association",
+      "year": 2011,
+      "title": "Open Source Hardware (OSHW) Definition 1.0",
+      "url": "https://www.oshwa.org/definition/",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "commons-github-office",
+      "type": "website",
+      "author": "Rrustema",
+      "year": 2018,
+      "title": "Letterbox for GitHub office in Spuistraat, Amsterdam, the Netherlands",
+      "url": "https://commons.wikimedia.org/wiki/File:Letterbox_for_GitHub_office_in_Spuistraat,_Amsterdam,_the_Netherlands.jpg",
+      "license": "CC0 1.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-github-mark",
+      "type": "website",
+      "author": "GitHub",
+      "year": 2014,
+      "title": "GitHub Mark.png",
+      "url": "https://commons.wikimedia.org/wiki/File:GitHub_Mark.png",
+      "license": "Public Domain",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "osi-website",
+      "type": "website",
+      "author": "Open Source Initiative",
+      "year": 1998,
+      "title": "Open Source Initiative",
+      "url": "https://opensource.org",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "cern-ohl",
+      "type": "website",
+      "author": "CERN",
+      "year": 2013,
+      "title": "CERN Open Hardware Licence",
+      "url": "https://cern-ohl.web.cern.ch",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "raspberrypi-foundation",
+      "type": "website",
+      "author": "Raspberry Pi Foundation",
+      "year": 2012,
+      "title": "Raspberry Pi",
+      "url": "https://www.raspberrypi.org",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "kernel-linux",
+      "type": "website",
+      "author": "The Linux Kernel Organization",
+      "year": 1991,
+      "title": "The Linux Kernel Archives",
+      "url": "https://www.kernel.org",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "stitchlabsim-github",
+      "type": "github",
+      "author": "prntr",
+      "year": 2024,
+      "title": "stitchLABsim (GitHub)",
+      "url": "https://github.com/prntr/stitchLABsim",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "turtlestitch-website",
+      "type": "website",
+      "author": "TurtleStitch Contributors",
+      "year": 2016,
+      "title": "TurtleStitch",
+      "url": "https://www.turtlestitch.org",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "turtlestitch-github",
+      "type": "github",
+      "author": "TurtleStitch Contributors",
+      "year": 2016,
+      "title": "turtlestitch (GitHub)",
+      "url": "https://github.com/turtlestitch/turtlestitch",
+      "license": "AGPL v3",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "turtlestitch-tutorials",
+      "type": "website",
+      "author": "TurtleStitch Contributors",
+      "year": 2016,
+      "title": "TurtleStitch Tutorials",
+      "url": "https://turtlestitch.org/page/tutorials/",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "turtlestitch-intro-video",
+      "type": "website",
+      "author": "TurtleStitch Contributors",
+      "year": 2016,
+      "title": "TurtleStitch: coded embroidery platform",
+      "url": "https://www.youtube.com/watch?v=GcaBKF86hBQ",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "logo-foundation",
+      "type": "website",
+      "author": "MIT Media Lab",
+      "year": 1999,
+      "title": "Logo Foundation",
+      "url": "https://el.media.mit.edu/logo-foundation/",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "scratch-website",
+      "type": "website",
+      "author": "Scratch Foundation",
+      "year": 2003,
+      "title": "Scratch",
+      "url": "https://scratch.mit.edu",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "snap-website",
+      "type": "website",
+      "author": "Mönig, Jens and Harvey, Brian",
+      "year": 2011,
+      "title": "Snap!",
+      "url": "https://snap.berkeley.edu",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-matador",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Matador (Spielzeug)",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Matador_(Spielzeug)",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-matador-holzbaukasten",
+      "type": "website",
+      "author": "Hermann Handleskaskel",
+      "year": 2019,
+      "title": "Matador-Holzbaukasten-1766.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Matador-Holzbaukasten-1766.jpg",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-franz-singer",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Franz Singer (Architekt)",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Franz_Singer_(Architekt)",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "bauhaus-in-wien-hoevelmann",
+      "type": "book",
+      "author": "Hövelmann, Katharina",
+      "year": 2021,
+      "title": "Bauhaus in Wien? Friedl Dicker und Franz Singer",
+      "url": "https://doi.org/10.7767/9783205213161",
+      "license": "CC BY-NC 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wienmuseum-atelier-bauhaus",
+      "type": "website",
+      "author": "Wien Museum",
+      "year": 2021,
+      "title": "Atelier Bauhaus, Wien",
+      "url": "https://www.wienmuseum.at/atelier_bauhaus_wien",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "bauhaus-archiv-singer-dicker",
+      "type": "website",
+      "author": "Bauhaus-Archiv / Museum für Gestaltung",
+      "year": 2026,
+      "title": "Erschließung der Nachlässe von Franz Singer und Friedl Dicker",
+      "url": "https://www.bauhaus.de/forschen/forschungprojekte/erschliessung-der-nachlaesse-von-franz-singer-und-friedl-dicker/",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "meccano-heritage",
+      "type": "website",
+      "author": "Meccano",
+      "year": 2026,
+      "title": "Meccano Heritage",
+      "url": "https://www.meccano.com/heritage/",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-meccano-set",
+      "type": "website",
+      "author": "Kim Traynor",
+      "year": 2013,
+      "title": "Meccano Set, Edinburgh Museum of Childhood.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Meccano_Set,_Edinburgh_Museum_of_Childhood.JPG",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-fischertechnik",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Fischertechnik",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Fischertechnik",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-fischertechnik-ebausteine",
+      "type": "website",
+      "author": "Kabelsalat",
+      "year": 2012,
+      "title": "E-Bausteine fischertechnik.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:E-Bausteine_fischertechnik.JPG",
+      "license": "Public Domain",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "lego-history",
+      "type": "website",
+      "author": "The LEGO Group",
+      "year": 2026,
+      "title": "History of the LEGO Group",
+      "url": "https://www.lego.com/en-us/history",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-lego-bricks",
+      "type": "website",
+      "author": "Rjgalindo86",
+      "year": 2006,
+      "title": "Lego bricks.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lego_bricks.jpg",
+      "license": "CC BY-SA 3.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "lego-mindstorms-about",
+      "type": "website",
+      "author": "The LEGO Group",
+      "year": 2026,
+      "title": "About LEGO MINDSTORMS",
+      "url": "https://www.lego.com/en-us/themes/mindstorms/about",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-lego-mindstorms-robot",
+      "type": "website",
+      "author": "Sicnag",
+      "year": 2019,
+      "title": "LEGO Mindstorms Robot with Compass + Ultrasonic.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:LEGO_Mindstorms_Robot_with_Compass_%2B_Ultrasonic.jpg",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-anni-albers",
+      "type": "article",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "title": "Anni Albers",
+      "journal": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anni_Albers",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-anni-albers-design",
+      "type": "website",
+      "author": "Anni Albers",
+      "year": 1925,
+      "title": "Anni Albers (1899–1994), Design for Wall Hanging, 1925.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Anni_Albers_(1899%E2%80%931994),_Design_for_Wall_Hanging,_1925.jpg",
+      "license": "Public Domain",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-nylon",
+      "type": "article",
+      "author": "Wikipedia contributors",
+      "year": 2026,
+      "title": "Nylon",
+      "journal": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nylon",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-nylon-stockings",
+      "type": "website",
+      "author": "Gorlov",
+      "year": 2021,
+      "title": "Плетение нейлоновых чулок.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BB%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B5%D0%B9%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2%D1%8B%D1%85_%D1%87%D1%83%D0%BB%D0%BE%D0%BA.jpg",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "velcro-history",
+      "type": "website",
+      "author": "VELCRO Companies",
+      "year": 2026,
+      "title": "An Idea That Stuck: How George de Mestral Invented the Velcro Fastener",
+      "url": "https://www.velcro.com/news-and-blog/2016/11/an-idea-that-stuck-how-george-de-mestral-invented-the-velcro-fastener/",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-velcro5",
+      "type": "website",
+      "author": "Ildar Sagdejev (Specious)",
+      "year": 2008,
+      "title": "Velcro5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Velcro5.jpg",
+      "license": "Public Domain",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "shima-wholegarment",
+      "type": "website",
+      "author": "SHIMA SEIKI MFG., LTD.",
+      "year": 2026,
+      "title": "WHOLEGARMENT",
+      "url": "https://www.shimaseiki.com/wholegarment/",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-computerized-flat-knitting-machine",
+      "type": "website",
+      "author": "Asivechowdhury",
+      "year": 2018,
+      "title": "Computerized Flat Knitting Machine (Jacquard Machine).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Computerized_Flat_Knitting_Machine_(Jacquard_Machine).jpg",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "issey-miyake-pleats-please",
+      "type": "website",
+      "author": "ISSEY MIYAKE INC.",
+      "year": 2026,
+      "title": "PLEATS PLEASE ISSEY MIYAKE",
+      "url": "https://us.isseymiyake.com/pages/pleatsplease",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-pleats-please-series-1",
+      "type": "website",
+      "author": "Francesco Bini",
+      "year": 2017,
+      "title": "Issey miyake, pleats please, series n.1, a-i 1996-97 (hasselt, modemuseum).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Issey_miyake,_pleats_please,_series_n.1,_a-i_1996-97_(hasselt,_modemuseum).jpg",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "sparkfun-lilypad-guide",
+      "type": "website",
+      "author": "SparkFun Electronics",
+      "year": 2026,
+      "title": "LilyPad Development Board Hookup Guide",
+      "url": "https://learn.sparkfun.com/tutorials/lilypad-development-board-hookup-guide/all",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-flexible-lilypad",
+      "type": "website",
+      "author": "Evil Mad Scientist Laboratories",
+      "year": 2010,
+      "title": "Flexible Lilypad Arduino.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Flexible_Lilypad_Arduino.jpg",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "automate-industrial-robot",
+      "type": "website",
+      "author": "Association for Advancing Automation",
+      "year": 2026,
+      "title": "The Birth of the First Industrial Robot",
+      "url": "https://www.automate.org/industry-insights/the-birth-of-the-first-industrial-robot",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "ros-website",
+      "type": "website",
+      "author": "Open Robotics",
+      "year": 2026,
+      "title": "ROS",
+      "url": "https://www.ros.org/",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-ros",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Robot Operating System",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Robot_Operating_System",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "soft-robotics-toolkit",
+      "type": "website",
+      "author": "Soft Robotics Toolkit",
+      "year": 2026,
+      "title": "Soft Robotics Toolkit",
+      "url": "https://softroboticstoolkit.com/",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "prntr-github",
+      "type": "github",
+      "author": "prntr",
+      "year": 2024,
+      "title": "prntr (GitHub profile)",
+      "url": "https://github.com/prntr",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-analytical-engine",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Analytical Engine",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Analytical_Engine",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "commons-babbage-plan",
+      "type": "website",
+      "author": "ArnoldReinhold",
+      "year": 2012,
+      "title": "Babbage Analytical Engine Plan 1840 CHM.agr.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Babbage_Analytical_Engine_Plan_1840_CHM.agr.jpg",
+      "license": "CC BY 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-ada-lovelace",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Ada Lovelace",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Ada_Lovelace",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "cern-birth-web",
+      "type": "website",
+      "author": "CERN",
+      "year": 2019,
+      "title": "The birth of the Web",
+      "url": "https://home.cern/science/computing/birth-web",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "kernel-org",
+      "type": "website",
+      "author": "The Linux Kernel Organization",
+      "year": 1991,
+      "title": "The Linux Kernel Archives",
+      "url": "https://www.kernel.org",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "wikipedia-linux",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Linux",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Linux",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "wikipedia-hollerith",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Herman Hollerith",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Herman_Hollerith",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "commons-lustenau-dress",
+      "type": "website",
+      "author": "Wolf D.",
+      "year": 2015,
+      "title": "Kleid ca1968 2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Kleid_ca1968_2.jpg",
+      "license": "Public Domain",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "internet-society-history",
+      "type": "website",
+      "author": "Internet Society",
+      "year": 2017,
+      "title": "Brief History of the Internet",
+      "url": "https://www.internetsociety.org/internet/history-internet/",
+      "accessed": "2026-03-08"
+    },
+    {
+      "id": "wikipedia-artificial-intelligence",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Künstliche Intelligenz",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-john-mccarthy-stanford",
+      "type": "website",
+      "author": "Steve Jurvetson",
+      "year": 2006,
+      "title": "John McCarthy Stanford.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+      "license": "CC BY 3.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-perceptron",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Perzeptron",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Perzeptron",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-mark-i-perceptron",
+      "type": "website",
+      "author": "Cornell Aeronautical Laboratory",
+      "year": 1958,
+      "title": "Mark I perceptron.jpeg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mark_I_perceptron.jpeg",
+      "license": "Public Domain",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikipedia-deep-learning",
+      "type": "article",
+      "author": "Wikipedia-Autoren",
+      "year": 2024,
+      "title": "Deep Learning",
+      "journal": "Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Deep_Learning",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "commons-artificial-neural-network",
+      "type": "website",
+      "author": "Dhp1080",
+      "year": 2017,
+      "title": "Artificial neural network.svg",
+      "url": "https://commons.wikimedia.org/wiki/File:Artificial_neural_network.svg",
+      "license": "CC BY-SA 3.0",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "anthropic-claude-code",
+      "type": "website",
+      "author": "Anthropic",
+      "year": 2025,
+      "title": "Claude Code",
+      "url": "https://www.anthropic.com/claude-code",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "anthropic-code-with-claude-2025",
+      "type": "website",
+      "author": "Anthropic",
+      "year": 2025,
+      "title": "Code with Claude 2025",
+      "url": "https://www.anthropic.com/events/code-with-claude-2025",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "hilo-spinning-machine",
+      "type": "website",
+      "author": "HILO Textiles",
+      "year": 2024,
+      "title": "HILO Spinning Machine 3.0+",
+      "url": "https://www.hilotextiles.com/hilo-spinning-machine",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "hilo-open-tools",
+      "type": "website",
+      "author": "HILO Textiles",
+      "year": 2025,
+      "title": "Open Tools",
+      "url": "https://www.hilotextiles.com/open-tools",
+      "accessed": "2026-03-09"
+    },
+    {
+      "id": "wikimedia-foundation",
+      "type": "website",
+      "author": "Wikimedia Foundation",
+      "year": 2001,
+      "title": "Wikimedia Commons — Free Media Repository",
+      "url": "https://commons.wikimedia.org",
+      "license": "CC BY-SA 4.0 / Public Domain",
+      "accessed": "2026-03-08"
+    }
+  ]
+}

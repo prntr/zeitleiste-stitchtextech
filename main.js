@@ -52,14 +52,19 @@
   let searchQuery    = '';
   let activeSession  = null;   // Kurs-Modus: aktive Session-ID oder null
   let viewMode       = 'multi';  // 'multi' | 'single'
+  let isPhoneLayout  = false;
+  let autoMobileView = false;
+  let userViewModeOverride = false;
   let collapsedLayerMap = null;  // Map<eventId, layer>
   let svgFontScale = 1;  // updated by applyFontSize(), ratio to 15px base
   function svgPx(base) { return Math.round(base * svgFontScale * 10) / 10; }
   function collDim() {
+    const compactCardW = isPhoneLayout ? 96 : 108;
+    const compactCardH = isPhoneLayout ? 38 : 40;
     return {
-      cardW:   Math.round(108 * svgFontScale),
-      cardH:   Math.round(40  * svgFontScale),
-      layerGap: Math.round(6  * svgFontScale),
+      cardW:   Math.round(compactCardW * svgFontScale),
+      cardH:   Math.round(compactCardH * svgFontScale),
+      layerGap: Math.round((isPhoneLayout ? 5 : 6) * svgFontScale),
       stemGap:  3
     };
   }
@@ -371,6 +376,59 @@
         <span>${t.label}</span>`;
       sidebar.appendChild(div);
     });
+  }
+
+  function updateViewToggleUI() {
+    const collapseBtn = document.getElementById('stt-collapse-btn');
+    const isCollapsed = viewMode === 'single';
+    if (collapseBtn) {
+      collapseBtn.setAttribute('aria-pressed', isCollapsed ? 'true' : 'false');
+      collapseBtn.textContent = isCollapsed ? 'Tracks' : 'Kompakt';
+    }
+    if (sidebar) sidebar.style.display = isCollapsed ? 'none' : '';
+  }
+
+  function ensureCollapsedLabels() {
+    const labelBtn = document.getElementById('stt-label-btn');
+    showLabels = true;
+    if (labelBtn) labelBtn.setAttribute('aria-pressed', 'true');
+  }
+
+  function syncCollapsedLabelVisibility() {
+    if (!svgSel || viewMode !== 'single') return;
+    const hidden = !showLabels;
+    svgSel.select('.stt-card-group-container').style('display', hidden ? 'none' : null);
+    svgSel.select('.stt-stem-group').style('display', hidden ? 'none' : null);
+  }
+
+  function isPhoneBreakpoint() {
+    return window.matchMedia('(max-width: 700px)').matches;
+  }
+
+  function syncResponsiveState(options) {
+    const opts = options || {};
+    const allowAutoView = opts.allowAutoView !== false;
+    const nextPhoneLayout = isPhoneBreakpoint();
+    const phoneChanged = nextPhoneLayout !== isPhoneLayout;
+    const prevViewMode = viewMode;
+
+    isPhoneLayout = nextPhoneLayout;
+    document.body.classList.toggle('stt-phone-layout', isPhoneLayout);
+    svgWrapper.classList.toggle('is-phone-layout', isPhoneLayout);
+
+    if (allowAutoView && isPhoneLayout && !userViewModeOverride && viewMode !== 'single') {
+      viewMode = 'single';
+      autoMobileView = true;
+      ensureCollapsedLabels();
+    } else if (allowAutoView && !isPhoneLayout && autoMobileView && !userViewModeOverride && viewMode !== 'multi') {
+      viewMode = 'multi';
+      autoMobileView = false;
+    } else if (!isPhoneLayout && autoMobileView && viewMode === 'multi') {
+      autoMobileView = false;
+    }
+
+    updateViewToggleUI();
+    return { phoneChanged, viewChanged: prevViewMode !== viewMode };
   }
 
   /* ================================================================
@@ -1036,6 +1094,7 @@
     renderCollapsedConnections(collConnG, currentXScale, AXIS_Y, h);
     renderCollapsedCards(stemG, cardG, currentXScale, AXIS_Y, h);
     renderCollapsedEvents(eventG, currentXScale, AXIS_Y);
+    syncCollapsedLabelVisibility();
 
     /* Zoom */
     zoomBehavior = d3.zoom()
@@ -1360,6 +1419,7 @@
       toggleEventInSession(d.id);
       return;
     }
+    hideTooltip();
     selectedId = d.id;
     openPanel(d);
     applyEventVisibility();
@@ -1424,11 +1484,15 @@
     updateConnectionVisibility();
   }
 
-  function onEventMouseLeave() {
+  function hideTooltip() {
     tooltip.classList.remove('is-visible', 'is-flipped', 'has-thumb');
     tooltip.setAttribute('aria-hidden', 'true');
     hoveredId = null;
     updateConnectionVisibility();
+  }
+
+  function onEventMouseLeave() {
+    hideTooltip();
   }
 
   /* ================================================================
@@ -1750,6 +1814,7 @@
   /* Open panel (first time / from timeline click) */
   function openPanel(ev) {
     selectedId = ev.id;
+    hideTooltip();
     renderPanelContent(ev);
     updatePanelNav();
     panel.classList.add('is-open');
@@ -1807,6 +1872,7 @@
   /* Switch to another event with fade-out/in */
   function switchPanelTo(ev) {
     closeEditMode();
+    hideTooltip();
     if (!panelBody) { openPanel(ev); return; }
     panelBody.classList.add('is-fading');
     setTimeout(() => {
@@ -1969,6 +2035,7 @@
 
   function closePanel() {
     closeEditMode();
+    hideTooltip();
     panel.classList.remove('is-open');
     selectedId = null;
     applyEventVisibility();
@@ -2280,10 +2347,7 @@
         showLabels = !showLabels;
         this.setAttribute('aria-pressed', showLabels ? 'true' : 'false');
         if (viewMode === 'single') {
-          /* Kompakt-Modus: Cards + Stems ein-/ausblenden */
-          const hidden = !showLabels;
-          svgSel.select('.stt-card-group-container').style('display', hidden ? 'none' : null);
-          svgSel.select('.stt-stem-group').style('display', hidden ? 'none' : null);
+          syncCollapsedLabelVisibility();
         } else if (labelGroupSel) {
           renderEventLabels(labelGroupSel, currentXScale, svgDimensions().h);
           applyEventVisibility();
@@ -2412,15 +2476,13 @@
     const collapseBtn = document.getElementById('stt-collapse-btn');
     if (collapseBtn) {
       collapseBtn.addEventListener('click', function () {
+        userViewModeOverride = true;
+        autoMobileView = false;
         viewMode = viewMode === 'multi' ? 'single' : 'multi';
-        const isCollapsed = viewMode === 'single';
-        this.setAttribute('aria-pressed', isCollapsed ? 'true' : 'false');
-        this.textContent  = isCollapsed ? 'Tracks' : 'Kompakt';
-        sidebar.style.display = isCollapsed ? 'none' : '';
-        if (isCollapsed) {
+        updateViewToggleUI();
+        if (viewMode === 'single') {
           /* Kompakt-Karten sind per default sichtbar → showLabels auf true setzen */
-          showLabels = true;
-          if (labelBtn) labelBtn.setAttribute('aria-pressed', 'true');
+          ensureCollapsedLabels();
           buildCollapsedSVG();
         } else {
           sidebar.innerHTML = '';
@@ -2684,6 +2746,7 @@
     const ro = new ResizeObserver(() => {
       clearTimeout(timer);
       timer = setTimeout(() => {
+        syncResponsiveState({ allowAutoView: true });
         if (viewMode === 'single') {
           buildCollapsedSVG();
         } else {
@@ -2716,7 +2779,11 @@
     if (upBtn)   upBtn.disabled   = px >= FONT_STEPS[FONT_STEPS.length - 1];
     if (rebuild && svgSel) {
       if (viewMode === 'single') buildCollapsedSVG();
-      else                       buildSVG();
+      else {
+        buildSVG();
+        sidebar.innerHTML = '';
+        buildSidebar();
+      }
     }
   }
 
@@ -2769,8 +2836,13 @@
     }
 
     setupFontSize();
-    buildSidebar();
-    buildSVG();
+    syncResponsiveState({ allowAutoView: true });
+    if (viewMode === 'single') {
+      buildCollapsedSVG();
+    } else {
+      buildSidebar();
+      buildSVG();
+    }
     setupControls();
     setupFilterPopover();
     setupMetricPicker();

@@ -129,12 +129,12 @@
     {
       "id": "knitic-github",
       "type": "github",
-      "author": "Fab Lab Barcelona / fashiontec",
+      "author": "Canet, Mar; Guljajeva, Varvara",
       "year": 2012,
       "title": "knitic (GitHub)",
-      "url": "https://github.com/fashiontec/knitic",
-      "license": "LGPL v3",
-      "accessed": "2026-03-08"
+      "url": "https://github.com/mcanet/knitic",
+      "license": "GPL v3",
+      "accessed": "2026-03-25"
     },
     {
       "id": "openknit-website",
@@ -142,19 +142,19 @@
       "author": "Rubio, Gerard",
       "year": 2014,
       "title": "OpenKnit — Open Knitting Machine",
-      "url": "http://openknit.org",
+      "url": "https://openknit.org",
       "license": "CC BY-SA 4.0",
-      "accessed": "2026-03-08"
+      "accessed": "2026-03-25"
     },
     {
       "id": "openknit-github",
       "type": "github",
       "author": "Rubio, Gerard",
       "year": 2014,
-      "title": "openknit (GitHub)",
-      "url": "https://github.com/g-rubio/openknit",
-      "license": "CC BY-SA 4.0",
-      "accessed": "2026-03-08"
+      "title": "OpenKnit (GitHub)",
+      "url": "https://github.com/g3rard/OpenKnit",
+      "license": "⚠️ LIZENZ PRÜFEN: keine SPDX-Lizenz im Repo",
+      "accessed": "2026-03-25"
     },
     {
       "id": "inkstitch-website",
@@ -193,6 +193,15 @@
       "title": "Ink/Stitch Beginner Tutorial Video",
       "url": "https://www.youtube.com/watch?v=PTcSRuCA1Aw",
       "accessed": "2026-03-09"
+    },
+    {
+      "id": "inkstitch-diy-embroidery-machine",
+      "type": "website",
+      "author": "Ink/Stitch Community; jameskolme",
+      "year": 2018,
+      "title": "Self-Made Embroidery Machine (Running on G-Code)",
+      "url": "https://inkstitch.org/tutorials/embroidery-machine/",
+      "accessed": "2026-03-25"
     },
     {
       "id": "kniterate-kickstarter",
@@ -932,6 +941,84 @@
       "title": "Open Tools",
       "url": "https://www.hilotextiles.com/open-tools",
       "accessed": "2026-03-09"
+    },
+    {
+      "id": "twitterknitter-tog",
+      "type": "website",
+      "author": "TOG Hackerspace",
+      "year": 2013,
+      "title": "The TwitterKnitter",
+      "url": "https://www.tog.ie/2013/08/the-twitterknitter/",
+      "accessed": "2026-03-25"
+    },
+    {
+      "id": "twitterknitter-github",
+      "type": "github",
+      "author": "tangentmonger",
+      "year": 2013,
+      "title": "twitterknitter (GitHub)",
+      "url": "https://github.com/tangentmonger/twitterknitter",
+      "license": "GPL v2",
+      "accessed": "2026-03-25"
+    },
+    {
+      "id": "circular-knitic-github",
+      "type": "github",
+      "author": "Guljajeva, Varvara; Canet Sola, Mar",
+      "year": 2014,
+      "title": "circular_knitic (GitHub)",
+      "url": "https://github.com/var-mar/circular_knitic",
+      "license": "MIT",
+      "accessed": "2026-03-25"
+    },
+    {
+      "id": "embroidermodder-github",
+      "type": "github",
+      "author": "Embroidermodder Contributors",
+      "year": 2013,
+      "title": "Embroidermodder (GitHub)",
+      "url": "https://github.com/Embroidermodder/Embroidermodder",
+      "license": "zlib",
+      "accessed": "2026-03-25"
+    },
+    {
+      "id": "embroiderino-article",
+      "type": "website",
+      "author": "markol",
+      "year": 2018,
+      "title": "Embroiderino towards open source embroidery",
+      "url": "https://lordovervolt.com/embroidery/1",
+      "accessed": "2026-03-25"
+    },
+    {
+      "id": "embroiderino-github",
+      "type": "github",
+      "author": "openembroidery",
+      "year": 2024,
+      "title": "embroiderino (GitHub)",
+      "url": "https://github.com/openembroidery/embroiderino",
+      "license": "GPL v3",
+      "accessed": "2026-03-25"
+    },
+    {
+      "id": "knitout-github",
+      "type": "github",
+      "author": "Carnegie Mellon Textiles Lab",
+      "year": 2017,
+      "title": "knitout (GitHub)",
+      "url": "https://github.com/textiles-lab/knitout",
+      "license": "⚠️ LIZENZ PRÜFEN: keine SPDX-Lizenz im Repo",
+      "accessed": "2026-03-25"
+    },
+    {
+      "id": "pembroider-github",
+      "type": "github",
+      "author": "Creative Inquiry",
+      "year": 2020,
+      "title": "PEmbroider (GitHub)",
+      "url": "https://github.com/CreativeInquiry/PEmbroider",
+      "license": "GPL v3 + ACSL 1.4",
+      "accessed": "2026-03-25"
     },
     {
       "id": "wikimedia-foundation",

@@ -445,3 +445,7 @@ Medium nur eintragen wenn alle `ja`:
 
 This managed block is checked by `~/Code/_std/bin/agents-doctor`; keep its markers intact.
 <!-- END _STD:SHARED_REFERENCES -->
+
+## StitchLAB-Ökosystem
+
+Teil von StitchLAB. Wie die Repos zusammenhängen (Classic, Hybrid, OpenRSS, Nähkopf): `../MainsailDev/docs/00-ecosystem.md`. OpenRSS liest Dateien von hier; sie stehen in `../OpenRSS/docs/sources.md`, also nur zusammen mit diesem Verzeichnis verschieben oder umbenennen.

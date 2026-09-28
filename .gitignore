@@ -15,3 +15,6 @@ data/sources.js
 
 # Claude Code (lokal)
 .claude/
+
+# --- Editor-Workspaces ---
+*.code-workspace

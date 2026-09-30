@@ -1690,10 +1690,11 @@ body::after {
   box-sizing: border-box;
   transition: border-color 0.15s;
 }
-.stt-edit-field input:focus,
-.stt-edit-field textarea:focus,
-.stt-edit-field select:focus {
-  outline: none;
+.stt-edit-field input:focus-visible,
+.stt-edit-field textarea:focus-visible,
+.stt-edit-field select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
   border-color: var(--accent);
 }
 .stt-edit-field textarea {
@@ -1760,9 +1761,10 @@ body::after {
   box-sizing: border-box;
   width: 100%;
 }
-.stt-edit-dyn-row input:focus,
-.stt-edit-dyn-row select:focus {
-  outline: none;
+.stt-edit-dyn-row input:focus-visible,
+.stt-edit-dyn-row select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
   border-color: var(--accent);
 }
 .stt-edit-dyn-remove {
@@ -1870,8 +1872,9 @@ body::after {
   color: var(--text);
   width: 100%;
 }
-.stt-session-mgr__row-fields input:focus {
-  outline: none;
+.stt-session-mgr__row-fields input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
   border-color: var(--accent);
 }
 .stt-session-mgr__row-meta {

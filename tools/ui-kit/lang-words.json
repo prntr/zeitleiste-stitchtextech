@@ -1,0 +1,5 @@
+{
+  "$comment": "Function words that exist in one language only. Words both languages use (in, an, so, also, will, war, hat, man, die as an English verb aside) are left out on purpose. Used by lang-audit.mjs (browser) and ui_lint.py (static HTML).",
+  "de": ["der", "die", "das", "den", "dem", "des", "ein", "eine", "einen", "einem", "einer", "und", "oder", "nicht", "ist", "sind", "wird", "werden", "mit", "für", "auf", "zu", "zum", "zur", "von", "vom", "bei", "beim", "nach", "aus", "wie", "noch", "nur", "über", "kann", "können", "kein", "keine", "alle", "diese", "dieser", "wenn", "hier", "ohne", "bitte", "sich", "auch", "wählen", "ihr", "ihre", "sie", "wir", "uns", "ich"],
+  "en": ["the", "and", "or", "not", "is", "are", "was", "were", "with", "for", "on", "of", "to", "from", "this", "that", "these", "at", "by", "be", "it", "its", "your", "you", "can", "no", "all", "if", "here", "without", "please", "choose", "select", "we", "our", "they", "their", "which", "what", "when", "how", "has", "have"]
+}

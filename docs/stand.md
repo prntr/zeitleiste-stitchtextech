@@ -33,6 +33,9 @@ Aus `AGENTS.md` ausgelagert am 2026-09-23.
 
 ### POLISH
 - [ ] Druckansicht (A3 quer, alle Tracks, Quellen als Fußnoten)
-- [ ] Barrierefreiheit-Audit (WCAG 2.1 AA)
+- [ ] Barrierefreiheit-Audit (WCAG 2.1 AA). Automatisch geprüft seit 2026-09-30: `make lint`
+      läuft das ui-kit-Gate (`tools/ui-kit/ui_lint.py`): `lang` gegen den Text,
+      `outline: none` nur mit `:focus-visible`-Ersatz, Farbliterale außerhalb von
+      `:root` gegen `ui-debt.json` (Schuld mit Eigentümer, sinkt nur). Kein axe-Lauf.
 - [ ] `prefers-reduced-motion` vollständig berücksichtigen
 - [ ] Favicon (SVG, Spule/Nadel)

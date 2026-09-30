@@ -1,0 +1,14 @@
+{
+  "commit": "d812199",
+  "dirty": false,
+  "files": {
+    "tools/ui-kit/ui_lint.py": {
+      "from": "gates/ui_lint.py",
+      "sha256": "132b64e231926ac3e7fe22a55a0bd7a5dfd135a4d50f84b6310799e8c9d5376f"
+    },
+    "tools/ui-kit/lang-words.json": {
+      "from": "gates/lang-words.json",
+      "sha256": "8f580a2930f35a902733514d7621d13ff7de3ed2015497c74e200f592ccab129"
+    }
+  }
+}

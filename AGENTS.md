@@ -36,16 +36,11 @@ Intellektueller Rahmen: Papert-Konstruktionismus, Gershenfeld „How to Make Alm
 
 - **HTML5** + **CSS Custom Properties** — kein CSS-Framework
 - **Vanilla JavaScript** (IIFE-Pattern, kein ES-Module-System) — kein React/Vue/Svelte
-- **D3.js v7** (via CDN) — für SVG-Timeline, Zoom, Datenbindung
-- **IBM Plex Mono + IBM Plex Sans** (Google Fonts) — Typografie
+- **D3.js v7.9.0** (`vendor/d3/d3.min.js`) — für SVG-Timeline, Zoom, Datenbindung
+- **IBM Plex Mono + IBM Plex Sans** (`vendor/fonts/plex.css`) — Typografie
 - **Keine Build-Tools** — direkt im Browser lauffähig
 - **Keine Cookies, keine Analytics, kein Backend**
-
-CDN-Links (genau diese verwenden):
-```html
-<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-```
+- **Offline-fähig:** kein CDN, keine Google Fonts. Die App läuft im Workshop über den Pixel-Hotspot ohne Internet. Nur relative Pfade. Versionen und Lizenzen: `vendor/README.md`.
 
 ---
 
@@ -62,6 +57,7 @@ ZeitleisteStitchTexTech/
 │   ├── timeline.js     # Legacy: window.__timelineData = {...} (nicht mehr aktiv)
 │   ├── sources.json    # Primär: Bibliografie-Array
 │   └── sources.js      # Legacy (nicht mehr aktiv)
+├── vendor/             # d3 + IBM Plex lokal (offline), siehe vendor/README.md
 ├── assets/
 │   └── icons/
 ├── AGENTS.md           # Diese Datei

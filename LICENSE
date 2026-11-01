@@ -40,5 +40,6 @@ DRITTMATERIAL
 -------------
 D3.js v7: BSD 3-Clause License (Mike Bostock, Observable)
 IBM Plex Fonts: SIL Open Font License 1.1 (IBM Corporation)
+Sora + Azeret Mono (nur in design-example/): SIL Open Font License 1.1
 Wikimedia Commons Bilder: jeweils CC BY / CC BY-SA / Public Domain
   (Einzelnachweise in data/timeline.js, Feld image.license)

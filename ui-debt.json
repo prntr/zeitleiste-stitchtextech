@@ -1,0 +1,37 @@
+{
+  "owner": "Zeitleiste: move track colours, greys and shadows into :root tokens (AGENTS.md TODO: WCAG 2.1 AA audit)",
+  "debt": {
+    "color-function": {
+      "lv-tools/index.html": {
+        "count": 13,
+        "owner": "Zeitleiste: move track colours, greys and shadows into :root tokens (AGENTS.md TODO: WCAG 2.1 AA audit)"
+      },
+      "style.css": {
+        "count": 16,
+        "owner": "Zeitleiste: move track colours, greys and shadows into :root tokens (AGENTS.md TODO: WCAG 2.1 AA audit)"
+      }
+    },
+    "color-no-hex": {
+      "index.html": {
+        "count": 7,
+        "owner": "Zeitleiste: move track colours, greys and shadows into :root tokens (AGENTS.md TODO: WCAG 2.1 AA audit)",
+        "why": "track colours as inline --clr; the same seven colours are --track-a..g in style.css and again in main.js"
+      },
+      "lv-tools/index.html": {
+        "count": 3,
+        "owner": "Zeitleiste: move track colours, greys and shadows into :root tokens (AGENTS.md TODO: WCAG 2.1 AA audit)"
+      },
+      "style.css": {
+        "count": 25,
+        "owner": "Zeitleiste: move track colours, greys and shadows into :root tokens (AGENTS.md TODO: WCAG 2.1 AA audit)"
+      }
+    },
+    "outline-replacement": {
+      "style.css": {
+        "count": 1,
+        "owner": "Zeitleiste: move track colours, greys and shadows into :root tokens (AGENTS.md TODO: WCAG 2.1 AA audit)",
+        "why": "the search input draws its focus on the wrapper (.stt-search-wrap:focus-within), which a selector match cannot see; review by hand"
+      }
+    }
+  }
+}

@@ -454,7 +454,7 @@
       "links": [
         {
           "label": "GitHub",
-          "url": "https://github.com/fashiontec/knitic"
+          "url": "https://github.com/mcanet/knitic"
         },
         {
           "label": "Fab Lab BCN",
@@ -474,7 +474,7 @@
         "Barcelona",
         "Open Hardware"
       ],
-      "source": "Knitic GitHub, fashiontec/knitic; Fab Lab Barcelona"
+      "source": "Knitic GitHub, mcanet/knitic; Fab Lab Barcelona"
     },
     {
       "id": "circular-knitic-2013",
@@ -492,17 +492,17 @@
         },
         {
           "type": "embed",
-          "url": "https://github.com/fashiontec/circular-knitic",
+          "url": "https://github.com/var-mar/circular_knitic",
           "caption": "Projekt-Repository mit Dokumentation und Entwicklungsstand",
           "label": "Circular Knitic auf GitHub"
         }
       ],
       "image": {
-        "url": "https://github.com/fashiontec/circular-knitic/raw/master/images/barretina.jpg",
+        "url": "https://raw.githubusercontent.com/var-mar/circular_knitic/master/images/barretina.jpg",
         "caption": "Circular-Knitic-Demonstrator aus dem offiziellen Projekt-Repository",
         "license": "Projektdokumentation im offiziellen GitHub-Repository",
-        "author": "fashiontec / Fab Lab Barcelona",
-        "source": "GitHub fashiontec/circular-knitic"
+        "author": "Varvara Guljajeva & Mar Canet",
+        "source": "GitHub var-mar/circular_knitic"
       },
       "video": {
         "url": "https://player.vimeo.com/video/79931101",
@@ -511,7 +511,7 @@
       "links": [
         {
           "label": "GitHub",
-          "url": "https://github.com/fashiontec/circular-knitic"
+          "url": "https://github.com/var-mar/circular_knitic"
         },
         {
           "label": "Fab Lab BCN",
@@ -529,7 +529,75 @@
         "3D-Druck",
         "Open Hardware"
       ],
-      "source": "Circular Knitic GitHub, fashiontec/circular-knitic"
+      "source": "Circular Knitic GitHub, var-mar/circular_knitic"
+    },
+    {
+      "id": "twitterknitter-2013",
+      "year": 2013,
+      "month": 7,
+      "track": "B",
+      "title": "TwitterKnitter",
+      "subtitle": "Tweets werden zu Mustern auf einer Strickmaschine",
+      "description": "TwitterKnitter entsteht 2013 im TOG Hackerspace in Dublin. Das Projekt koppelt eine mechanische Empisal Knitmaster 321 mit Arduino Mega, Servos, Lasercut-Teilen und Python-Software, sodass Tweets als gestrickte Muster ausgegeben werden. Es ist ein fruehes und gut dokumentiertes Beispiel dafuer, wie Maker-Kultur alte Textilmaschinen mit offener Elektronik und Netzkommunikation neu nutzbar macht.",
+      "significance": "medium",
+      "links": [
+        {
+          "label": "TOG Hackerspace",
+          "url": "https://www.tog.ie/2013/08/the-twitterknitter/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/tangentmonger/twitterknitter"
+        }
+      ],
+      "connections": [
+        "ayab-2011",
+        "knitic-2012",
+        "openknit-2014",
+        "arduino-2005"
+      ],
+      "tags": [
+        "Strickmaschine",
+        "Arduino",
+        "Python",
+        "Hackerspace",
+        "Social Media"
+      ],
+      "source": "TOG Hackerspace, «The TwitterKnitter», 2013; GitHub tangentmonger/twitterknitter, GPL v2"
+    },
+    {
+      "id": "embroidermodder-2013",
+      "year": 2013,
+      "month": 7,
+      "track": "B",
+      "title": "Embroidermodder",
+      "subtitle": "Freie Software fuer Stickdateien und Formate",
+      "description": "Embroidermodder ist freie, plattformuebergreifende Software zum Anzeigen, Bearbeiten und Konvertieren von Maschinenstickdateien. Das Projekt schliesst eine zentrale Luecke in einem Feld, das sonst stark von proprietaeren Formaten und teurer Spezialsoftware gepraegt ist. Fuer offene Stick-Workflows ist Embroidermodder daher eher Infrastruktur als nur ein Einzeltool.",
+      "significance": "high",
+      "links": [
+        {
+          "label": "libembroidery.org",
+          "url": "https://www.libembroidery.org"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Embroidermodder/Embroidermodder"
+        }
+      ],
+      "connections": [
+        "digital-embroidery-1990",
+        "inkstitch-2017",
+        "turtlestitch-2016",
+        "embroiderino-2018"
+      ],
+      "tags": [
+        "Stickerei",
+        "Dateiformate",
+        "Open Source",
+        "Software",
+        "Infrastruktur"
+      ],
+      "source": "Embroidermodder/Embroidermodder auf GitHub, erstellt 2013, zlib-Lizenz"
     },
     {
       "id": "openknit-2014",
@@ -548,7 +616,7 @@
         },
         {
           "type": "embed",
-          "url": "http://openknit.org",
+          "url": "https://openknit.org",
           "caption": "Projektwebseite mit Dokumentation und Hintergrund",
           "label": "openknit.org"
         }
@@ -567,11 +635,11 @@
       "links": [
         {
           "label": "openknit.org",
-          "url": "http://openknit.org"
+          "url": "https://openknit.org"
         },
         {
           "label": "GitHub",
-          "url": "https://github.com/g-rubio/openknit"
+          "url": "https://github.com/g3rard/OpenKnit"
         },
         {
           "label": "Fab Lab BCN",
@@ -713,6 +781,12 @@
           "url": "https://inkstitch.org/tutorials/resources/beginner-video-tutorials/",
           "caption": "Tutorial-Seite mit offizieller Video-Serie und Beispielen",
           "label": "Beginner Tutorials"
+        },
+        {
+          "type": "embed",
+          "url": "https://inkstitch.org/tutorials/embroidery-machine/",
+          "caption": "Ink/Stitch-Dokumentation eines selbst gebauten Stickmaschinenprojekts auf G-Code-Basis",
+          "label": "DIY Embroidery Machine"
         }
       ],
       "image": {
@@ -734,12 +808,19 @@
         {
           "label": "Docs",
           "url": "https://inkstitch.org/docs/"
+        },
+        {
+          "label": "DIY Embroidery Machine",
+          "url": "https://inkstitch.org/tutorials/embroidery-machine/"
         }
       ],
       "connections": [
         "openknit-2014",
         "digital-embroidery-1990",
-        "dst-format-1984"
+        "dst-format-1984",
+        "embroidermodder-2013",
+        "embroiderino-2018",
+        "turtlestitch-2016"
       ],
       "tags": [
         "Stickerei",
@@ -750,6 +831,38 @@
         "Open Source"
       ],
       "source": "Ink/Stitch Project, inkstitch.org, GPL v3; GitHub inkstitch/inkstitch"
+    },
+    {
+      "id": "knitout-2017",
+      "year": 2017,
+      "month": 5,
+      "track": "B",
+      "title": "knitout",
+      "subtitle": "Offenes Dateiformat fuer maschinelles Stricken",
+      "description": "Knitout ist ein maschinenunabhaengiges Dateiformat fuer niederstufige Strickbefehle. Entwickelt im Umfeld des Carnegie Mellon Textiles Lab trennt es Strickprogramme von einzelnen Maschinenmodellen und proprietaeren Softwareketten. Damit ist knitout weniger eine Maschine als ein offener Standard, der Interoperabilitaet im digitalen Stricken ermoeglicht.",
+      "significance": "medium",
+      "links": [
+        {
+          "label": "Spezifikation",
+          "url": "https://textiles-lab.github.io/knitout/knitout.html"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/textiles-lab/knitout"
+        }
+      ],
+      "connections": [
+        "openknit-2014",
+        "kniterate-2015"
+      ],
+      "tags": [
+        "Dateiformat",
+        "Standard",
+        "Maschinenstricken",
+        "Open Source",
+        "Interoperabilitaet"
+      ],
+      "source": "textiles-lab/knitout auf GitHub, erstellt 2017"
     },
     {
       "id": "seamly2d-2018",
@@ -798,6 +911,40 @@
       "source": "Seamly2D GitHub, FashionFreedom/Seamly2D; seamly.net"
     },
     {
+      "id": "embroiderino-2018",
+      "year": 2018,
+      "month": 11,
+      "track": "B",
+      "title": "Embroiderino",
+      "subtitle": "DIY-Umbau von Naehmaschinen zu Stickmaschinen",
+      "description": "Embroiderino dokumentiert seit November 2018 einen offenen Umbaupfad, mit dem sich gewoehnliche Naehmaschinen in digitale Stickmaschinen verwandeln lassen. Das Projekt kombiniert 3D-gedruckte Mechanikteile, Stepper-gesteuerte Rahmenbewegung, eigene Firmware und eine Python-Host-Software. Fuer die Timeline ist es einer der staerksten DIY-Hardware-Kandidaten im Bereich offene Stickmaschinen.",
+      "significance": "high",
+      "links": [
+        {
+          "label": "Projektartikel 2018",
+          "url": "https://lordovervolt.com/embroidery/1"
+        },
+        {
+          "label": "GitHub-Spiegel",
+          "url": "https://github.com/openembroidery/embroiderino"
+        }
+      ],
+      "connections": [
+        "arduino-2005",
+        "embroidermodder-2013",
+        "inkstitch-2017",
+        "turtlestitch-2016"
+      ],
+      "tags": [
+        "Stickmaschine",
+        "DIY",
+        "Arduino",
+        "3D-Druck",
+        "Open Hardware"
+      ],
+      "source": "markol, «Embroiderino towards open source embroidery», 2018; GitHub openembroidery/embroiderino, GPL v3"
+    },
+    {
       "id": "fabtextiles-2020",
       "year": 2020,
       "track": "B",
@@ -841,6 +988,35 @@
         "Fab Lab",
         "Barcelona"
       ]
+    },
+    {
+      "id": "pembroider-2020",
+      "year": 2020,
+      "month": 3,
+      "track": "B",
+      "title": "PEmbroider",
+      "subtitle": "Creative-Coding-Bibliothek fuer Stickerei",
+      "description": "PEmbroider ist eine offene Bibliothek fuer computergestuetzte Stickerei in Processing. Sie richtet sich explizit an Kunst, Bildung, Making und Schulen und verbindet Stickausgabe mit generativer Gestaltung, Typografie und Interaktion. Fuer StitchTexTech ist PEmbroider besonders dort interessant, wo offene Textiltechnik mit Computational Thinking zusammentrifft.",
+      "significance": "medium",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/CreativeInquiry/PEmbroider"
+        }
+      ],
+      "connections": [
+        "turtlestitch-2016",
+        "inkstitch-2017",
+        "embroidermodder-2013"
+      ],
+      "tags": [
+        "Stickerei",
+        "Processing",
+        "Creative Coding",
+        "Bildung",
+        "Generativ"
+      ],
+      "source": "CreativeInquiry/PEmbroider auf GitHub, erstellt 2020; GPL v3 + ACSL 1.4"
     },
     {
       "id": "gnu-1983",
